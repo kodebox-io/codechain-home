@@ -1,0 +1,47 @@
+.footer {
+  position: relative;
+  background-color: #313131;
+
+  .footer-menu {
+    position: relative;
+  }
+
+  .footer-menu-first-row {
+    height: 80px;
+  }
+
+  .footer-menu-left {
+    width: 100px;
+  }
+
+  .footer-menu-item:hover {
+    text-decoration: none;
+  }
+
+  .footer-menu-item {
+    color: white;
+  }
+
+  .footer-menu-item:link {
+    color: white;
+  }
+
+  .footer-menu-item:active {
+    color: #fff000;
+  }
+
+  .copyright {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: white;
+  }
+
+  .footer-link-item {
+    color: white;
+  }
+
+  .footer-list-menu {
+    margin-top: 20px;
+  }
+}

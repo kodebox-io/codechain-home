@@ -2,6 +2,29 @@
 //- like so './images/image.jpg',
 //- and not './../images/image.jpg'
 
-header
-  h1 Hello world!
-  img(src='./images/js-logo.svg' alt='js logo' width='200')
+nav.header.custom-nav.navbar.navbar-expand-lg.navbar-dark
+  .container
+    a.navbar-brand(href='#') CodeChain
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.test.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Downloads
+        li.nav-item
+          a.nav-link(href='#') Contribute
+        li.nav-item
+          a.nav-link(href='#') Decuments
+        li.nav-item
+          a.nav-link(href='#') About
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='#')
+            | Medium
+        li.nav-item
+          a.nav-link(href='#')
+            | GitHub

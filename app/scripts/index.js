@@ -1,4 +1,6 @@
 import './../styles/main.scss'
+import './../styles/header.scss'
+import './../styles/footer.scss'
 
 // import js
 import 'bootstrap'
