@@ -50,8 +50,8 @@ const paths = getPaths()
 const lintStylesOptions = {
   context: path.resolve(__dirname, `${paths.app}/styles`),
   syntax: 'scss',
-  emitErrors: false
-  // fix: true,
+  emitErrors: false,
+  fix: true
 }
 
 const cssPreprocessorLoader = { loader: 'fast-sass-loader' }
@@ -70,7 +70,11 @@ const commonConfig = merge([
     },
     plugins: [
       new HtmlPlugin({
-        template: './index.pug'
+        template: './index.pug',
+      }),
+      new HtmlPlugin({
+        filename: 'download.html',
+        template: './download.pug',
       }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
