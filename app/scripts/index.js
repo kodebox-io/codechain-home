@@ -1,3 +1,4 @@
+import './../styles/common.scss'
 import './../styles/main.scss'
 import './../styles/header.scss'
 import './../styles/footer.scss'

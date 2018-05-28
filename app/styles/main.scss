@@ -1,11 +1,94 @@
-@import 'fonts';
-@import "~bootstrap/scss/bootstrap";
+.main {
+  h3 {
+    font-weight: bold;
+  }
 
-$fa-font-path: "~font-awesome/fonts";
+  .underline {
+    position: absolute;
+    background-color: black;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+  }
 
-@import "~font-awesome/scss/font-awesome";
+  .top-logo-container {
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: white;
+    .title {
+      padding-top: 164px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+
+    .download-btn {
+      width: 160px;
+      height: 52px;
+      margin-top: 20px;
+      background-color: #eb6100;
+      border-color:  #eb6100;
+    }
+
+    .source-btn {
+      width: 160px;
+      height: 52px;
+      margin-top: 20px;
+      margin-left: 20px;
+      background-color: #eb6100;
+      border-color:  #eb6100;
+    }
+  }
+
+  .feature-container {
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    .item {
+      margin: 0 auto;
+      margin-bottom: 25px;
+      width: 458px;
+      height: 226px;
+      border: 1px solid;
+    }
+
+    .item-group {
+      margin-top: 50px;
+    }
+  }
+
+  .news-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .item {
+      margin: 0 auto;
+      width: 283px;
+      height: 254px;
+      border: 1px solid;
+    }
+
+    .item-group {
+      padding-top: 50px;
+    }
+  }
+
+  .newsletter-container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #eee;
+
+    form {
+      button {
+        background-color: #eb6100;
+        border-color: #eb6100;
+        width: 100%;
+        margin-top: 33px;
+      }
+    }
+  }
 }

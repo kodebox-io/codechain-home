@@ -7,5 +7,74 @@ html(lang="en")
     title CodeChain
   body
     include includes/header.pug
-    span Hi
+    .main
+      .top-logo-container
+        .container
+          p.title CodeChain
+          p.description
+            | codeChain is a programmable multi-asset management solution#[br]
+            | that leverages blockchain technologies.
+          button.btn.btn-primary(type='button').download-btn
+            | Downloads
+          button.btn.btn-primary(type='button').source-btn
+            | Source Code
+      .feature-container
+        .container
+          h3.title
+            | Feature
+          .underline
+          .item-group
+            .row
+              .col-lg-6
+                .item.text-center
+                  | Item1
+              .col-lg-6
+                .item.text-center
+                  | Item2
+            .row
+              .col-lg-6
+                .item.text-center
+                  | Item3
+              .col-lg-6
+                .item
+                  | Item4
+      .news-container
+        .container
+          h3.title
+            | News
+          .underline
+          .item-group
+            .row
+              .col-lg-4
+                .item
+                  | Item1
+              .col-lg-4
+                .item
+                  | Item2
+              .col-lg-4
+                .item
+                  | Item3
+      .newsletter-container
+        .container
+          h3.title
+            | Sign Up For#[br]
+            | Our Newsletter
+          form
+            .row.mt-3
+              .col-lg-4
+                label(for="first-name") First Name
+                .input-group
+                  input(type="text", class="form-control", id="first-name" aria-description="first-name-input")
+              .col-lg-4
+                label(for="last-name") Last Name
+                .input-group
+                  input(type="text", class="form-control", id="last-name" aria-description="last-name-input")
+              .col-lg-auto
+            .row.mt-3
+              .col-lg-8
+                label(for="email") Email
+                .input-group
+                  input(type="email", class="form-control", id="email" aria-description="email-input")
+              .col-lg-4
+                button.btn.btn-primary(type='submit') Submit
     include includes/footer.pug
