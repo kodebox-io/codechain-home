@@ -76,7 +76,13 @@ const commonConfig = merge([
       new StylelintPlugin(lintStylesOptions)
     ],
     module: {
-      noParse: /\.min\.js/
+      noParse: /\.min\.js/,
+      rules: [
+        {
+          test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
+          loader: 'file-loader'
+        }
+      ]
     }
   },
   parts.loadPug(),
@@ -120,11 +126,11 @@ const productionConfig = merge([
   parts.minifyJS({
     uglifyOptions: {
       parse: {
-      // we want uglify-js to parse ecma 8 code. However, we don't want it
-      // to apply any minfication steps that turns valid ecma 5 code
-      // into invalid ecma 5 code. This is why the 'compress' and 'output'
-      // sections only apply transformations that are ecma 5 safe
-      // https://github.com/facebook/create-react-app/pull/4234
+        // we want uglify-js to parse ecma 8 code. However, we don't want it
+        // to apply any minfication steps that turns valid ecma 5 code
+        // into invalid ecma 5 code. This is why the 'compress' and 'output'
+        // sections only apply transformations that are ecma 5 safe
+        // https://github.com/facebook/create-react-app/pull/4234
         ecma: 8
       },
       compress: {
@@ -201,7 +207,7 @@ const developmentConfig = merge([
     port: process.env.PORT
   }),
   parts.loadCSS({ include: paths.app, use: [cssPreprocessorLoader] }),
-  parts.loadImages({include: paths.app})
+  parts.loadImages({ include: paths.app })
 ])
 
 module.exports = env => {
@@ -214,7 +220,7 @@ module.exports = env => {
   return merge(commonConfig, developmentConfig)
 }
 
-function getPaths ({
+function getPaths({
   sourceDir = 'app',
   buildDir = 'build',
   staticDir = '',
@@ -232,8 +238,8 @@ function getPaths ({
 
     return obj
   }, {
-    app: path.join(__dirname, sourceDir),
-    build: path.join(__dirname, buildDir),
-    staticDir
-  })
+      app: path.join(__dirname, sourceDir),
+      build: path.join(__dirname, buildDir),
+      staticDir
+    })
 }

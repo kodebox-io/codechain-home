@@ -1,6 +1,10 @@
 @import 'fonts';
 @import "~bootstrap/scss/bootstrap";
 
+$fa-font-path: "~font-awesome/fonts";
+
+@import "~font-awesome/scss/font-awesome";
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
