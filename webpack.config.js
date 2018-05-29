@@ -76,23 +76,29 @@ const commonConfig = merge([
         filename: 'download.html',
         template: './download.pug',
       }),
+      new HtmlPlugin({
+        filename: 'documents.html',
+        template: './documents.pug',
+      }),
+      new HtmlPlugin({
+        filename: 'about.html',
+        template: './about.pug',
+      }),
+      new HtmlPlugin({
+        filename: 'contribute.html',
+        template: './contribute.pug',
+      }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
     ],
     module: {
-      noParse: /\.min\.js/,
-      rules: [
-        {
-          test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
-          loader: 'file-loader'
-        }
-      ]
+      noParse: /\.min\.js/
     }
   },
   parts.loadPug(),
   parts.lintJS({ include: paths.app, options: lintJSOptions }),
   parts.loadFonts({
-    include: paths.app,
+    // include: paths.app,
     options: {
       name: `${paths.fonts}/[name].[hash:8].[ext]`
     }
@@ -191,7 +197,6 @@ const productionConfig = merge([
       safe: true
     }
   }),
-  /*
   parts.loadImages({
     include: paths.app,
     options: {
@@ -201,7 +206,6 @@ const productionConfig = merge([
   }),
   // should go after loading images
   parts.optimizeImages()
-  */
 ])
 
 const developmentConfig = merge([
@@ -213,7 +217,7 @@ const developmentConfig = merge([
     port: process.env.PORT
   }),
   parts.loadCSS({ include: paths.app, use: [cssPreprocessorLoader] }),
-  // parts.loadImages({ include: paths.app })
+  parts.loadImages({ include: paths.app })
 ])
 
 module.exports = env => {

@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title CodeChain
+  body
+    include includes/header.pug
+    +cc-header('documents')
+    .documents
+      .container
+        .documents-container
+            h3
+              | Documents
+            .underline
+            .row
+              .col-lg-6
+                .link-button
+                  table
+                    tr
+                      td.align-middle
+                        | Manual
+              .col-lg-6
+                .link-button
+                  table
+                    tr
+                      td.align-middle
+                        | API Documents
+        .slide-container
+          h3
+            | Slides
+          .underline
+          ul
+            li
+              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+            li
+              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+            li
+              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+            li
+              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+    include includes/footer.pug

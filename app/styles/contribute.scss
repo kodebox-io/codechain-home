@@ -1,0 +1,51 @@
+.contribute {
+  .contribut-code-container {
+    margin-top: 80px;
+
+    .description-group {
+      margin-top: 35px;
+    }
+  }
+
+  .pull-request-checklist-container {
+    margin-top: 80px;
+
+    .description {
+      margin-top: 30px;
+    }
+
+    ul {
+      margin-top: 15px;
+    }
+  }
+
+  .how-to-contribute-container {
+    margin-top: 60px;
+
+    .description-group {
+      margin-top: 30px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    a {
+      margin-top: 30px;
+      background-color: #eb6100;
+      border-color: #eb6100;
+      width: 520px;
+      height: 71px;
+      padding-top: 23px;
+
+      @media screen and (max-width: 600px) {
+        margin-top: 15px;
+        width: 100%;
+      }
+    }
+  }
+
+  .good-first-issue-container {
+    margin-top: 60px;
+  }
+}
