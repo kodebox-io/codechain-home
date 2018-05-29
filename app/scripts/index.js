@@ -1,5 +1,6 @@
 import './../styles/common.scss'
 import './../styles/main.scss'
+import './../styles/download.scss'
 import './../styles/header.scss'
 import './../styles/footer.scss'
 

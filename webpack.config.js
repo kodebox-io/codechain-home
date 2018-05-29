@@ -191,6 +191,7 @@ const productionConfig = merge([
       safe: true
     }
   }),
+  /*
   parts.loadImages({
     include: paths.app,
     options: {
@@ -200,6 +201,7 @@ const productionConfig = merge([
   }),
   // should go after loading images
   parts.optimizeImages()
+  */
 ])
 
 const developmentConfig = merge([
@@ -211,7 +213,7 @@ const developmentConfig = merge([
     port: process.env.PORT
   }),
   parts.loadCSS({ include: paths.app, use: [cssPreprocessorLoader] }),
-  parts.loadImages({ include: paths.app })
+  // parts.loadImages({ include: paths.app })
 ])
 
 module.exports = env => {
