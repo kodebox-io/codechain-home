@@ -1,34 +1,59 @@
 .main {
   .top-logo-container {
+    position: relative;
     width: 100%;
     height: 400px;
-    background-color: aqua;
+    background: url('../images/main/main_background.jpg') repeat-x;
+    background-size: 100% auto;
+    background-position: center;
+    overflow: hidden;
+
+    @media screen and (max-width: 600px) {
+      background-size: auto 100%;
+    }
+
+    .background-image {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+    }
 
     .title {
+      position: relative;
       padding-top: 164px;
-      font-size: 23px;
-      font-weight: bold;
+      font-size: 30px;
+      font-weight: 900;
+      z-index: 10;
     }
 
     .description {
-      font-size: 14px;
+      position: relative;
+      font-size: 17px;
+      z-index: 10;
     }
 
     .download-btn {
+      position: relative;
       width: 160px;
       height: 52px;
       margin-top: 20px;
       background-color: #eb6100;
       border-color: #eb6100;
+      z-index: 10;
     }
 
     .source-btn {
+      position: relative;
       width: 160px;
       height: 52px;
       margin-top: 20px;
       margin-left: 20px;
       background-color: #eb6100;
       border-color: #eb6100;
+      z-index: 10;
     }
   }
 
@@ -41,7 +66,38 @@
       margin-bottom: 25px;
       width: 458px;
       height: 226px;
-      border: 1px solid;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+
+      @media screen and (max-width: 456px) {
+        width: 100%;
+      }
+
+      .item-description {
+        padding-top: 25px;
+        text-shadow: 2px 2px rgba(46, 46, 46, 0.35)
+      }
+
+      img {
+        padding-top: 25px;
+      }
+    }
+
+    .item-support {
+      background: linear-gradient(to right, #ff510b , #ffb900);
+    }
+
+    .item-engine {
+      background: linear-gradient(to right, #0cc4af , #cbf212);
+    }
+
+    .item-license {
+      background: linear-gradient(to right, #9d0bda , #45e8fc);
+    }
+
+    .item-rust {
+      background: linear-gradient(to right, #204afb , #45e9fc);
     }
 
     .item-group {

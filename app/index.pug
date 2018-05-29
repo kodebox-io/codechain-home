@@ -10,6 +10,7 @@ html(lang="en")
     +cc-header('main')
     .main
       .top-logo-container
+        img.background-image(src='./images/main/main_background2.png')
         .container
           p.title CodeChain
           p.description
@@ -27,18 +28,26 @@ html(lang="en")
           .item-group
             .row
               .col-lg-6
-                .item.text-center
-                  | Item1
+                .item.text-center.item-support
+                  .item-description
+                    | Built-in multi-asset support
+                  img(src="./images/main/asset.png")
               .col-lg-6
-                .item.text-center
-                  | Item2
+                .item.text-center.item-engine
+                  .item-description
+                    | Blockchain engine with pluggable architecture
+                  img(src="./images/main/codechain.png")
             .row
               .col-lg-6
-                .item.text-center
-                  | Item3
+                .item.text-center.item-license
+                  .item-description
+                    | Licensed under AGPL v3
+                  img(src="./images/main/license.png")
               .col-lg-6
-                .item
-                  | Item4
+                .item.text-center.item-rust
+                  .item-description
+                    | Written in Rust
+                  img(src="./images/main/rust.png")
       .news-container
         .container
           h3.title
