@@ -63,30 +63,39 @@ const commonConfig = merge([
       unsafeCache: true,
       symlinks: false
     },
-    entry: `${paths.app}/scripts`,
+    entry: {
+      main: `${paths.app}/scripts/index.js`,
+      contribute: `${paths.app}/scripts/contribute.js`
+    },
     output: {
       path: paths.build,
       publicPath: parts.publicPath
     },
     plugins: [
       new HtmlPlugin({
+        filename: 'index.html',
         template: './index.pug',
+        chunks: ['main']
       }),
       new HtmlPlugin({
         filename: 'download.html',
         template: './download.pug',
+        chunks: ['main']
       }),
       new HtmlPlugin({
         filename: 'documents.html',
         template: './documents.pug',
+        chunks: ['main']
       }),
       new HtmlPlugin({
         filename: 'about.html',
         template: './about.pug',
+        chunks: ['main']
       }),
       new HtmlPlugin({
         filename: 'contribute.html',
         template: './contribute.pug',
+        chunks: ['main', 'contribute']
       }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
