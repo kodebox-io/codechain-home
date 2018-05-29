@@ -18,15 +18,12 @@
     color: white;
   }
 
-  .footer-menu-item:hover {
-    text-decoration: none;
-  }
-
   .footer-menu-item:link {
     color: white;
   }
 
-  .footer-menu-item:active {
+  .footer-menu-item:hover {
+    text-decoration: none;
     color: #fff000;
   }
 
@@ -38,7 +35,16 @@
   }
 
   .footer-link-item {
-    color: white;
+    color: #fff;
+    margin-left: 10px;
+
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      color: #fff000;
+    }
   }
 
   .footer-list-menu {
