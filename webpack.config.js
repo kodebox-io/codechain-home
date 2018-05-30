@@ -75,27 +75,27 @@ const commonConfig = merge([
       new HtmlPlugin({
         filename: 'index.html',
         template: './index.pug',
-        chunks: ['main']
+        chunks: ['main', 'vendors', 'manifest']
       }),
       new HtmlPlugin({
         filename: 'download.html',
         template: './download.pug',
-        chunks: ['main']
+        chunks: ['main', 'vendors', 'manifest']
       }),
       new HtmlPlugin({
         filename: 'documents.html',
         template: './documents.pug',
-        chunks: ['main']
+        chunks: ['main', 'vendors', 'manifest']
       }),
       new HtmlPlugin({
         filename: 'about.html',
         template: './about.pug',
-        chunks: ['main']
+        chunks: ['main', 'vendors', 'manifest']
       }),
       new HtmlPlugin({
         filename: 'contribute.html',
         template: './contribute.pug',
-        chunks: ['main', 'contribute']
+        chunks: ['main', 'contribute', 'vendors', 'manifest']
       }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
@@ -222,7 +222,7 @@ const developmentConfig = merge([
     mode: 'development'
   },
   parts.devServer({
-    host: process.env.HOST,
+    host: process.env.HOST || '0.0.0.0',
     port: process.env.PORT
   }),
   parts.loadCSS({ include: paths.app, use: [cssPreprocessorLoader] }),
