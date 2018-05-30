@@ -192,10 +192,10 @@ const productionConfig = merge([
       chunkFilename: `${paths.css}/[id].[contenthash:8].css`
     }
   }),
-  parts.purifyCSS({
-    paths: glob.sync(`${paths.app}/**/*.+(pug|js)`, { nodir: true }),
-    styleExtensions: ['.css', '.scss']
-  }),
+  //parts.purifyCSS({
+  //  paths: glob.sync(`${paths.app}/**/*.+(pug|js)`, { nodir: true }),
+  //  styleExtensions: ['.css', '.scss']
+  //}),
   parts.minifyCSS({
     options: {
       discardComments: {
