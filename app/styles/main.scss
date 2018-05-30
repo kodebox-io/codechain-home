@@ -8,7 +8,7 @@
     background-position: center;
     overflow: hidden;
 
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1366px) {
       background-size: 100% auto;
     }
 
@@ -42,8 +42,8 @@
       width: 160px;
       height: 52px;
       margin-top: 20px;
-      background-color: #eb6100;
-      border-color: #eb6100;
+      background-color: #d94c47;
+      border-color: #d94c47;
       z-index: 10;
     }
 
@@ -53,8 +53,8 @@
       height: 52px;
       margin-top: 20px;
       margin-left: 20px;
-      background-color: #eb6100;
-      border-color: #eb6100;
+      background-color: #d94c47;
+      border-color: #d94c47;
       z-index: 10;
     }
   }
@@ -69,7 +69,8 @@
       width: 458px;
       height: 226px;
       border-radius: 10px;
-      color: white;
+      color: #313131;
+      font-weight: bold;
       font-size: 18px;
 
       @media screen and (max-width: 456px) {
@@ -78,7 +79,7 @@
 
       .item-description {
         padding-top: 25px;
-        text-shadow: 2px 2px rgba(46, 46, 46, 0.35);
+        // text-shadow: 2px 2px rgba(46, 46, 46, 0.35);
       }
 
       img {
@@ -87,19 +88,19 @@
     }
 
     .item-support {
-      background: linear-gradient(to right, #ff510b, #ffb900);
+      background-color: #eee;
     }
 
     .item-engine {
-      background: linear-gradient(to right, #0cc4af, #cbf212);
+      background-color: #eee;
     }
 
     .item-license {
-      background: linear-gradient(to right, #9d0bda, #45e8fc);
+      background-color: #eee;
     }
 
     .item-rust {
-      background: linear-gradient(to right, #204afb, #45e9fc);
+      background-color: #eee;
     }
 
     .item-group {
@@ -187,10 +188,18 @@
 
     form {
       button {
-        background-color: #eb6100;
-        border-color: #eb6100;
+        background-color: #d94c47;
+        border-color: #d94c47;
         width: 100%;
-        margin-top: 33px;
+        margin-top: 35px;
+      }
+
+      input {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid black;
       }
     }
   }
