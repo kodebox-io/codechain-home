@@ -26,7 +26,6 @@ async function getIssue () {
   let result
   try {
     result = await $.get('https://api.github.com/repos/paritytech/parity/issues?labels=P0-dropeverything')
-    console.log(result)
     if (result.length > 0) {
       var count = Math.min(result.length, 10)
       for (var i = 0; i < count; i++) {
@@ -36,7 +35,6 @@ async function getIssue () {
       appendEmptyDom()
     }
   } catch (error) {
-    console.log(error)
     appendEmptyDom()
   }
 }

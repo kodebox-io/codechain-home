@@ -42,7 +42,6 @@ async function getMedium () {
       rss_url: 'https://medium.com/feed/codechain'
     })
     if (result && result.items && result.items.length > 0) {
-      console.log(result)
       var items = result.items
       var filteredItem = _.filter(items, (item) => {
         return _.contains(item.categories, 'chaincode')
@@ -55,7 +54,6 @@ async function getMedium () {
       appendEmptyDom()
     }
   } catch (error) {
-    console.log(error)
     appendEmptyDom()
   }
 }

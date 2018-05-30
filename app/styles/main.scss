@@ -3,13 +3,13 @@
     position: relative;
     width: 100%;
     height: 400px;
-    background: url('../images/main/main_background.jpg') repeat-x;
-    background-size: 100% auto;
+    background: url('../images/main/home_background.png') repeat-x;
+    background-size: auto 100%;
     background-position: center;
     overflow: hidden;
 
-    @media screen and (max-width: 600px) {
-      background-size: auto 100%;
+    @media screen and (min-width: 1920px) {
+      background-size: 100% auto;
     }
 
     .background-image {
@@ -17,8 +17,10 @@
       right: 0;
       top: 0;
       z-index: 0;
-      opacity: 0.7;
-      filter: alpha(opacity=70);
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
 
     .title {
@@ -76,7 +78,7 @@
 
       .item-description {
         padding-top: 25px;
-        text-shadow: 2px 2px rgba(46, 46, 46, 0.35)
+        text-shadow: 2px 2px rgba(46, 46, 46, 0.35);
       }
 
       img {
@@ -85,19 +87,19 @@
     }
 
     .item-support {
-      background: linear-gradient(to right, #ff510b , #ffb900);
+      background: linear-gradient(to right, #ff510b, #ffb900);
     }
 
     .item-engine {
-      background: linear-gradient(to right, #0cc4af , #cbf212);
+      background: linear-gradient(to right, #0cc4af, #cbf212);
     }
 
     .item-license {
-      background: linear-gradient(to right, #9d0bda , #45e8fc);
+      background: linear-gradient(to right, #9d0bda, #45e8fc);
     }
 
     .item-rust {
-      background: linear-gradient(to right, #204afb , #45e9fc);
+      background: linear-gradient(to right, #204afb, #45e9fc);
     }
 
     .item-group {
