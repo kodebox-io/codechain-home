@@ -53,17 +53,10 @@ html(lang="en")
           h3.title
             | News
           .underline
-          .item-group
-            .row
-              .col-lg-4
-                .item
-                  | Item1
-              .col-lg-4
-                .item
-                  | Item2
-              .col-lg-4
-                .item
-                  | Item3
+          #new-item-group.item-group
+            #new-item-group-row.row
+            a.float-right(href="https://medium.com/codechain", target="_blank")
+              | More>>
       .newsletter-container
         .container
           h3.title
