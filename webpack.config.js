@@ -98,6 +98,9 @@ const commonConfig = merge([
         template: './contribute.pug',
         chunks: ['vendors', 'manifest', 'main', 'contribute']
       }),
+      new HtmlPlugin({
+        favicon: './favicon.ico'
+      }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
     ],
