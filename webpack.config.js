@@ -74,32 +74,34 @@ const commonConfig = merge([
     },
     plugins: [
       new HtmlPlugin({
+        favicon: './favicon.ico',
         filename: 'index.html',
         template: './index.pug',
         chunks: ['vendors', 'manifest', 'main', 'news']
       }),
       new HtmlPlugin({
+        favicon: './favicon.ico',
         filename: 'download.html',
         template: './download.pug',
         chunks: ['vendors', 'manifest', 'main']
       }),
       new HtmlPlugin({
+        favicon: './favicon.ico',
         filename: 'documents.html',
         template: './documents.pug',
         chunks: ['vendors', 'manifest', 'main']
       }),
       new HtmlPlugin({
+        favicon: './favicon.ico',
         filename: 'about.html',
         template: './about.pug',
         chunks: ['vendors', 'manifest', 'main']
       }),
       new HtmlPlugin({
+        favicon: './favicon.ico',
         filename: 'contribute.html',
         template: './contribute.pug',
         chunks: ['vendors', 'manifest', 'main', 'contribute']
-      }),
-      new HtmlPlugin({
-        favicon: './favicon.ico'
       }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
