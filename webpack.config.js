@@ -66,8 +66,7 @@ const commonConfig = merge([
     entry: {
       main: `${paths.app}/scripts/index.js`,
       contribute: `${paths.app}/scripts/contribute.js`,
-      news: `${paths.app}/scripts/news.js`,
-      team: `${paths.app}/scripts/team.js`
+      news: `${paths.app}/scripts/news.js`
     },
     output: {
       path: paths.build,
@@ -102,7 +101,7 @@ const commonConfig = merge([
         favicon: './favicon.ico',
         filename: 'team.html',
         template: './team.pug',
-        chunks: ['vendors', 'manifest', 'main', 'team']
+        chunks: ['vendors', 'manifest', 'main']
       }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
