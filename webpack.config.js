@@ -113,10 +113,11 @@ const commonConfig = merge([
   parts.loadPug(),
   parts.lintJS({ include: paths.app, options: lintJSOptions }),
   parts.loadFonts({
-    // include: paths.app,
+    include: [paths.app, path.join(__dirname, '/node_modules/font-awesome/')],
     options: {
       name: `${paths.fonts}/[name].[hash:8].[ext]`
-    }
+    },
+    exclude: `${paths.app}/images/`
   })
 ])
 
