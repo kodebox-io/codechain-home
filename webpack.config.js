@@ -81,8 +81,8 @@ const commonConfig = merge([
       }),
       new HtmlPlugin({
         favicon: './favicon.ico',
-        filename: 'download.html',
-        template: './download.pug',
+        filename: 'downloads.html',
+        template: './downloads.pug',
         chunks: ['vendors', 'manifest', 'main']
       }),
       new HtmlPlugin({

@@ -13,48 +13,85 @@ html(lang="en")
     .content
       .main
         .top-logo-container
-          img.background-image(src='./images/main/main_background2.png')
           .container
-            p.title CodeChain
-            p.description
-              | codeChain is a programmable multi-asset management solution#[br]
-              | that leverages blockchain technologies.
-            button.btn.btn-primary(type='button').download-btn
-              | Downloads
-            button.btn.btn-primary(type='button').source-btn
-              | Source Code
+            .row
+              .col-lg-7
+                p.title CodeChain
+                p.description
+                  | CodeChain is a programmable multi-asset management solution that leverages blockchain technologies.
+                .button-container
+                  button.btn.btn-primary(type='button').download-btn
+                    | Downloads
+                  button.btn.btn-primary(type='button').source-btn
+                    | Source Code
+                  button.btn.btn-primary(type='button').join-chat-btn
+                    | Join Chat
+              .col-lg-5.text-center
+                .connected-people-container
+                  img.default-object(src='./images/main/connected-people.svg')
+                  img.rotate-object.rotating(src='./images/main/circle.svg')
         .feature-container
           .container
             h3.title
-              | Feature
+              | Features
             .underline
+            .feature-description
+              | An open source blockchain technology perfect for all those organizations that need programmable multi-asset management systems.
             .item-group
               .row
                 .col-lg-6
-                  .item.text-center.item-support
+                  .feature-item
+                    img.item-img(src="./images/main/feature-image-1.png")
+                    .item-title
+                      | Built-in multi-asset#[br]
+                      | management
+                    .item-underline.underline-red
                     .item-description
-                      | Built-in multi-asset support
-                    img(src="./images/main/asset.png")
+                      | A transaction can easily issue and transfer ownership of their assets to other parties without smart contract.
                 .col-lg-6
-                  .item.text-center.item-engine
+                  .feature-item
+                    img.item-img(src="./images/main/feature-image-2.png")
+                    .item-title
+                      | Pluggable#[br]
+                      | Consensus
+                    .item-underline.underline-green
                     .item-description
-                      | Blockchain engine with pluggable architecture
-                    img(src="./images/main/codechain.png")
+                      | CodeChain is designed with a pluggable consensus model, allowing businesses to select an optimal algorithm for their networks.(e.g. PoA, PoW, Tendermint, Hot-stuff)
+              .row.flex-column-reverse.flex-lg-row
+                .col-lg-6
+                  .feature-item
+                    img.item-img(src="./images/main/feature-image-3.png")
+                    .item-title
+                      | Scalibility
+                    .item-underline.underline-green
+                    .item-description
+                      | Horizontal scaling through sharding comes into practice from start. Sharding would make a tremendous amount of difference and dramatically improve transaction speed.
+                .col-lg-6
+                  .feature-item
+                    img.item-img(src="./images/main/feature-image-4.png")
+                    .item-title
+                      | Smart#[br]
+                      | Contract
+                    .item-underline.underline-red
+                    .item-description
+                      | CodeChain provides smart contract languages and VM that supports various transaction types - Escrow, Payment Channel, Atomic Swap
+            .feature-second
               .row
                 .col-lg-6
-                  .item.text-center.item-license
-                    .item-description
-                      | Licensed under AGPL v3
-                    img(src="./images/main/license.png")
+                  .second-item
+                    .second-item-description
+                      | Open source project#[br]
+                      | licensed under AGPL
+                    img.second-item-img.apgl-img(src='./images/main/agpl.png')
                 .col-lg-6
-                  .item.text-center.item-rust
-                    .item-description
+                  .second-item
+                    .second-item-description
                       | Written in Rust
-                    img(src="./images/main/rust.png")
+                    img.second-item-img(src='./images/main/rust.png')
         .news-container
           .container
             h3.title
-              | News
+              | Tech Blog
             .underline
             #new-item-group.item-group
               #new-item-group-row.row

@@ -2,60 +2,164 @@
   .top-logo-container {
     position: relative;
     width: 100%;
-    height: 400px;
-    background: url('../images/main/home_background.png') repeat-x;
-    background-size: auto 100%;
-    background-position: center;
-    overflow: hidden;
 
     @media screen and (min-width: 1366px) {
       background-size: 100% auto;
     }
 
-    .background-image {
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 0;
+    .connected-people-container {
+      position: relative;
+      width: 450px;
+      height: 450px;
+      margin: 0 auto;
+      margin-top: 100px;
 
-      @media screen and (max-width: 600px) {
-        display: none;
+      @media screen and (max-width: 470px) {
+        width: 350px;
+        height: 350px;
+        margin-top: 50px;
       }
+
+      .default-object {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        left: 0;
+        top: 0;
+        z-index: 10;
+
+        @media screen and (max-width: 470px) {
+          width: 350px;
+          height: 350px;
+        }
+      }
+
+      .rotate-object {
+        position: absolute;
+        width: 390px;
+        height: 390px;
+        left: 30px;
+        top: 30px;
+        z-index: 5;
+
+        @media screen and (max-width: 470px) {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+
+    @-webkit-keyframes rotating /* Safari and Chrome */ {
+      from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotating {
+      from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotating {
+      -webkit-animation: rotating 14s linear infinite;
+      -moz-animation: rotating 14s linear infinite;
+      -ms-animation: rotating 14s linear infinite;
+      -o-animation: rotating 14s linear infinite;
+      animation: rotating 14s linear infinite;
     }
 
     .title {
       position: relative;
       padding-top: 164px;
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 900;
-      z-index: 10;
+
+      @media screen and (max-width: 991px) {
+        padding-top: 60px;
+      }
     }
 
     .description {
       position: relative;
-      font-size: 17px;
-      z-index: 10;
+      font-size: 22px;
     }
 
-    .download-btn {
-      position: relative;
-      width: 160px;
-      height: 52px;
-      margin-top: 20px;
-      background-color: #d94c47;
-      border-color: #d94c47;
-      z-index: 10;
-    }
+    .button-container {
+      width: 520px;
+      margin-top: 30px;
+      text-align: center;
 
-    .source-btn {
-      position: relative;
-      width: 160px;
-      height: 52px;
-      margin-top: 20px;
-      margin-left: 20px;
-      background-color: #d94c47;
-      border-color: #d94c47;
-      z-index: 10;
+      @media screen and (max-width: 540px) {
+        width: 100%;
+      }
+
+      .download-btn {
+        position: relative;
+        width: 160px;
+        height: 52px;
+        margin-top: 20px;
+        background-color: #d94c47;
+        border-color: #d94c47;
+
+        @media screen and (max-width: 540px) {
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+
+      .source-btn {
+        position: relative;
+        width: 160px;
+        height: 52px;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #d94c47;
+        border-color: #d94c47;
+
+        @media screen and (max-width: 540px) {
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+
+      .join-chat-btn {
+        position: relative;
+        width: 160px;
+        height: 52px;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #eaa912;
+        border-color: #eaa912;
+
+        @media screen and (max-width: 540px) {
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
     }
   }
 
@@ -63,48 +167,74 @@
     padding-top: 70px;
     padding-bottom: 30px;
 
-    .item {
-      margin: 0 auto;
-      margin-bottom: 25px;
-      width: 458px;
-      height: 226px;
-      border-radius: 10px;
+    .feature-description {
+      margin-top: 30px;
       color: #313131;
-      font-weight: bold;
       font-size: 18px;
-
-      @media screen and (max-width: 456px) {
-        width: 100%;
-      }
-
-      .item-description {
-        padding-top: 25px;
-        // text-shadow: 2px 2px rgba(46, 46, 46, 0.35);
-      }
-
-      img {
-        padding-top: 25px;
-      }
-    }
-
-    .item-support {
-      background-color: #eee;
-    }
-
-    .item-engine {
-      background-color: #eee;
-    }
-
-    .item-license {
-      background-color: #eee;
-    }
-
-    .item-rust {
-      background-color: #eee;
     }
 
     .item-group {
-      margin-top: 50px;
+      margin-top: 70px;
+
+      .feature-item {
+        margin: 0 auto;
+        width: 380px;
+      }
+
+      .item-title {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 80%;
+        margin-top: 30px;
+      }
+
+      .item-img {
+        width: auto;
+        height: 80px;
+      }
+
+      .item-underline {
+        width: 110px;
+        height: 6px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .item-description {
+        font-size: 20px;
+        margin-bottom: 50px;
+        width: 380px;
+      }
+
+      .underline-red {
+        background-color: #d94c47;
+      }
+
+      .underline-green {
+        background-color: #087250;
+      }
+    }
+
+    .feature-second {
+      .second-item {
+        width: 380px;
+        margin: 0 auto;
+
+        .second-item-description {
+          display: inline-block;
+          color: #898989;
+          font-size: 17px;
+        }
+
+        .second-item-img {
+          margin-left: 20px;
+          display: inline-block;
+        }
+
+        .apgl-img {
+          padding-bottom: 25px;
+        }
+      }
     }
   }
 
