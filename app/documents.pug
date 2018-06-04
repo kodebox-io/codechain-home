@@ -8,36 +8,39 @@ html(lang="en")
   body
     include includes/header.pug
     +cc-header('documents')
-    .documents
-      .container
-        .documents-container
+    .background-green-box
+      img(src="./images/main/main_background.svg")
+    .content
+      .documents
+        .container
+          .documents-container
+              h3
+                | Documents
+              .underline
+              .row
+                .col-lg-6
+                  .link-button
+                    table
+                      tr
+                        td.align-middle
+                          | Manual
+                .col-lg-6
+                  .link-button
+                    table
+                      tr
+                        td.align-middle
+                          | API Documents
+          .slide-container
             h3
-              | Documents
+              | Slides
             .underline
-            .row
-              .col-lg-6
-                .link-button
-                  table
-                    tr
-                      td.align-middle
-                        | Manual
-              .col-lg-6
-                .link-button
-                  table
-                    tr
-                      td.align-middle
-                        | API Documents
-        .slide-container
-          h3
-            | Slides
-          .underline
-          ul
-            li
-              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
-            li
-              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
-            li
-              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
-            li
-              | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+            ul
+              li
+                | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+              li
+                | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+              li
+                | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
+              li
+                | link to slideshare, Google Drive, and Youtube (name, 0000/00/00)
     include includes/footer.pug

@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title CodeChain
+  body
+    include includes/header.pug
+    +cc-header('team')
+    .background-green-box
+      img(src="./images/main/main_background.svg")
+    .content
+      .team
+        .container
+          .contributor-container
+            h3
+              | Contributors
+            .underline
+            .description
+              | Kodebox is a blockchain technology company on a mission to create and enable a smarter asset management system.
+            .contributor-item-group
+              .contributor-item
+                .name
+                  | Kwang Yul Seo
+                .team-name
+                  | Kodebox
+              .contributor-item
+                .name
+                  | Kwang Yul Seo
+                .team-name
+                  | Kodebox
+              .contributor-item
+                .name
+                  | Kwang Yul Seo
+                .team-name
+                  | Kodebox
+              .contributor-item
+                .name
+                  | Kwang Yul Seo
+                .team-name
+                  | Kodebox
+              .contributor-item
+                .name
+                  | Kwang Yul Seo
+                .team-name
+                  | Kodebox
+              .contributor-button
+                a(href='/contribute.html')
+                  | Interested in contributing?
+    include includes/footer.pug

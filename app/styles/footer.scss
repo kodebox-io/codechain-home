@@ -1,17 +1,16 @@
 .footer {
   position: relative;
-  background-color: #313131;
+  background-color: #087250;
 
-  .footer-menu {
-    position: relative;
-  }
+  ul {
+    margin-top: 40px;
+    list-style: none;
+    padding-left: 0;
 
-  .footer-menu-first-row {
-    height: 80px;
-  }
-
-  .footer-menu-left {
-    width: 100px;
+    li {
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
   }
 
   .footer-menu-item {
@@ -28,10 +27,10 @@
   }
 
   .copyright {
-    position: relative;
     padding-top: 30px;
     padding-bottom: 40px;
     color: #eee;
+    font-weight: 300;
   }
 
   .footer-link-item {

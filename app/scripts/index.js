@@ -6,6 +6,7 @@ import './../styles/documents.scss'
 import './../styles/about.scss'
 import './../styles/header.scss'
 import './../styles/footer.scss'
+import './../styles/team.scss'
 
 // import js
 import 'bootstrap'

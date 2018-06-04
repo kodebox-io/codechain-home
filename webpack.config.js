@@ -103,6 +103,12 @@ const commonConfig = merge([
         template: './contribute.pug',
         chunks: ['vendors', 'manifest', 'main', 'contribute']
       }),
+      new HtmlPlugin({
+        favicon: './favicon.ico',
+        filename: 'team.html',
+        template: './team.pug',
+        chunks: ['vendors', 'manifest', 'main']
+      }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
     ],
@@ -113,7 +119,7 @@ const commonConfig = merge([
   parts.loadPug(),
   parts.lintJS({ include: paths.app, options: lintJSOptions }),
   parts.loadFonts({
-    include: [paths.app, path.join(__dirname, '/node_modules/font-awesome/')],
+    include: [paths.app, path.join(__dirname, '/node_modules/font-awesome/webfonts')],
     options: {
       name: `${paths.fonts}/[name].[hash:8].[ext]`
     },
