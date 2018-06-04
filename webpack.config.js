@@ -94,12 +94,6 @@ const commonConfig = merge([
       }),
       new HtmlPlugin({
         favicon: './favicon.ico',
-        filename: 'about.html',
-        template: './about.pug',
-        chunks: ['vendors', 'manifest', 'main']
-      }),
-      new HtmlPlugin({
-        favicon: './favicon.ico',
         filename: 'contribute.html',
         template: './contribute.pug',
         chunks: ['vendors', 'manifest', 'main', 'contribute']
