@@ -8,5 +8,13 @@
       color: #313131;
       font-size: 18px;
     }
+
+    .material-item {
+      color: black;
+    }
+
+    .material-item:hover {
+      text-decoration: none;
+    }
   }
 }
