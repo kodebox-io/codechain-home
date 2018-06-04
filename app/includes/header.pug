@@ -15,21 +15,16 @@ mixin cc-header(url)
   nav.header.custom-nav.navbar.navbar-expand-lg.navbar-light
     .container
       a.navbar-brand(href='/index.html')
-        img.logo.d-inline-block.align-top(src='./images/js-logo.svg')
+        img.logo.d-inline-block.align-top(src='./images/codechain-logo.png')
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarSupportedContent.collapse.navbar-collapse
         ul.navbar-nav.mr-auto
           +cc-nav-item('Home', '/index.html', url == 'main')
           +cc-nav-item('Download', '/download.html', url == 'download')
-          +cc-nav-item('Contribute', '/contribute.html', url == 'contribute')
           +cc-nav-item('Documents', '/documents.html', url == 'documents')
-          +cc-nav-item('About', '/about.html', url == 'about')
+          +cc-nav-item('Contribute', '/contribute.html', url == 'contribute')
           +cc-nav-item('Team', '/team.html', url == 'team')
         ul.navbar-nav
           li.nav-item
-            a.nav-link(href='https://medium.com/codechain', target='_blank')
-              | Medium
-          li.nav-item
-            a.nav-link(href='https://github.com/CodeChain-io/codechain', target='_blank')
-              | GitHub
+            img.second-logo.d-inline-block.align-top(src='./images/kodebox-logo.png')

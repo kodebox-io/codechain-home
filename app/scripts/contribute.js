@@ -5,7 +5,7 @@ function appendDom (issue) {
   var githubItemGroup = $('#github-item-group')
   var githubItem = $('<div>', { class: 'github-item' })
   var githubItemIcon = $('<div>', { class: 'github-item-icon' })
-  githubItemIcon.append($('<i>', { class: 'fa fa-check-circle-o fa-2x', 'aria-hidden': true }))
+  githubItemIcon.append($('<i>', { class: 'far fa-check-circle', 'aria-hidden': true }))
   var githubItemTitle = $('<a>', { class: 'github-item-title', href: issue.html_url, target: '_blank' })
   githubItemTitle.text(issue.title)
   var githubItemDescription = $('<div>', { class: 'github-item-description' })
