@@ -1,15 +1,15 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title CodeChain
   body
     include includes/header.pug
     +cc-header('main')
     .background-green-box
-      img(src="./images/main/main_background.svg")
+      img(src='./images/main/main_background.svg')
     .content
       .main
         .top-logo-container
@@ -41,7 +41,7 @@ html(lang="en")
               .row
                 .col-lg-6
                   .feature-item
-                    img.item-img(src="./images/main/feature-image-1.png")
+                    img.item-img(src='./images/main/feature-image-1.png')
                     .item-title
                       | Built-in multi-asset#[br]
                       | management
@@ -50,7 +50,7 @@ html(lang="en")
                       | A transaction can easily issue and transfer ownership of their assets to other parties without smart contract.
                 .col-lg-6
                   .feature-item
-                    img.item-img(src="./images/main/feature-image-2.png")
+                    img.item-img(src='./images/main/feature-image-2.png')
                     .item-title
                       | Pluggable#[br]
                       | Consensus
@@ -60,7 +60,7 @@ html(lang="en")
               .row.flex-column-reverse.flex-lg-row
                 .col-lg-6
                   .feature-item
-                    img.item-img(src="./images/main/feature-image-3.png")
+                    img.item-img(src='./images/main/feature-image-3.png')
                     .item-title
                       | Scalibility
                     .item-underline.underline-green
@@ -68,7 +68,7 @@ html(lang="en")
                       | Horizontal scaling through sharding comes into practice from start. Sharding would make a tremendous amount of difference and dramatically improve transaction speed.
                 .col-lg-6
                   .feature-item
-                    img.item-img(src="./images/main/feature-image-4.png")
+                    img.item-img(src='./images/main/feature-image-4.png')
                     .item-title
                       | Smart#[br]
                       | Contract
@@ -95,7 +95,7 @@ html(lang="en")
             .underline
             #new-item-group.item-group
               #new-item-group-row.row
-              a.float-right(href="https://medium.com/codechain", target="_blank")
+              a.float-right(href='https://medium.com/codechain', target='_blank')
                 | More>>
         .newsletter-container
           .container
@@ -105,19 +105,19 @@ html(lang="en")
             form
               .row
                 .col-lg-4.mt-3
-                  label(for="first-name") First Name
+                  label(for='first-name') First Name
                   .input-group
-                    input(type="text", id="first-name" aria-description="first-name-input")
+                    input(type='text', id='first-name' aria-description='first-name-input')
                 .col-lg-4.mt-3
-                  label(for="last-name") Last Name
+                  label(for='last-name') Last Name
                   .input-group
-                    input(type="text", id="last-name" aria-description="last-name-input")
+                    input(type='text', id='last-name' aria-description='last-name-input')
                 .col-lg-auto
               .row
                 .col-lg-8.mt-3
-                  label(for="email") Email
+                  label(for='email') Email
                   .input-group
-                    input(type="email", id="email" aria-description="email-input")
+                    input(type='email', id='email' aria-description='email-input')
                 .col-lg-4
                   button.btn.btn-primary(type='submit') Submit
     include includes/footer.pug

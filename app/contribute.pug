@@ -1,16 +1,16 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title CodeChain
   body
     include includes/header.pug
     +cc-header('contribute')
     .content
       .background-green-box
-        img(src="./images/main/main_background.svg")
+        img(src='./images/main/main_background.svg')
       .contribute
         .container
           .contribut-code-container
@@ -23,7 +23,7 @@ html(lang="en")
               p.description
                 | CodeChain team members will be assigned to review your pull requests. Once the pull requests are approved and pass continuous integration checks, we will merge the pull requests.#[br]
               p.description
-                | If you want to contribute but you're not sure where to start, take a look at the issues with the "good first issue" label. These are issues that we believe are particularly well suited for outside contributions, often because we probably won't get to them right now. If you decide to start on an issue, leave a comment so that other people know that you're working on it. If you want to help out, but not alone, use the issue comment thread to coordinate.
+                | If you want to contribute but you're not sure where to start, take a look at the issues with the 'good first issue' label. These are issues that we believe are particularly well suited for outside contributions, often because we probably won't get to them right now. If you decide to start on an issue, leave a comment so that other people know that you're working on it. If you want to help out, but not alone, use the issue comment thread to coordinate.
           .pull-request-checklist-container
             h3
               | Pull Request Checklist
@@ -58,7 +58,7 @@ html(lang="en")
               p.description
                 | NOTE: Only original source code from you and other people that have signed the CLA can be accepted into the main repository.
               .text-center
-                a.btn.btn-primary(href="https://cla-assistant.io/CodeChain-io/codechain", target="_blank", role="button")
+                a.btn.btn-primary(href='https://cla-assistant.io/CodeChain-io/codechain', target='_blank', role='button')
                   | Contributor License Agreements
           .good-first-issue-container
             h3
