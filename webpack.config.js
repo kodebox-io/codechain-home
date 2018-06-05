@@ -103,6 +103,12 @@ const commonConfig = merge([
         template: './team.pug',
         chunks: ['vendors', 'manifest', 'main']
       }),
+      new HtmlPlugin({
+        favicon: './favicon.ico',
+        filename: 'privacy.html',
+        template: './privacy.pug',
+        chunks: ['vendors', 'manifest']
+      }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
     ],
