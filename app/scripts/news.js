@@ -1,20 +1,21 @@
 import $ from 'jquery'
 // import * as _ from 'underscore'
 
-function appendDom (item) {
+import * as cheerio from 'cheerio'
+
+function appendDom (link, contentText, titleText, dateText, nameText) {
   var newsItemGroup = $('#new-item-group-row')
   var newsItemContainer = $('<div>', { class: 'col-lg-6' })
   var newsItem = $('<div>', { class: 'item' })
   var title = $('<p>', { class: 'title' })
   var description = $('<p>', { class: 'description block-with-text' })
-  var cleanDescription = item.description.replace(/<\/?[^>]+(>|$)/g, '')
-  description.text(cleanDescription)
+  description.text(contentText)
   var name = $('<p>', { class: 'name-date' })
-  var readMore = $('<a>', { class: 'read-more', href: item.link, target: '_blank' })
+  var readMore = $('<a>', { class: 'read-more', href: link, target: '_blank' })
   readMore.text('Read more')
 
-  title.text(item.title)
-  name.text(item.author + ' - ' + item.pubDate)
+  title.text(titleText)
+  name.text(nameText + ' - ' + dateText)
   newsItem.append(title)
   newsItem.append(name)
   newsItem.append(description)
@@ -29,21 +30,21 @@ function appendEmptyDom () {
 }
 
 async function getMedium () {
-  let result
   try {
-    result = await $.get('https://api.rss2json.com/v1/api.json', {
-      rss_url: 'https://medium.com/feed/codechain?limit=100'
-    })
-    if (result && result.items && result.items.length > 0) {
-      var items = result.items
-      // var filteredItem = _.filter(items, (item) => {
-      //   return _.contains(item.categories, 'chaincode')
-      // })
-      // var count = Math.min(filteredItem.length, 3)
-      var count = Math.min(items.length, 6)
-      for (var i = 0; i < count; i++) {
-        appendDom(items[i])
-      }
+    let codechainHTML = await $.get('https://cors-anywhere.herokuapp.com/medium.com/codechain')
+    const c$ = cheerio.load(codechainHTML)
+    var aContents = c$('a[data-post-id]')
+    var dateContents = c$('time[datetime]')
+    var nameContnets = c$('a[data-user-id]')
+    if (aContents.length > 0) {
+      aContents.each((index, element) => {
+        let link = c$(element).attr('href')
+        let title = c$(element).find('h3').text()
+        let content = c$(element).children('div').text()
+        let date = dateContents.eq(index).text()
+        let name = nameContnets.eq(index * 2 + 1).text()
+        appendDom(link, content, title, date, name)
+      })
     } else {
       appendEmptyDom()
     }

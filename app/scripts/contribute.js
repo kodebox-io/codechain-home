@@ -8,12 +8,14 @@ function appendDom (issue) {
   githubItemIcon.append($('<i>', { class: 'far fa-check-circle', 'aria-hidden': true }))
   var githubItemTitle = $('<a>', { class: 'github-item-title', href: issue.html_url, target: '_blank' })
   githubItemTitle.text(issue.title)
+  var rightContainer = $('<div>', { class: 'right-container' })
   var githubItemDescription = $('<div>', { class: 'github-item-description' })
   var dateString = memont(issue.created_at).format('DD MMM, YYYY')
   githubItemDescription.text('#' + issue.number + ' opened ' + dateString)
+  rightContainer.append(githubItemTitle)
+  rightContainer.append(githubItemDescription)
   githubItem.append(githubItemIcon)
-  githubItem.append(githubItemTitle)
-  githubItem.append(githubItemDescription)
+  githubItem.append(rightContainer)
   githubItemGroup.append(githubItem)
 }
 

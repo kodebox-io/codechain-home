@@ -59,9 +59,7 @@
       .github-item {
         position: relative;
         width: 100%;
-        height: 50px;
         margin-bottom: 5px;
-        overflow: hidden;
 
         i {
           font-size: 22px;
@@ -74,12 +72,13 @@
           color: #094;
         }
 
+        .right-container {
+          margin-left: 40px;
+        }
+
         .github-item-title {
-          position: absolute;
-          left: 40px;
-          top: 5px;
+          position: relative;
           font-size: 18px;
-          white-space: nowrap;
           color: #3c758d;
         }
 
@@ -88,9 +87,7 @@
         }
 
         .github-item-description {
-          position: absolute;
-          left: 40px;
-          top: 27px;
+          position: relative;
           font-size: 14px;
         }
       }
