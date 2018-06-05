@@ -1,20 +1,25 @@
 .documents {
   .material-container {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 70px;
 
     ul {
-      margin-top: 40px;
+      margin-top: 50px;
       color: #313131;
-      font-size: 18px;
+      font-size: 20px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+      }
+
+      li {
+        margin-top: 5px;
+      }
     }
 
     .material-item {
-      color: black;
-    }
-
-    .material-item:hover {
-      text-decoration: none;
+      color: #313131;
+      margin-top: 10px;
     }
   }
 }

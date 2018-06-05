@@ -1,5 +1,9 @@
 .header {
   background-color: #eee !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 
   .logo {
     width: 30px;
@@ -9,5 +13,9 @@
   .second-logo {
     width: 95px;
     height: 27px;
+  }
+
+  .nav-item {
+    text-align: center;
   }
 }

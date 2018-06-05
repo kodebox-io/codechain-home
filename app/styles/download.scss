@@ -1,4 +1,6 @@
 .download {
+  margin-bottom: 150px;
+
   .download-container {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -70,11 +72,11 @@
           float: left;
           margin-left: 20px;
           color: #aaa;
-          cursor: pointer;
         }
 
         .active {
           color: black;
+          cursor: pointer;
         }
 
         .donwload-link-icon {
@@ -120,13 +122,13 @@
 
         .download-link-item {
           display: inline-block;
-          cursor: pointer;
           color: #aaa;
           margin-right: 15px;
         }
 
         .active {
           color: black;
+          cursor: pointer;
         }
 
         .donwload-link-icon {
@@ -137,7 +139,7 @@
 
         .donwload-link-text {
           float: left;
-          font-size: 30px;
+          font-size: 25px;
         }
       }
     }
