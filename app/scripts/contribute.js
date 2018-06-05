@@ -39,6 +39,8 @@ async function getIssue () {
   } catch (error) {
     appendEmptyDom()
   }
+
+  $('#spinner').hide()
 }
 
 getIssue()

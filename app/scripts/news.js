@@ -12,14 +12,13 @@ function appendDom (link, contentText, titleText, dateText, nameText) {
   description.text(contentText)
   var name = $('<p>', { class: 'name-date' })
   var readMore = $('<a>', { class: 'read-more', href: link, target: '_blank' })
-  readMore.text('Read more')
+  readMore.append(title)
 
   title.text(titleText)
   name.text(nameText + ' - ' + dateText)
-  newsItem.append(title)
+  newsItem.append(readMore)
   newsItem.append(name)
   newsItem.append(description)
-  newsItem.append(readMore)
   newsItemContainer.append(newsItem)
   newsItemGroup.append(newsItemContainer)
 }
@@ -51,6 +50,8 @@ async function getMedium () {
   } catch (error) {
     appendEmptyDom()
   }
+
+  $('#spinner').hide()
 }
 
 getMedium()

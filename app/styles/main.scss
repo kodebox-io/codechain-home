@@ -261,7 +261,7 @@
     }
 
     .item {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
 
       .title {
         font-size: 20px;
@@ -271,19 +271,20 @@
 
       .description {
         font-size: 16px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        max-height: 110px;
-        overflow: hidden;
       }
 
       .name-date {
         font-size: 16px;
+        margin-bottom: 8px;
       }
 
       .read-more {
+        color: #313131;
+      }
+
+      .read-more:hover {
         color: #d94c47;
-        font-size: 18px;
+        text-decoration: none;
       }
     }
 

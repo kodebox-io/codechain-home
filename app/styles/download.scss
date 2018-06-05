@@ -79,6 +79,10 @@
           cursor: pointer;
         }
 
+        .active:hover {
+          color: #d94c47;
+        }
+
         .donwload-link-icon {
           float: left;
           margin-right: 8px;
@@ -129,6 +133,10 @@
         .active {
           color: black;
           cursor: pointer;
+        }
+
+        .active:hover {
+          color: #d94c47;
         }
 
         .donwload-link-icon {
