@@ -97,12 +97,12 @@ html(lang='en')
               #new-item-group-row.row
         .newsletter-container
           .container
-            form.newsletter-form
+            form.newsletter-form#mc-embedded-subscribe-form(action='//kodebox.us16.list-manage.com/subscribe/post?u=51f164251116e8c09451006ca&id=1c802d56ea', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
               p.title
                 | Sign up for our newsletter
               .row
                 .col-lg-8.mb-3
-                  input.newsletter-input.form-control(type='text', placeholder='E-mail', id='first-name', aria-description='first-name-input')
+                  input#mce-EMAIL.newsletter-input.form-control(type='email', name='EMAIL', placeholder='E-mail', aria-description='first-name-input')
                 .col-lg-4
-                  button.newsletter-btn.btn.btn-primary(type='submit') Submit
+                  button.newsletter-btn.btn.btn-primary(type='submit', value='Subscribe', name='subscribe') Submit
     include includes/footer.pug
