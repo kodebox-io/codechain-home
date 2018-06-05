@@ -15,8 +15,8 @@
       margin-top: 100px;
 
       @media screen and (max-width: 470px) {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
         margin-top: 50px;
       }
 
@@ -29,8 +29,8 @@
         z-index: 10;
 
         @media screen and (max-width: 470px) {
-          width: 350px;
-          height: 350px;
+          width: 250px;
+          height: 250px;
         }
       }
 
@@ -38,13 +38,13 @@
         position: absolute;
         width: 390px;
         height: 390px;
-        left: 30px;
-        top: 30px;
+        left: 16px;
+        top: 16px;
         z-index: 5;
 
         @media screen and (max-width: 470px) {
-          width: 300px;
-          height: 300px;
+          width: 220px;
+          height: 220px;
         }
       }
     }
@@ -179,6 +179,10 @@
       .feature-item {
         margin: 0 auto;
         width: 380px;
+
+        @media screen and (max-width: 400px) {
+          width: 100%;
+        }
       }
 
       .item-title {
@@ -204,6 +208,10 @@
         font-size: 20px;
         margin-bottom: 50px;
         width: 380px;
+
+        @media screen and (max-width: 400px) {
+          width: 100%;
+        }
       }
 
       .underline-red {
@@ -219,6 +227,10 @@
       .second-item {
         width: 380px;
         margin: 0 auto;
+
+        @media screen and (max-width: 400px) {
+          width: 100%;
+        }
 
         .second-item-description {
           display: inline-block;
