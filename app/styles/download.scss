@@ -4,13 +4,13 @@
     padding-bottom: 30px;
 
     .description {
-      margin-top: 50px;
+      margin-top: 30px;
       margin-bottom: 50px;
     }
 
     .download-item {
       position: relative;
-      width: 940px;
+      width: 100%;
       height: 120px;
       background-color: #eee;
       margin-bottom: 30px;
@@ -41,7 +41,7 @@
 
       .right-container {
         position: absolute;
-        width: 780px;
+        width: calc(100% - 160px);
         height: 120px;
         left: 160px;
         top: 0;
@@ -80,10 +80,12 @@
         .donwload-link-icon {
           float: left;
           margin-right: 8px;
+          font-size: 20px;
         }
 
         .donwload-link-text {
           float: left;
+          font-size: 20px;
         }
       }
     }
@@ -95,6 +97,12 @@
 
       .download-item-small {
         margin-bottom: 10px;
+        background-color: #eee;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
       }
 
       .download-item-small-title {
@@ -124,6 +132,7 @@
         .donwload-link-icon {
           float: left;
           margin-right: 8px;
+          margin-top: 3px;
         }
 
         .donwload-link-text {
