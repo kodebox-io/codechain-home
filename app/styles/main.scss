@@ -38,13 +38,15 @@
         position: absolute;
         width: 390px;
         height: 390px;
-        left: 16px;
-        top: 16px;
+        left: 30px;
+        top: 30px;
         z-index: 5;
 
         @media screen and (max-width: 470px) {
           width: 220px;
           height: 220px;
+          left: 16px;
+          top: 16px;
         }
       }
     }
