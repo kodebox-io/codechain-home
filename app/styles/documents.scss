@@ -7,6 +7,7 @@
       margin-top: 50px;
       color: #313131;
       font-size: 20px;
+      list-style-type: none;
 
       @media screen and (max-width: 991px) {
         font-size: 18px;
@@ -20,6 +21,10 @@
     .material-item {
       color: #313131;
       margin-top: 10px;
+    }
+
+    .meterial-icon {
+      margin-right: 5px;
     }
 
     .material-item:hover {
