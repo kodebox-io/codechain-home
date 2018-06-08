@@ -4,20 +4,31 @@ import * as _ from 'underscore'
 import * as cheerio from 'cheerio'
 import * as moment from 'moment'
 
-function appendDom (link, contentText, titleText, dateText, nameText) {
+function appendDom (link, contentText, titleText, dateText, nameText, index) {
   var newsItemGroup = $('#new-item-group-row')
-  var newsItemContainer = $('<div>', { class: 'col-lg-6' })
+  var newsItemContainer = $('<div>', { class: 'col-lg-4' })
   var newsItem = $('<div>', { class: 'item' })
-  var titleIcon = $('<i>', { class: 'fas fa-book title-icon' })
   var title = $('<span>', { class: 'title' })
+  var titleDecoBlock = $('<div>', { class: 'title-deco-block' })
   var description = $('<p>', { class: 'description block-with-text' })
   description.text(contentText)
   var name = $('<p>', { class: 'name-date' })
   var readMore = $('<a>', { class: 'read-more', href: link, target: '_blank' })
 
+  if (index % 3 === 0) {
+    title.addClass('red-title')
+    titleDecoBlock.addClass('red-block')
+  } else if (index % 3 === 1) {
+    title.addClass('yellow-title')
+    titleDecoBlock.addClass('yellow-block')
+  } else if (index % 3 === 2) {
+    title.addClass('green-title')
+    titleDecoBlock.addClass('green-block')
+  }
+
   title.text(titleText)
   name.text(nameText + ' - ' + dateText)
-  newsItem.append(titleIcon)
+  newsItem.append(titleDecoBlock)
   newsItem.append(title)
   newsItem.append(name)
   newsItem.append(description)
@@ -53,8 +64,8 @@ function getDataFromSessionStorage () {
 async function getMedium () {
   let sessionStorageData = getDataFromSessionStorage()
   if (sessionStorageData.data && sessionStorageData.data.length > 0 && moment().format('YYYY-MM-DD') === sessionStorageData.date) {
-    _.each(sessionStorageData.data, (d) => {
-      appendDom(d.link, d.content, d.title, d.date, d.name)
+    _.each(sessionStorageData.data, (d, index) => {
+      appendDom(d.link, d.content, d.title, d.date, d.name, index)
     })
 
     $('#spinner').hide()
@@ -85,7 +96,7 @@ async function getMedium () {
           link: link,
           content: content
         })
-        appendDom(link, content, title, date, name)
+        appendDom(link, content, title, date, name, index)
       })
     } else {
       appendEmptyDom()

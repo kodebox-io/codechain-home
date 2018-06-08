@@ -262,6 +262,9 @@
 
     .item {
       margin-bottom: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
 
       .title {
         font-size: 20px;
@@ -269,8 +272,22 @@
         margin-bottom: 0;
       }
 
-      .title-icon {
-        margin-right: 5px;
+      .title-deco-block {
+        width: 40px;
+        height: 25px;
+        margin-bottom: 5px;
+      }
+
+      .red-block {
+        background-color: #d94c47;
+      }
+
+      .yellow-block {
+        background-color: #eaa912;
+      }
+
+      .green-block {
+        background-color: #087250;
       }
 
       .description {
@@ -281,6 +298,10 @@
         font-size: 16px;
         margin-bottom: 8px;
       }
+    }
+
+    .item:hover {
+      background-color: #eee;
     }
 
     .read-more {
@@ -294,9 +315,16 @@
     .read-more:hover {
       text-decoration: none;
 
-      .title,
-      .title-icon {
+      .red-title {
         color: #d94c47;
+      }
+
+      .yellow-title {
+        color: #eaa912;
+      }
+
+      .green-title {
+        color: #087250;
       }
     }
 

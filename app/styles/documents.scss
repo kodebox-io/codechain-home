@@ -8,6 +8,7 @@
       color: #313131;
       font-size: 20px;
       list-style-type: none;
+      padding-left: 20px;
 
       @media screen and (max-width: 991px) {
         font-size: 18px;
@@ -25,6 +26,7 @@
 
     .meterial-icon {
       margin-right: 5px;
+      margin-left: -20px;
     }
 
     .material-item:hover {
