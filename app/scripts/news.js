@@ -1,7 +1,8 @@
 import $ from 'jquery'
-// import * as _ from 'underscore'
+import * as _ from 'underscore'
 
 import * as cheerio from 'cheerio'
+import * as moment from 'moment'
 
 function appendDom (link, contentText, titleText, dateText, nameText) {
   var newsItemGroup = $('#new-item-group-row')
@@ -28,13 +29,46 @@ function appendEmptyDom () {
   githubItemGroup.append('<p>Not existed yet.</p>')
 }
 
+function addSessionStorage (sessionStorageobject) {
+  if (typeof (Storage) !== 'undefined') {
+    sessionStorage.setItem('mediumItems', JSON.stringify(sessionStorageobject))
+  }
+}
+
+function getDataFromSessionStorage () {
+  if (typeof (Storage) !== 'undefined') {
+    var mediumItemString = sessionStorage.getItem('mediumItems')
+
+    if (mediumItemString) {
+      return JSON.parse(mediumItemString)
+    } else {
+      return {}
+    }
+  }
+  return {}
+}
+
 async function getMedium () {
+  let sessionStorageData = getDataFromSessionStorage()
+  if (sessionStorageData.data && sessionStorageData.data.length > 0 && moment().format('YYYY-MM-DD') === sessionStorageData.date) {
+    _.each(sessionStorageData.data, (d) => {
+      appendDom(d.link, d.content, d.title, d.date, d.name)
+    })
+
+    $('#spinner').hide()
+    return
+  }
+
   try {
     let codechainHTML = await $.get('https://cors-anywhere.herokuapp.com/medium.com/codechain')
     const c$ = cheerio.load(codechainHTML)
     var aContents = c$('a[data-post-id]')
     var dateContents = c$('time[datetime]')
     var nameContnets = c$('a[data-user-id]')
+    var sessionStorageobject = {
+      data: [],
+      date: moment().format('YYYY-MM-DD')
+    }
     if (aContents.length > 0) {
       aContents.each((index, element) => {
         let link = c$(element).attr('href')
@@ -42,11 +76,19 @@ async function getMedium () {
         let content = c$(element).children('div').text()
         let date = dateContents.eq(index).text()
         let name = nameContnets.eq(index * 2 + 1).text()
+        sessionStorageobject.data.push({
+          name: name,
+          date: date,
+          title: title,
+          link: link,
+          content: content
+        })
         appendDom(link, content, title, date, name)
       })
     } else {
       appendEmptyDom()
     }
+    addSessionStorage(sessionStorageobject)
   } catch (error) {
     appendEmptyDom()
   }
