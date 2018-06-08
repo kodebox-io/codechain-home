@@ -14,15 +14,15 @@ function appendDom (link, contentText, titleText, dateText, nameText) {
   description.text(contentText)
   var name = $('<p>', { class: 'name-date' })
   var readMore = $('<a>', { class: 'read-more', href: link, target: '_blank' })
-  readMore.append(titleIcon)
-  readMore.append(title)
 
   title.text(titleText)
   name.text(nameText + ' - ' + dateText)
-  newsItem.append(readMore)
+  newsItem.append(titleIcon)
+  newsItem.append(title)
   newsItem.append(name)
   newsItem.append(description)
-  newsItemContainer.append(newsItem)
+  readMore.append(newsItem)
+  newsItemContainer.append(readMore)
   newsItemGroup.append(newsItemContainer)
 }
 
