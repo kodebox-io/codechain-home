@@ -23,7 +23,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo
+yarn run build
 
 echo "codechain.io" >> public/CNAME
 
