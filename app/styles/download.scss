@@ -92,6 +92,12 @@
         .donwload-link-text {
           float: left;
           font-size: 20px;
+          color: #313131;
+        }
+
+        .donwload-link-text:hover {
+          text-decoration: none;
+          color: #d94c47;
         }
       }
     }
@@ -148,6 +154,12 @@
         .donwload-link-text {
           float: left;
           font-size: 25px;
+          color: #313131;
+        }
+
+        .donwload-link-text:hover {
+          text-decoration: none;
+          color: #d94c47;
         }
       }
     }
