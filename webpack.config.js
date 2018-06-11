@@ -254,7 +254,7 @@ module.exports = env => {
 
 function getPaths({
   sourceDir = 'app',
-  buildDir = 'docs',
+  buildDir = 'public',
   staticDir = '',
   images = 'images',
   fonts = 'fonts',
