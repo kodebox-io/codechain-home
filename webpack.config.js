@@ -151,7 +151,6 @@ const productionConfig = merge([
     plugins: [
       new webpack.HashedModuleIdsPlugin(),
       new ManifestPlugin(),
-      new BundleAnalyzerPlugin(),
       new CleanPlugin(paths.build)
     ]
   },
