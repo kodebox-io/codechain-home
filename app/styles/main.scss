@@ -131,6 +131,10 @@
         }
       }
 
+      .download-btn:hover {
+        background-color: #ac3c38;
+      }
+
       .source-btn {
         position: relative;
         width: 160px;
@@ -147,6 +151,10 @@
         }
       }
 
+      .source-btn:hover {
+        background-color: #ac3c38;
+      }
+
       .join-chat-btn {
         position: relative;
         width: 160px;
@@ -161,6 +169,10 @@
           margin: 0 auto;
           margin-top: 20px;
         }
+      }
+
+      .join-chat-btn:hover {
+        background-color: #cb9516;
       }
     }
   }

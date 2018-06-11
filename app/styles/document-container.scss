@@ -32,6 +32,11 @@
     }
   }
 
+  .link-button:hover {
+    background-color: #ca9518;
+    transition-duration: 0.5s;
+  }
+
   .link-button-a:hover {
     text-decoration: none;
   }
