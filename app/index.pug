@@ -25,10 +25,12 @@ html(lang='en')
                 p.description
                   | CodeChain is a programmable multi-asset management solution that leverages blockchain technologies.
                 .button-container
-                  button.btn.btn-primary(type='button').download-btn
-                    | Downloads
-                  button.btn.btn-primary(type='button').source-btn
-                    | Source Code
+                  a(href='/downloads.html')
+                    button.btn.btn-primary(type='button').download-btn
+                      | Downloads
+                  a(href='https://github.com/CodeChain-io/codechain', target='_blank')
+                    button.btn.btn-primary(type='button').source-btn
+                      | Source Code
                   a(href='https://gitter.im/CodeChain-io/codechain', target='_blank')
                     button.btn.btn-primary(type='button').join-chat-btn
                       | Join Chat
