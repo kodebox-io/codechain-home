@@ -75,6 +75,14 @@
         }
 
         .active {
+          a {
+            color: black;
+          }
+
+          a:hover {
+            color: #d94c47;
+          }
+
           color: black;
           cursor: pointer;
         }
@@ -92,12 +100,10 @@
         .donwload-link-text {
           float: left;
           font-size: 20px;
-          color: #313131;
         }
 
         .donwload-link-text:hover {
           text-decoration: none;
-          color: #d94c47;
         }
       }
     }
@@ -139,6 +145,14 @@
         .active-small {
           color: black;
           cursor: pointer;
+
+          a {
+            color: black;
+          }
+
+          a:hover {
+            color: #d94c47;
+          }
         }
 
         .active-small:hover {
@@ -154,12 +168,10 @@
         .donwload-link-text {
           float: left;
           font-size: 25px;
-          color: #313131;
         }
 
         .donwload-link-text:hover {
           text-decoration: none;
-          color: #d94c47;
         }
       }
     }
