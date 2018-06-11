@@ -49,7 +49,7 @@ html(lang='en')
               .row
                 .col-lg-6
                   .feature-item
-                    img.item-img(src='./images/main/feature1.png')
+                    .item-img.item-feature-1
                     .item-title
                       | Built-in multi-asset management solution
                     .item-underline.underline-red
@@ -57,29 +57,30 @@ html(lang='en')
                       | Issue, transfer and manage currencies, tokens and/or digital items on a blockchain network. No need for smart contracts.
                 .col-lg-6
                   .feature-item
-                    img.item-img(src='./images/main/feature2.png')
-                    .item-title
-                      | Multiple types of transactions
-                    .item-underline.underline-green
-                    .item-description
-                      | Make use of CodeChain’s support for programmable transactions: asset evolution, fusion, random item generation, escrow, payment channels and atomic swap.
-              .row.flex-column-reverse.flex-lg-row
-                .col-lg-6
-                  .feature-item
-                    img.item-img(src='./images/main/feature4.png')
-                    .item-title
-                      | Scalability - Sharding
-                    .item-underline.underline-green
-                    .item-description
-                      | Achieve higher transaction speed through horizontal scaling.
-                .col-lg-6
-                  .feature-item
-                    img.item-img(src='./images/main/feature3.png')
+                    .item-img.item-feature-2
                     .item-title
                       | Pluggable consensus model
-                    .item-underline.underline-red
+                    .item-underline.underline-green
                     .item-description
                       | Choose the consensus model optimal for your business: PoW, Tendermint, Hot-stuff, and PoA.
+              .row
+                .col-lg-6
+                  .feature-item
+                    .item-img.item-feature-3
+                    .item-title
+                      | Multiple types of transactions
+                    .item-underline.underline-green.reverse-red
+                    .item-description
+                      | Make use of CodeChain’s support for programmable transactions: asset evolution, fusion, random item generation, escrow, payment channels and atomic swap.
+                .col-lg-6
+                  .feature-item
+                    .item-img.item-feature-4
+                    .item-title
+                      | Scalability#[br]
+                      | - Sharding
+                    .item-underline.underline-red.reverse-green
+                    .item-description
+                      | Achieve higher transaction speed through horizontal scaling.
             .feature-second
               .row
                 .col-lg-6

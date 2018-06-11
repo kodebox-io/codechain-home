@@ -199,6 +199,34 @@
         height: 80px;
       }
 
+      .item-feature-1 {
+        background-image: url('../images/main/feature1.png');
+        background-repeat: no-repeat;
+      }
+
+      .item-feature-2 {
+        background-image: url('../images/main/feature2.png');
+        background-repeat: no-repeat;
+      }
+
+      .item-feature-3 {
+        background-image: url('../images/main/feature3.png');
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 991px) {
+          background-image: url('../images/main/feature3red.png');
+        }
+      }
+
+      .item-feature-4 {
+        background-image: url('../images/main/feature4.png');
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 991px) {
+          background-image: url('../images/main/feature4green.png');
+        }
+      }
+
       .item-underline {
         width: 110px;
         height: 6px;
@@ -222,6 +250,18 @@
 
       .underline-green {
         background-color: #087250;
+      }
+
+      .reverse-red {
+        @media screen and (max-width: 991px) {
+          background-color: #d94c47;
+        }
+      }
+
+      .reverse-green {
+        @media screen and (max-width: 991px) {
+          background-color: #087250;
+        }
       }
     }
 

@@ -191,12 +191,12 @@ exports.optimizeImages = ({ include, exclude } = {}) => ({
 
             svgo: {
 
-            }, */
+            },
 
             pngquant: {
               quality: '65-90',
               speed: 4
-            }
+            }*/
           }
         }
       }
