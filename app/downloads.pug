@@ -65,10 +65,11 @@ html(lang='en')
                     | Get the source code.
                 .donwload-link-group
                   .download-link-item.active
-                    .donwload-link-icon
-                      i.fas.fa-arrow-alt-circle-down(aria-hidden='true')
-                    a.donwload-link-text(href='https://github.com/CodeChain-io/codechain', target='_blank')
-                      | Download
+                    a(href='https://github.com/CodeChain-io/codechain', target='_blank')
+                      .donwload-link-icon
+                        i.fab.fa-github(aria-hidden='true')
+                      .donwload-link-text
+                        | Source
               .download-item-small-group
                 .download-item-small
                   .download-item-small-title
@@ -98,9 +99,10 @@ html(lang='en')
                     | Get the source code.
                   .donwload-link-group
                     .download-link-item.active-small
-                      .donwload-link-icon
-                        i.fas.fa-arrow-alt-circle-down.fa-2x(aria-hidden='true')
-                      a.donwload-link-text(href='https://github.com/CodeChain-io/codechain', target='_blank')
-                        | Download
+                      a(href='https://github.com/CodeChain-io/codechain', target='_blank')
+                        .donwload-link-icon
+                          i.fab.fa-github.fa-2x(aria-hidden='true')
+                        .donwload-link-text
+                          | Source
           include includes/document.pug
     include includes/footer.pug
