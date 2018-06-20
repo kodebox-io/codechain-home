@@ -5,7 +5,6 @@
   "contribute.js": "/scripts/contribute.47253108.js",
   "main.css": "/styles/4.12cc6aa3.css",
   "main.js": "/scripts/main.af3d8642.js",
-  "fonts/fa-brands-400.woff": "/fonts/fa-brands-400.2248542e.woff",
   "images/connected-people.svg": "/images/connected-people.b4a70cd1.svg",
   "fonts/fa-regular-400.svg": "/fonts/fa-regular-400.14526d95.svg",
   "fonts/fa-brands-400.eot": "/fonts/fa-brands-400.748ab466.eot",
@@ -20,6 +19,7 @@
   "fonts/fa-solid-900.svg": "/fonts/fa-solid-900.96dc3d20.svg",
   "fonts/fa-brands-400.ttf": "/fonts/fa-brands-400.7febe26e.ttf",
   "fonts/fa-solid-900.eot": "/fonts/fa-solid-900.035a137a.eot",
+  "fonts/fa-brands-400.woff": "/fonts/fa-brands-400.2248542e.woff",
   "fonts/fa-solid-900.woff2": "/fonts/fa-solid-900.8a8c0474.woff2",
   "favicon.ico": "/favicon.ico",
   "index.html": "/index.html",
@@ -28,5 +28,10 @@
   "contribute.html": "/contribute.html",
   "team.html": "/team.html",
   "privacy.html": "/privacy.html",
-  "slides/ScriptLanguage.html": "/slides/ScriptLanguage.html"
+  "slides/.DS_Store": "/slides/.DS_Store",
+  "slides/ccs1.html": "/slides/ccs1.html",
+  "slides/ccs2.html": "/slides/ccs2.html",
+  "slides/ccs3.html": "/slides/ccs3.html",
+  "slides/ccs5.html": "/slides/ccs5.html",
+  "slides/ccs4.html": "/slides/ccs4.html"
 }
