@@ -2,7 +2,7 @@
   "manifest.js": "/scripts/manifest.715eaefd.js",
   "vendors.js": "/scripts/vendors.6b2eacae.js",
   "news.js": "/scripts/news.33e213b5.js",
-  "contribute.js": "/scripts/contribute.8e4d74d6.js",
+  "contribute.js": "/scripts/contribute.f183a406.js",
   "main.css": "/styles/4.d26ba64e.css",
   "main.js": "/scripts/main.ffed0af2.js",
   "images/connected-people.svg": "/images/connected-people.b4a70cd1.svg",
@@ -29,12 +29,12 @@
   "team.html": "/team.html",
   "privacy.html": "/privacy.html",
   "slides/.DS_Store": "/slides/.DS_Store",
-  "slides/ccs2.html": "/slides/ccs2.html",
   "slides/ccs1.html": "/slides/ccs1.html",
+  "slides/ccs2.html": "/slides/ccs2.html",
   "slides/ccs3.html": "/slides/ccs3.html",
-  "slides/ccs5.html": "/slides/ccs5.html",
   "slides/ccs4.html": "/slides/ccs4.html",
+  "slides/ccs5.html": "/slides/ccs5.html",
   "static/.DS_Store": "/static/.DS_Store",
-  "static/facebook.png": "/static/facebook.png",
-  "static/facebook_og.png": "/static/facebook_og.png"
+  "static/facebook_og.png": "/static/facebook_og.png",
+  "static/facebook.png": "/static/facebook.png"
 }
