@@ -3,8 +3,8 @@
   "vendors.js": "/scripts/vendors.6b2eacae.js",
   "news.js": "/scripts/news.33e213b5.js",
   "contribute.js": "/scripts/contribute.feadd29c.js",
-  "main.css": "/styles/4.d26ba64e.css",
-  "main.js": "/scripts/main.ffed0af2.js",
+  "main.css": "/styles/4.01e0be5d.css",
+  "main.js": "/scripts/main.e1a22924.js",
   "images/connected-people.svg": "/images/connected-people.b4a70cd1.svg",
   "fonts/fa-regular-400.svg": "/fonts/fa-regular-400.14526d95.svg",
   "fonts/fa-brands-400.eot": "/fonts/fa-brands-400.748ab466.eot",
@@ -29,12 +29,12 @@
   "team.html": "/team.html",
   "privacy.html": "/privacy.html",
   "slides/ccs1.html": "/slides/ccs1.html",
-  "slides/.DS_Store": "/slides/.DS_Store",
   "slides/ccs2.html": "/slides/ccs2.html",
   "slides/ccs3.html": "/slides/ccs3.html",
   "slides/ccs4.html": "/slides/ccs4.html",
   "slides/ccs5.html": "/slides/ccs5.html",
+  "slides/.DS_Store": "/slides/.DS_Store",
   "static/.DS_Store": "/static/.DS_Store",
-  "static/facebook_og.png": "/static/facebook_og.png",
-  "static/facebook.png": "/static/facebook.png"
+  "static/facebook.png": "/static/facebook.png",
+  "static/facebook_og.png": "/static/facebook_og.png"
 }
