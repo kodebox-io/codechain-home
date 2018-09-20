@@ -4,7 +4,7 @@
   "news.js": "/scripts/news.33e213b5.js",
   "contribute.js": "/scripts/contribute.32744a4d.js",
   "main.css": "/styles/4.3056fefb.css",
-  "main.js": "/scripts/main.86c9dbc0.js",
+  "main.js": "/scripts/main.8f2e1f0c.js",
   "images/connected-people.svg": "/images/connected-people.b4a70cd1.svg",
   "fonts/fa-regular-400.svg": "/fonts/fa-regular-400.14526d95.svg",
   "fonts/fa-brands-400.eot": "/fonts/fa-brands-400.748ab466.eot",
@@ -30,11 +30,11 @@
   "privacy.html": "/privacy.html",
   "slides/.DS_Store": "/slides/.DS_Store",
   "slides/ccs1.html": "/slides/ccs1.html",
+  "slides/ccs4.html": "/slides/ccs4.html",
+  "slides/ccs5.html": "/slides/ccs5.html",
   "slides/ccs2.html": "/slides/ccs2.html",
   "slides/ccs3.html": "/slides/ccs3.html",
-  "slides/ccs5.html": "/slides/ccs5.html",
-  "slides/ccs4.html": "/slides/ccs4.html",
-  "static/.DS_Store": "/static/.DS_Store",
   "static/facebook.png": "/static/facebook.png",
+  "static/.DS_Store": "/static/.DS_Store",
   "static/facebook_og.png": "/static/facebook_og.png"
 }
