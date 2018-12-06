@@ -28,13 +28,13 @@
   "contribute.html": "/contribute.html",
   "team.html": "/team.html",
   "privacy.html": "/privacy.html",
-  "slides/ccs2.html": "/slides/ccs2.html",
   "slides/ccs3.html": "/slides/ccs3.html",
-  "slides/.DS_Store": "/slides/.DS_Store",
   "slides/ccs1.html": "/slides/ccs1.html",
-  "slides/ccs4.html": "/slides/ccs4.html",
+  "slides/.DS_Store": "/slides/.DS_Store",
+  "slides/ccs2.html": "/slides/ccs2.html",
   "slides/ccs5.html": "/slides/ccs5.html",
-  "static/facebook_og.png": "/static/facebook_og.png",
+  "slides/ccs4.html": "/slides/ccs4.html",
   "static/.DS_Store": "/static/.DS_Store",
+  "static/facebook_og.png": "/static/facebook_og.png",
   "static/facebook.png": "/static/facebook.png"
 }
