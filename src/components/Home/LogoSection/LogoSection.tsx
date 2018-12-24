@@ -1,4 +1,5 @@
 import * as React from "react";
+import MediaQuery from "react-responsive";
 import laptop from "./img/laptop.png";
 import "./LogoSection.scss";
 
@@ -23,9 +24,11 @@ export default class LogoSection extends React.Component<any, any> {
                     </div>
                 </div>
                 <div className="graph-background" />
-                <div className="computer-continer">
-                    <img src={laptop} />
-                </div>
+                <MediaQuery query="(min-width:768px)">
+                    <div className="computer-continer">
+                        <img src={laptop} />
+                    </div>
+                </MediaQuery>
             </div>
         );
     }

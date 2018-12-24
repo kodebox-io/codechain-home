@@ -8,7 +8,7 @@ export default class SeeMoreSection extends React.Component<any, any> {
             <div className="See-more-section">
                 <Container>
                     <Row>
-                        <Col md={6}>
+                        <Col md={6} className="mb-3 mb-md-0">
                             <div className="d-flex align-items-center justify-content-center">
                                 <div className="more-text">See more</div>
                                 <div>

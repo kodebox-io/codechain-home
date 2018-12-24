@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
 import NotFound from "../NotFound/NotFound";
@@ -17,6 +18,7 @@ class App extends Component {
                             <Route component={NotFound} />
                         </Switch>
                     </div>
+                    <Footer />
                 </div>
             </Router>
         );

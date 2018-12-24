@@ -1,0 +1,37 @@
+@import "styles/variables.scss";
+@import "styles/mixin.scss";
+
+.Footer {
+  background-color: $dark-slate-blue;
+  color: white;
+  padding: 50px 0 100px 0;
+  font-size: 0.75rem;
+
+  .link-icon {
+    cursor: pointer;
+  }
+
+  .link-container {
+    text-align: right;
+    .link-item-col {
+      vertical-align: top;
+      margin-left: 40px;
+
+      .link-item:hover {
+        cursor: pointer;
+      }
+    }
+
+    @include respond-below(sm) {
+      & {
+        margin-top: 80px;
+        text-align: left;
+
+        .link-item-col {
+          margin-left: 0;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}
