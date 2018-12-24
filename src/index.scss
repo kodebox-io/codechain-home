@@ -33,3 +33,43 @@ a {
     text-decoration: none;
   }
 }
+
+.modal-dialog {
+  margin: 0;
+  max-width: 100%;
+
+  .modal-content {
+    border-radius: 0;
+    border: 0;
+
+    .modal-body {
+      padding: 0;
+    }
+    .menu-modal {
+      width: 100vw;
+      height: 100vh;
+      background-color: $turquoise-blue;
+      color: white;
+      text-align: center;
+      padding: 80px 0 80px 0;
+
+      .close-btn {
+        position: absolute;
+        right: 18px;
+        top: 25px;
+        cursor: pointer;
+      }
+      .menu-item {
+        margin-top: 61px;
+        .item-name {
+          font-weight: 300;
+          font-size: 1.5rem;
+        }
+        .paper-btn {
+          width: 148px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
