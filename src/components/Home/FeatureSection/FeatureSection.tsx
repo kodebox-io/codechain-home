@@ -13,7 +13,7 @@ export default class FeatureSection extends React.Component<any, any> {
             <div className="Feature-section">
                 <Container>
                     <div className="d-inline-block test2 text-center">
-                        <div className="feature-item d-inline-block">
+                        <div className="feature-item d-inline-block wow fadeInUp">
                             <div>
                                 <img src={legal} />
                             </div>
@@ -30,7 +30,7 @@ export default class FeatureSection extends React.Component<any, any> {
                                 </span>
                             </div>
                         </div>
-                        <div className="feature-item d-inline-block">
+                        <div className="feature-item d-inline-block wow fadeInUp">
                             <div>
                                 <img src={programmable} />
                             </div>
@@ -51,7 +51,7 @@ export default class FeatureSection extends React.Component<any, any> {
                                 </span>
                             </div>
                         </div>
-                        <div className="feature-item d-inline-block">
+                        <div className="feature-item d-inline-block wow fadeInUp">
                             <div>
                                 <img src={increase} />
                             </div>
@@ -70,7 +70,7 @@ export default class FeatureSection extends React.Component<any, any> {
                                 </span>
                             </div>
                         </div>
-                        <div className="feature-item d-inline-block">
+                        <div className="feature-item d-inline-block wow fadeInUp">
                             <div>
                                 <img src={transparent} />
                             </div>
@@ -85,7 +85,7 @@ export default class FeatureSection extends React.Component<any, any> {
                                 </span>
                             </div>
                         </div>
-                        <div className="feature-item d-inline-block">
+                        <div className="feature-item d-inline-block wow fadeInUp">
                             <div>
                                 <img src={guaranteed} />
                             </div>

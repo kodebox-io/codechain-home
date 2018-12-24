@@ -25,7 +25,7 @@ export default class LogoSection extends React.Component<any, any> {
                 </div>
                 <div className="graph-background" />
                 <MediaQuery query="(min-width:768px)">
-                    <div className="computer-continer">
+                    <div className="computer-continer wow fadeInUp">
                         <img src={laptop} />
                     </div>
                 </MediaQuery>

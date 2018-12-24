@@ -4,22 +4,30 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
 import NotFound from "../NotFound/NotFound";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import "./App.scss";
+const WOW = require("wowjs");
 
 class App extends Component {
+    public componentDidMount() {
+        const wow = new WOW.WOW();
+        wow.init();
+    }
     public render() {
         return (
             <Router>
-                <div className="App">
-                    <Header />
-                    <div className="Content">
-                        <Switch>
-                            <Route exact={true} path="/" component={Home} />
-                            <Route component={NotFound} />
-                        </Switch>
+                <ScrollToTop>
+                    <div className="App">
+                        <Header />
+                        <div className="Content">
+                            <Switch>
+                                <Route exact={true} path="/" component={Home} />
+                                <Route component={NotFound} />
+                            </Switch>
+                        </div>
+                        <Footer />
                     </div>
-                    <Footer />
-                </div>
+                </ScrollToTop>
             </Router>
         );
     }

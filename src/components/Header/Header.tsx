@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 import logo from "./img/logo.svg";
 
@@ -29,8 +30,12 @@ export default class Header extends React.Component<any, State> {
                 className={`d-flex align-items-center Header ${isTop &&
                     "blue-header"}`}
             >
-                <img src={logo} />
-                <div className="menu-item ml-auto">Platform</div>
+                <Link to="/">
+                    <img src={logo} />
+                </Link>
+                <div className="menu-item ml-auto">
+                    <Link to="/platform">Platform</Link>
+                </div>
                 <div className="menu-item">Technology</div>
                 <div className="menu-item">About us</div>
                 <div className="menu-item">

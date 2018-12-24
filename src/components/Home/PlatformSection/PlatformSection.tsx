@@ -18,7 +18,7 @@ export default class PlatformSection extends React.Component<any, any> {
                         <span className="title">Platform</span>
                     </div>
                     <div>
-                        <div className="platform-item d-inline-block">
+                        <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={network} />
                             </div>
@@ -28,7 +28,7 @@ export default class PlatformSection extends React.Component<any, any> {
                                 </span>
                             </div>
                         </div>
-                        <div className="platform-item d-inline-block">
+                        <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={consoleImg} />
                             </div>
@@ -36,7 +36,7 @@ export default class PlatformSection extends React.Component<any, any> {
                                 <span className="description">Console</span>
                             </div>
                         </div>
-                        <div className="platform-item d-inline-block">
+                        <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={liquidity} />
                             </div>
@@ -46,7 +46,7 @@ export default class PlatformSection extends React.Component<any, any> {
                                 </span>
                             </div>
                         </div>
-                        <div className="platform-item d-inline-block">
+                        <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={exchange} />
                             </div>
@@ -54,7 +54,7 @@ export default class PlatformSection extends React.Component<any, any> {
                                 <span className="description">Exchange</span>
                             </div>
                         </div>
-                        <div className="platform-item d-inline-block">
+                        <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={wallet} />
                             </div>
@@ -62,7 +62,7 @@ export default class PlatformSection extends React.Component<any, any> {
                                 <span className="description">Wallet</span>
                             </div>
                         </div>
-                        <div className="platform-item d-inline-block">
+                        <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={explorer} />
                             </div>
