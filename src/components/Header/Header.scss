@@ -1,0 +1,45 @@
+@import "styles/variables.scss";
+
+.Header {
+  padding: 0 16px 0 16px;
+  height: $header-height;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  transition: all 0.5s ease-in;
+
+  .menu-item {
+    color: $turquoise-blue;
+    margin-left: 40px;
+    cursor: pointer;
+
+    .paper-btn {
+      border: 1px solid $turquoise-blue;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 30px 0 30px;
+      border-radius: 2px;
+
+      &:hover {
+        background-color: rgba(5, 170, 209, 0.12);
+      }
+    }
+  }
+
+  &.blue-header {
+    background-color: $turquoise-blue;
+
+    .menu-item {
+      color: white;
+
+      .paper-btn {
+        border: 1px solid white;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.24);
+        }
+      }
+    }
+  }
+}
