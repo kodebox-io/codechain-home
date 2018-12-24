@@ -1,5 +1,6 @@
 import * as React from "react";
 import MediaQuery from "react-responsive";
+import { Container } from "reactstrap";
 import laptop from "./img/laptop.png";
 import "./LogoSection.scss";
 
