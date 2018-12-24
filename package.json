@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2",
@@ -12,7 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "tslint -p tsconfig.json && prettier 'src/**/*.{ts,tsx,scss,json,html,js,jsx}' -l",
+    "fmt": "tslint -p tsconfig.json --fix && prettier 'src/**/*.{ts,tsx,scss,json,html,js,jsx}' --write"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,6 +30,10 @@
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.18",
     "@types/react": "^16.7.18",
-    "@types/react-dom": "^16.0.11"
+    "@types/react-dom": "^16.0.11",
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0"
   }
 }
