@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="198px" height="198px" viewBox="0 0 198 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Exchange</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 198 0 198 197.9997 0 197.9997"></polygon>
+        <polygon id="path-3" points="0 198 198 198 198 0 0 0"></polygon>
+    </defs>
+    <g id="Exchange" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-19">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M198,98.9997 C198,153.6767 153.676,197.9997 99,197.9997 C44.324,197.9997 0,153.6767 0,98.9997 C0,44.3237 44.324,-0.0003 99,-0.0003 C153.676,-0.0003 198,44.3237 198,98.9997" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M124.9409,141.9909 C100.9989,141.9909 81.5899,122.5829 81.5899,98.6399 C81.5899,74.6979 100.9989,55.2899 124.9409,55.2899 C148.8829,55.2899 168.2919,74.6979 168.2919,98.6399 C168.2919,122.5829 148.8829,141.9909 124.9409,141.9909" id="Fill-4" fill="#BCCFD1"></path>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <g id="Clip-7"></g>
+            <polygon id="Fill-6" fill="#E4EFF1" mask="url(#mask-4)" points="92.878 107.204 141.261 107.204 141.261 90.077 92.878 90.077"></polygon>
+            <polygon id="Fill-8" fill="#E4EFF1" mask="url(#mask-4)" points="135.5932 112.907 135.5932 84.374 149.8602 98.64"></polygon>
+            <path d="M116.9404,141.9909 C92.9984,141.9909 73.5894,122.5829 73.5894,98.6399 C73.5894,74.6979 92.9984,55.2899 116.9404,55.2899 C140.8824,55.2899 160.2914,74.6979 160.2914,98.6399 C160.2914,122.5829 140.8824,141.9909 116.9404,141.9909 Z" id="Stroke-9" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)"></path>
+            <path d="M78.6538,141.9909 C54.7118,141.9909 35.3028,122.5829 35.3028,98.6399 C35.3028,74.6979 54.7118,55.2899 78.6538,55.2899 C102.5958,55.2899 122.0048,74.6979 122.0048,98.6399 C122.0048,122.5829 102.5958,141.9909 78.6538,141.9909" id="Fill-10" fill="#E4EFF1" mask="url(#mask-4)"></path>
+            <path d="M70.7866,141.9909 C46.8446,141.9909 27.4356,122.5829 27.4356,98.6399 C27.4356,74.6979 46.8446,55.2899 70.7866,55.2899 C94.7286,55.2899 114.1376,74.6979 114.1376,98.6399 C114.1376,122.5829 94.7286,141.9909 70.7866,141.9909 Z" id="Stroke-11" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)"></path>
+            <path d="M87.0513,111.2575 C80.0823,118.2265 68.7843,118.2265 61.8163,111.2575 C54.8473,104.2895 54.8473,92.9905 61.8163,86.0235 C68.7843,79.0545 80.0823,79.0545 87.0513,86.0235" id="Stroke-12" stroke="#05AAD1" stroke-width="14" mask="url(#mask-4)"></path>
+            <path d="M87.4028,41.1609 L126.2448,41.1609" id="Stroke-13" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)"></path>
+            <path d="M87.4028,48.6755 L115.6678,48.6755" id="Stroke-14" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)"></path>
+            <path d="M87.4028,156.0359 L115.6678,156.0359" id="Stroke-15" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)"></path>
+            <path d="M76.8262,148.5202 L115.6682,148.5202" id="Stroke-16" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)"></path>
+            <polygon id="Fill-17" fill="#05AAD1" mask="url(#mask-4)" points="69.891 84.852 75.837 84.852 75.837 67.164 69.891 67.164"></polygon>
+            <polygon id="Fill-18" fill="#05AAD1" mask="url(#mask-4)" points="69.891 128.738 75.837 128.738 75.837 111.051 69.891 111.051"></polygon>
+        </g>
+    </g>
+</svg>
