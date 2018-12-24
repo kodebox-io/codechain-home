@@ -28,15 +28,6 @@
     .paper-btn {
       height: 40px;
       width: 148px;
-      border: 1px solid white;
-      line-height: 40px;
-      border-radius: 2px;
-      z-index: 1;
-
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.24);
-        cursor: pointer;
-      }
     }
   }
   .graph-background {

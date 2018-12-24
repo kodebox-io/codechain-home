@@ -1,3 +1,25 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "styles/typography.scss";
 @import "styles/variables.scss";
+
+.custom-btn {
+  border: 1px solid $turquoise-blue;
+  line-height: 40px;
+  border-radius: 2px;
+  z-index: 1;
+  color: $turquoise-blue;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(5, 170, 209, 0.12);
+  }
+
+  &.reverse {
+    color: white;
+    border: 1px solid white;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.24);
+    }
+  }
+}

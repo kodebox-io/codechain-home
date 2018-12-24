@@ -34,7 +34,11 @@ export default class Header extends React.Component<any, State> {
                 <div className="menu-item">Technology</div>
                 <div className="menu-item">About us</div>
                 <div className="menu-item">
-                    <div className="paper-btn">White Paper</div>
+                    <div
+                        className={`custom-btn paper-btn ${isTop && "reverse"}`}
+                    >
+                        White Paper
+                    </div>
                 </div>
             </div>
         );

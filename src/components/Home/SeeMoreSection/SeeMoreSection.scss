@@ -1,0 +1,15 @@
+@import "styles/variables.scss";
+
+.See-more-section {
+  padding: 45px 0 45px 0;
+
+  .more-text {
+    font-size: 1.75rem;
+    color: $turquoise-blue;
+    margin-right: 38px;
+  }
+  .more-btn {
+    width: 148px;
+    height: 40px;
+  }
+}

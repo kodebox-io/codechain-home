@@ -1,7 +1,6 @@
 import * as React from "react";
-import Container from "reactstrap/lib/Container";
+import { Container } from "reactstrap";
 import "./FeatureSection.scss";
-
 import guaranteed from "./img/guaranteed_privacy_protection.svg";
 import increase from "./img/increased_liquidity.svg";
 import legal from "./img/legal_compliance.svg";

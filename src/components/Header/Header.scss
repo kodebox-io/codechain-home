@@ -15,15 +15,8 @@
     cursor: pointer;
 
     .paper-btn {
-      border: 1px solid $turquoise-blue;
+      width: 148px;
       height: 40px;
-      line-height: 40px;
-      padding: 0 30px 0 30px;
-      border-radius: 2px;
-
-      &:hover {
-        background-color: rgba(5, 170, 209, 0.12);
-      }
     }
   }
 
@@ -32,14 +25,6 @@
 
     .menu-item {
       color: white;
-
-      .paper-btn {
-        border: 1px solid white;
-
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.24);
-        }
-      }
     }
   }
 }

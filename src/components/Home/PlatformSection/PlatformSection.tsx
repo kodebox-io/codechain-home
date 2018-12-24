@@ -1,7 +1,7 @@
 import * as React from "react";
-import Container from "reactstrap/lib/Container";
 import "./PlatformSection.scss";
 
+import { Container } from "reactstrap";
 import network from "./img/Blockchain_network.svg";
 import consoleImg from "./img/Console.svg";
 import exchange from "./img/Exchange.svg";

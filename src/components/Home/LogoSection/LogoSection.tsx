@@ -17,7 +17,9 @@ export default class LogoSection extends React.Component<any, any> {
                         </span>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <div className="paper-btn">White Paper</div>
+                        <div className="custom-btn reverse paper-btn">
+                            White Paper
+                        </div>
                     </div>
                 </div>
                 <div className="graph-background" />
