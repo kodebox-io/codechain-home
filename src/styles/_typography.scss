@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+html {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: $black;
+}
+
+.font-logo {
+  font-family: "Questrial", sans-serif;
+}
