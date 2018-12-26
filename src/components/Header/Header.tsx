@@ -11,6 +11,14 @@ import logo from "./img/logo.svg";
 import menuWhite from "./img/menu.svg";
 import menuBlue from "./img/menu2.svg";
 
+enum Page {
+    Home,
+    Platform,
+    Source,
+    Contribute,
+    Contributors
+}
+
 interface State {
     isOpen: boolean;
     isBlueHeader: boolean;
@@ -60,6 +68,11 @@ class Header extends React.Component<RouteComponentProps, State> {
         } else {
             this.setState({ checkingTop: true, isBlueHeader: true });
         }
+        this.setState({
+            isOpen: false,
+            isTechMobileMenuOpen: false,
+            isAboutMobileMenuOpen: false
+        });
     }
 
     public render() {
@@ -81,11 +94,26 @@ class Header extends React.Component<RouteComponentProps, State> {
                     <img src={logo} />
                 </Link>
                 <MediaQuery query="(min-width:768px)">
-                    <div className="menu-item ml-auto">
-                        <Link to="/platform">Platform</Link>
+                    <div className={`menu-item ml-auto`}>
+                        <Link to="/platform">
+                            <span
+                                className={`menu-item-header ${this.getCurrentPage() ===
+                                    Page.Platform && "selected"}`}
+                            >
+                                Platform
+                            </span>
+                        </Link>
                     </div>
                     <div className="menu-item">
-                        <span onClick={this.toggleTechMenu} id="TechMenu">
+                        <span
+                            onClick={this.toggleTechMenu}
+                            id="TechMenu"
+                            className={`menu-item-header ${(this.getCurrentPage() ===
+                                Page.Source ||
+                                this.getCurrentPage() === Page.Contribute ||
+                                this.getCurrentPage() === Page.Contributors) &&
+                                "selected"}`}
+                        >
                             Technology
                         </span>
                         <Popover
@@ -107,13 +135,23 @@ class Header extends React.Component<RouteComponentProps, State> {
                                         )}
                                     </div>
                                     <div className="text-left menu-drop-item-container">
-                                        <div className="menu-drop-item selected">
+                                        <div
+                                            className={`menu-drop-item ${this.getCurrentPage() ===
+                                                Page.Source && "selected"}`}
+                                        >
                                             <span>Source code</span>
                                         </div>
-                                        <div className="menu-drop-item">
+                                        <div
+                                            className={`menu-drop-item ${this.getCurrentPage() ===
+                                                Page.Contribute && "selected"}`}
+                                        >
                                             <span>Contribute</span>
                                         </div>
-                                        <div className="menu-drop-item">
+                                        <div
+                                            className={`menu-drop-item ${this.getCurrentPage() ===
+                                                Page.Contributors &&
+                                                "selected"}`}
+                                        >
                                             <span>Contributors</span>
                                         </div>
                                     </div>
@@ -144,7 +182,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                         )}
                                     </div>
                                     <div className="text-left menu-drop-item-container">
-                                        <div className="menu-drop-item selected">
+                                        <div className="menu-drop-item">
                                             <span>Company</span>
                                         </div>
                                         <div className="menu-drop-item">
@@ -190,11 +228,24 @@ class Header extends React.Component<RouteComponentProps, State> {
                                     <img src={logoWhite} />
                                 </div>
                                 <div className="menu-item">
-                                    <span className="item-name">Platform</span>
+                                    <Link to="/platform">
+                                        <span
+                                            className={`item-name ${this.getCurrentPage() ===
+                                                Page.Platform && "selected"}`}
+                                        >
+                                            Platform
+                                        </span>
+                                    </Link>
                                 </div>
                                 <div className="menu-item">
                                     <span
-                                        className="item-name"
+                                        className={`item-name ${(this.getCurrentPage() ===
+                                            Page.Source ||
+                                            this.getCurrentPage() ===
+                                                Page.Contribute ||
+                                            this.getCurrentPage() ===
+                                                Page.Contributors) &&
+                                            "selected"}`}
                                         onClick={this.toggleTechMenuOnMobile}
                                     >
                                         Technology
@@ -205,13 +256,25 @@ class Header extends React.Component<RouteComponentProps, State> {
                                                 <img src={dropWhite} />
                                             </div>
                                             <div>
-                                                <div className="menu-drop-item selected">
+                                                <div
+                                                    className={`menu-drop-item ${this.getCurrentPage() ===
+                                                        Page.Source &&
+                                                        "selected"}`}
+                                                >
                                                     <span>Source code</span>
                                                 </div>
-                                                <div className="menu-drop-item">
+                                                <div
+                                                    className={`menu-drop-item ${this.getCurrentPage() ===
+                                                        Page.Contribute &&
+                                                        "selected"}`}
+                                                >
                                                     <span>Contribute</span>
                                                 </div>
-                                                <div className="menu-drop-item">
+                                                <div
+                                                    className={`menu-drop-item ${this.getCurrentPage() ===
+                                                        Page.Contributors &&
+                                                        "selected"}`}
+                                                >
                                                     <span>Contributors</span>
                                                 </div>
                                             </div>
@@ -231,7 +294,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                                 <img src={dropWhite} />
                                             </div>
                                             <div>
-                                                <div className="menu-drop-item selected">
+                                                <div className="menu-drop-item">
                                                     <span>Company</span>
                                                 </div>
                                                 <div className="menu-drop-item">
@@ -253,6 +316,25 @@ class Header extends React.Component<RouteComponentProps, State> {
             </div>
         );
     }
+
+    private getCurrentPage = () => {
+        const path = this.props.location.pathname;
+        switch (path) {
+            case "/":
+                return Page.Home;
+            case "/index.html":
+                return Page.Home;
+            case "/platform":
+                return Page.Platform;
+            case "/source":
+                return Page.Source;
+            case "/contribute":
+                return Page.Contribute;
+            case "/contributors":
+                return Page.Contributors;
+        }
+        return Page.Home;
+    };
 
     private toggleTechMenu = () => {
         this.setState({

@@ -7,13 +7,8 @@ import NotFound from "../NotFound/NotFound";
 import Platform from "../Platform/Platform";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import "./App.scss";
-const WOW = require("wowjs");
 
 class App extends Component {
-    public componentDidMount() {
-        const wow = new WOW.WOW();
-        wow.init();
-    }
     public render() {
         return (
             <Router>

@@ -27,6 +27,12 @@
 
     .menu-item {
       color: $turquoise-blue;
+
+      .menu-item-header {
+        &.selected {
+          font-weight: bold;
+        }
+      }
     }
   }
 }
@@ -97,6 +103,7 @@
         .item-name {
           font-weight: 300;
           font-size: 1.5rem;
+          cursor: pointer;
         }
         .paper-btn {
           width: 148px;
@@ -106,6 +113,10 @@
           font-weight: 1.125rem;
           font-weight: 300;
           margin-bottom: 8px;
+          cursor: pointer;
+        }
+        .selected {
+          font-weight: 400;
         }
       }
     }

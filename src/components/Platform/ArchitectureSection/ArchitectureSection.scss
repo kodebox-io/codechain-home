@@ -1,2 +1,17 @@
+@import "styles/variables.scss";
+
 .Platform-architecture-section {
+  padding: 98px 0 140px 0;
+  .title-container {
+    margin-bottom: 98px;
+
+    .title-text {
+      font-size: 2.5rem;
+      color: $turquoise-blue;
+    }
+  }
+  .architecture-img {
+    width: 100%;
+    height: auto;
+  }
 }

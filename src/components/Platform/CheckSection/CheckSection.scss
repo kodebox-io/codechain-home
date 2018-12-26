@@ -1,15 +1,18 @@
 @import "styles/variables.scss";
 @import "styles/mixin.scss";
 
-.See-more-section {
+.Platform-check-section {
+  background-color: $turquoise-blue;
+
   padding: 45px 0 45px 0;
 
   .more-text {
-    font-size: 1.75rem;
-    color: $turquoise-blue;
-    margin-right: 38px;
     font-weight: 300;
+    font-size: 1.75rem;
+    color: white;
+    margin-right: 38px;
   }
+
   .more-btn {
     width: 148px;
     height: 40px;
@@ -19,7 +22,7 @@
     & {
       padding: 72px 0 72px 0;
     }
-    .see-more-container {
+    .check-it-container {
       margin-bottom: 80px;
     }
     .more-text {
