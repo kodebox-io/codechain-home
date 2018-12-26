@@ -3,8 +3,11 @@ import MediaQuery from "react-responsive";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody } from "reactstrap";
 import "./Header.scss";
+import menuClose from "./img/Close.svg";
 import logoWhite from "./img/CodechainLogo_White.svg";
 import logo from "./img/logo.svg";
+import menuWhite from "./img/menu.svg";
+import menuBlue from "./img/menu2.svg";
 
 interface State {
     isOpen: boolean;
@@ -53,7 +56,11 @@ export default class Header extends React.Component<any, State> {
                 </MediaQuery>
                 <MediaQuery query="(max-width:767px)">
                     <div className="menu-item ml-auto" onClick={this.toggle}>
-                        menu
+                        {isTop ? (
+                            <img src={menuWhite} />
+                        ) : (
+                            <img src={menuBlue} />
+                        )}
                     </div>
                     <Modal isOpen={isOpen} toggle={this.toggle} fade={false}>
                         <ModalBody>
@@ -62,7 +69,7 @@ export default class Header extends React.Component<any, State> {
                                     className="close-btn"
                                     onClick={this.toggle}
                                 >
-                                    close
+                                    <img src={menuClose} />
                                 </div>
                                 <div className="logo-container">
                                     <img src={logoWhite} />
