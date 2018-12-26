@@ -22,7 +22,7 @@ const MaterialData: MaterialItem[] = [
     {
         title: "Proof of Ownership",
         description:
-            "new business opportunities with CodeChain tokens (Slides)",
+            "New business opportunities with CodeChain tokens (Slides)",
         link:
             "https://docs.google.com/presentation/d/1a0-mWOEwIWpIbxaPiRcyi91I_zOlDUC958HItqaTfh0/edit?usp=sharing"
     },
