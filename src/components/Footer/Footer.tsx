@@ -1,5 +1,6 @@
 import * as React from "react";
 import MediaQuery from "react-responsive";
+import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "./Footer.scss";
 import logo from "./img/CodechainLogo_White.svg";
@@ -36,26 +37,59 @@ export default class Footer extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div className="mt-4">
-                                <img src={github} className="mr-3 link-icon" />
-                                <img src={gitter} className="mr-3 link-icon" />
-                                <img src={twitter} className="mr-3 link-icon" />
-                                <img
-                                    src={facebook}
-                                    className="mr-3 link-icon"
-                                />
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/CodeChain-io/codechain"
+                                >
+                                    <img
+                                        src={github}
+                                        className="mr-3 link-icon"
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://gitter.im/CodeChain-io/codechain"
+                                >
+                                    <img
+                                        src={gitter}
+                                        className="mr-3 link-icon"
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://twitter.com/codechain_io"
+                                >
+                                    <img
+                                        src={twitter}
+                                        className="mr-3 link-icon"
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.facebook.com/codechain/"
+                                >
+                                    <img
+                                        src={facebook}
+                                        className="mr-3 link-icon"
+                                    />
+                                </a>
                             </div>
                         </Col>
                         <Col md={8}>
                             <div className="link-container">
                                 <div className="d-inline-block link-item-col mb-5">
-                                    <span className="link-item link-header">
-                                        Home
-                                    </span>
+                                    <Link to="/">
+                                        <span className="link-item link-header">
+                                            Home
+                                        </span>
+                                    </Link>
                                 </div>
                                 <div className="d-inline-block link-item-col mb-5">
-                                    <span className="link-item link-header">
-                                        Platform
-                                    </span>
+                                    <Link to="/platform">
+                                        <span className="link-item link-header">
+                                            Platform
+                                        </span>
+                                    </Link>
                                 </div>
                                 <MediaQuery query="(max-width:767px)">
                                     <br />
@@ -67,17 +101,25 @@ export default class Footer extends React.Component<any, any> {
                                         </span>
                                     </div>
                                     <div className="mb-2">
-                                        <span className="link-item">
-                                            Source code
-                                        </span>
+                                        <Link to="/source">
+                                            <span className="link-item">
+                                                Source code
+                                            </span>
+                                        </Link>
                                     </div>
                                     <div className="mb-2">
-                                        <span className="link-item">
-                                            Contribute
-                                        </span>
+                                        <Link to="/contribute">
+                                            <span className="link-item">
+                                                Contribute
+                                            </span>
+                                        </Link>
                                     </div>
                                     <div className="mb-2">
-                                        <span className="link-item">Team</span>
+                                        <Link to="/contributors">
+                                            <span className="link-item">
+                                                Contributors
+                                            </span>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="d-inline-block link-item-col text-left">
@@ -87,17 +129,24 @@ export default class Footer extends React.Component<any, any> {
                                         </span>
                                     </div>
                                     <div className="mb-2">
-                                        <span className="link-item">
-                                            Company
-                                        </span>
+                                        <a
+                                            target="_blank"
+                                            href="https://kodebox.io"
+                                        >
+                                            <span className="link-item">
+                                                Company
+                                            </span>
+                                        </a>
                                     </div>
                                     <div className="mb-2">
-                                        <span className="link-item">Blog</span>
-                                    </div>
-                                    <div className="mb-2">
-                                        <span className="link-item">
-                                            Contact
-                                        </span>
+                                        <a
+                                            target="_blank"
+                                            href="https://medium.com/codechain"
+                                        >
+                                            <span className="link-item">
+                                                Blog
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="d-inline-block link-item-col">

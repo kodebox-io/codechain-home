@@ -19,18 +19,18 @@ export default class LogoSection extends React.Component<any, any> {
                     </div>
                     <Row>
                         <Col md={6} className="mb-5 mb-md-0">
-                            <div className="feature-container">
+                            <div className="section-title-container">
                                 <div>
-                                    <span className="feature-index">01</span>
+                                    <span className="section-index">01</span>
                                 </div>
-                                <div className="feature-deco" />
+                                <div className="section-deco" />
                                 <div className="mb-3">
-                                    <span className="feature-title">
+                                    <span className="section-title">
                                         Easy to use
                                     </span>
                                 </div>
                                 <div>
-                                    <span className="feature-description">
+                                    <span className="section-description">
                                         You just need to register the asset,
                                         program the conditions and regulations
                                         that the asset-backed tokens need to
@@ -40,18 +40,18 @@ export default class LogoSection extends React.Component<any, any> {
                             </div>
                         </Col>
                         <Col md={6}>
-                            <div className="feature-container">
+                            <div className="section-title-container">
                                 <div>
-                                    <span className="feature-index">02</span>
+                                    <span className="section-index">02</span>
                                 </div>
-                                <div className="feature-deco" />
+                                <div className="section-deco" />
                                 <div className="mb-3">
-                                    <span className="feature-title">
+                                    <span className="section-title">
                                         No issuance or trading fees
                                     </span>
                                 </div>
                                 <div>
-                                    <span className="feature-description">
+                                    <span className="section-description">
                                         The platform only charges network fees
                                         that are needed for transaction
                                         record-keeping. You can buy the network

@@ -71,7 +71,9 @@ class Header extends React.Component<RouteComponentProps, State> {
         this.setState({
             isOpen: false,
             isTechMobileMenuOpen: false,
-            isAboutMobileMenuOpen: false
+            isAboutMobileMenuOpen: false,
+            isTechMenuOpen: false,
+            isAboutMenuOpen: false
         });
     }
 
@@ -139,20 +141,26 @@ class Header extends React.Component<RouteComponentProps, State> {
                                             className={`menu-drop-item ${this.getCurrentPage() ===
                                                 Page.Source && "selected"}`}
                                         >
-                                            <span>Source code</span>
+                                            <Link to="/source">
+                                                <span>Source code</span>
+                                            </Link>
                                         </div>
                                         <div
                                             className={`menu-drop-item ${this.getCurrentPage() ===
                                                 Page.Contribute && "selected"}`}
                                         >
-                                            <span>Contribute</span>
+                                            <Link to="/contribute">
+                                                <span>Contribute</span>
+                                            </Link>
                                         </div>
                                         <div
                                             className={`menu-drop-item ${this.getCurrentPage() ===
                                                 Page.Contributors &&
                                                 "selected"}`}
                                         >
-                                            <span>Contributors</span>
+                                            <Link to="/contributors">
+                                                <span>Contributors</span>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -183,10 +191,20 @@ class Header extends React.Component<RouteComponentProps, State> {
                                     </div>
                                     <div className="text-left menu-drop-item-container">
                                         <div className="menu-drop-item">
-                                            <span>Company</span>
+                                            <a
+                                                target="_blank"
+                                                href="https://kodebox.io"
+                                            >
+                                                <span>Company</span>
+                                            </a>
                                         </div>
                                         <div className="menu-drop-item">
-                                            <span>Blog</span>
+                                            <a
+                                                target="_blank"
+                                                href="https://medium.com/codechain"
+                                            >
+                                                <span>Blog</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -261,7 +279,9 @@ class Header extends React.Component<RouteComponentProps, State> {
                                                         Page.Source &&
                                                         "selected"}`}
                                                 >
-                                                    <span>Source code</span>
+                                                    <Link to="/source">
+                                                        <span>Source code</span>
+                                                    </Link>
                                                 </div>
                                                 <div
                                                     className={`menu-drop-item ${this.getCurrentPage() ===
@@ -295,10 +315,20 @@ class Header extends React.Component<RouteComponentProps, State> {
                                             </div>
                                             <div>
                                                 <div className="menu-drop-item">
-                                                    <span>Company</span>
+                                                    <a
+                                                        target="_blank"
+                                                        href="https://kodebox.io"
+                                                    >
+                                                        <span>Company</span>
+                                                    </a>
                                                 </div>
                                                 <div className="menu-drop-item">
-                                                    <span>Blog</span>
+                                                    <a
+                                                        target="_blank"
+                                                        href="https://medium.com/codechain"
+                                                    >
+                                                        <span>Blog</span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

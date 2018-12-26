@@ -6,6 +6,7 @@ import Home from "../Home/Home";
 import NotFound from "../NotFound/NotFound";
 import Platform from "../Platform/Platform";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import Source from "../Source/Source";
 import "./App.scss";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
                             <Switch>
                                 <Route exact={true} path="/" component={Home} />
                                 <Route path="/platform" component={Platform} />
+                                <Route path="/source" component={Source} />
                                 <Route component={NotFound} />
                             </Switch>
                         </div>

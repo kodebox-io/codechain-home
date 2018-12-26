@@ -13,8 +13,21 @@ export default class FeatureSection extends React.Component<any, any> {
         return (
             <div className="Platform-feature-section">
                 <Container>
-                    <div className="title-contaienr">
-                        <span className="title">Platform</span>
+                    <div className="section-title-container reverse">
+                        <div>
+                            <span className="section-index">03</span>
+                        </div>
+                        <div className="section-deco" />
+                        <div className="mb-3">
+                            <span className="section-title">
+                                Feature complete
+                            </span>
+                        </div>
+                        <div>
+                            <span className="section-description">
+                                The platform is fully-featured with
+                            </span>
+                        </div>
                     </div>
                     <div>
                         <div className="platform-item d-inline-block wow fadeInUp">
