@@ -1,10 +1,19 @@
 import * as React from "react";
 import MediaQuery from "react-responsive";
-import { Container } from "reactstrap";
 import laptop from "./img/laptop.png";
 import "./LogoSection.scss";
-
+const Rellax = require("rellax");
 export default class LogoSection extends React.Component<any, any> {
+    public componentDidMount() {
+        const rellax = new Rellax(".rellax", {
+            speed: -2,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+    }
     public render() {
         return (
             <div className="Logo-section">

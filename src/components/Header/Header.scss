@@ -6,11 +6,10 @@
   z-index: 10;
   position: fixed;
   width: 100%;
-  background-color: white;
-  transition: all 0.3s ease-in;
+  background-color: $turquoise-blue;
 
   .menu-item {
-    color: $turquoise-blue;
+    color: white;
     margin-left: 40px;
     cursor: pointer;
 
@@ -20,11 +19,90 @@
     }
   }
 
-  &.blue-header {
-    background-color: $turquoise-blue;
+  &.white-header {
+    background-color: white;
+    &.transition {
+      transition: all 0.2s ease-in;
+    }
 
     .menu-item {
+      color: $turquoise-blue;
+    }
+  }
+}
+
+.header-menu-popover {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  margin-top: 0 !important;
+
+  .popover-body {
+    padding: 0 8px 8px 8px;
+    color: white;
+    font-weight: 300;
+
+    .arrow-container {
+      vertical-align: top;
+    }
+
+    .menu-drop-item-container {
+      margin-top: 8px;
+      .menu-drop-item {
+        margin-top: 4px;
+        cursor: pointer;
+
+        &.selected {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &.white-menu {
+    background-color: white !important;
+    .popover-body {
+      color: $turquoise-blue;
+    }
+  }
+}
+
+.header-menu-modal {
+  margin: 0 !important;
+  max-width: 100% !important;
+
+  .modal-content {
+    border-radius: 0;
+    border: 0;
+
+    .modal-body {
+      padding: 0;
+    }
+    .menu-modal {
+      width: 100vw;
+      height: 100vh;
+      background-color: $turquoise-blue;
       color: white;
+      text-align: center;
+      padding: 80px 0 80px 0;
+
+      .close-btn {
+        position: absolute;
+        right: 18px;
+        top: 25px;
+        cursor: pointer;
+      }
+      .menu-item {
+        margin-top: 61px;
+        .item-name {
+          font-weight: 300;
+          font-size: 1.5rem;
+        }
+        .paper-btn {
+          width: 148px;
+          height: 40px;
+        }
+      }
     }
   }
 }

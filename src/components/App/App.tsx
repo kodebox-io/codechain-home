@@ -7,20 +7,11 @@ import NotFound from "../NotFound/NotFound";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import "./App.scss";
 const WOW = require("wowjs");
-const Rellax = require("rellax");
 
 class App extends Component {
     public componentDidMount() {
         const wow = new WOW.WOW();
         wow.init();
-        const rellax = new Rellax(".rellax", {
-            speed: -2,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
     }
     public render() {
         return (
