@@ -62,9 +62,13 @@ a {
     font-size: 1.75rem;
   }
 
-  .section-description {
-    font-weight: 300;
-    color: black;
+  .section-description-container {
+    max-width: 498px;
+    margin: 0 auto;
+    .section-description {
+      font-weight: 300;
+      color: black;
+    }
   }
 
   &.reverse {

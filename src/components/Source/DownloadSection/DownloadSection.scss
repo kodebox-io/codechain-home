@@ -16,10 +16,39 @@
   }
 
   .download-item {
+    position: relative;
+    vertical-align: top;
     background: $ice-blue;
     width: 304px;
-    height: 296px;
+    padding: 59px 0 48px 0;
     margin: 0 28px 0 28px;
+    height: 296px;
+
+    .download-item-title-container {
+      margin-bottom: 8px;
+      .title {
+        font-size: 1.25rem;
+      }
+    }
+
+    .description {
+      font-weight: 300;
+    }
+
+    .icon-container {
+      width: 100%;
+      position: absolute;
+      bottom: 47px;
+
+      .icon {
+        margin: 0 16px 0 16px;
+        cursor: pointer;
+
+        &.disable {
+          cursor: inherit;
+        }
+      }
+    }
 
     @include respond_below(sm) {
       & {

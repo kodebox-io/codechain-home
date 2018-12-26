@@ -2,6 +2,13 @@ import * as React from "react";
 import { Container } from "reactstrap";
 import "./DownloadSection.scss";
 
+import download from "./img/download.svg";
+import github from "./img/github-blue.svg";
+import linux from "./img/linux.svg";
+import apple from "./img/mac.svg";
+import source from "./img/source_a_code.svg";
+import window from "./img/window.svg";
+
 export default class DownloadSection extends React.Component<any, any> {
     public render() {
         return (
@@ -27,28 +34,45 @@ export default class DownloadSection extends React.Component<any, any> {
                     </div>
                     <div className="text-center">
                         <div className="d-inline-block download-item mb-4 mb-lg-0">
-                            <div>icon</div>
                             <div>
-                                <span>Download</span>
+                                <img src={download} />
+                            </div>
+                            <div className="download-item-title-container">
+                                <span className="title">Download</span>
                             </div>
                             <div>
-                                <span>
-                                    Binary downloads will be available soon.
+                                <span className="description">
+                                    Binary downloads will be
+                                    <br />
+                                    available soon.
                                 </span>
                             </div>
-                            <div>icons</div>
+                            <div className="icon-container text-center">
+                                <img src={linux} className="icon disable" />
+                                <img src={apple} className="icon disable" />
+                                <img src={window} className="icon disable" />
+                            </div>
                         </div>
                         <div className="d-inline-block download-item">
-                            <div>icon</div>
                             <div>
-                                <span>Download</span>
+                                <img src={source} />
+                            </div>
+                            <div className="download-item-title-container">
+                                <span className="title">Download</span>
                             </div>
                             <div>
-                                <span>
-                                    Binary downloads will be available soon.
+                                <span className="description">
+                                    Get the source code.
                                 </span>
                             </div>
-                            <div>icons</div>
+                            <div className="icon-container text-center">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/CodeChain-io/codechain"
+                                >
+                                    <img src={github} className="icon" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </Container>
