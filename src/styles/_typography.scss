@@ -9,5 +9,11 @@ html {
 body {
   font-family: "Lato", sans-serif;
   line-height: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   color: $black;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

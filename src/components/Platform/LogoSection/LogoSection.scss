@@ -1,0 +1,43 @@
+@import "styles/variables.scss";
+
+.Platform-logo-section {
+  padding: 90px 0 90px 0;
+
+  .logo-container {
+    margin-bottom: 34px;
+  }
+
+  .codechain-description-container {
+    margin: 0 auto;
+    max-width: 517px;
+    margin-bottom: 110px;
+  }
+  .codechain-description {
+    font-size: 1.5rem;
+  }
+  .feature-container {
+    .feature-index {
+      color: $turquoise-blue;
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+
+    .feature-deco {
+      height: 2px;
+      width: 20px;
+      background-color: $turquoise-blue;
+      margin: 0 auto;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .feature-title {
+      color: $turquoise-blue;
+      font-size: 1.75rem;
+    }
+
+    .feature-description {
+      font-weight: 300;
+    }
+  }
+}

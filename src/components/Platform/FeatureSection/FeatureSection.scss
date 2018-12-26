@@ -1,6 +1,6 @@
 @import "styles/variables.scss";
 
-.Platform-section {
+.Platform-feature-section {
   padding: 80px 0 80px 0;
   background-color: $turquoise-blue;
   color: white;
@@ -12,12 +12,18 @@
       font-size: 2.5rem;
     }
   }
+
   .platform-item {
     width: 250px;
     margin: 0 40px 80px 40px;
+    vertical-align: top;
 
     .description {
       font-size: 1.75rem;
+    }
+
+    .description2 {
+      line-height: 1.38;
     }
   }
 }

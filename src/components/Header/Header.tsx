@@ -36,6 +36,14 @@ class Header extends React.Component<RouteComponentProps, State> {
     }
 
     public componentDidMount() {
+        if (
+            this.props.location.pathname !== "/" &&
+            this.props.location.pathname !== "/index.html"
+        ) {
+            this.setState({ checkingTop: false, isBlueHeader: false });
+        } else {
+            this.setState({ checkingTop: true, isBlueHeader: true });
+        }
         window.addEventListener("scroll", this.handleScroll);
     }
 

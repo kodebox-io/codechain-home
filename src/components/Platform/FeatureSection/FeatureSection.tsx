@@ -1,17 +1,17 @@
 import * as React from "react";
 import { Container } from "reactstrap";
+import "./FeatureSection.scss";
 import network from "./img/Blockchain_network.svg";
 import consoleImg from "./img/Console.svg";
 import exchange from "./img/Exchange.svg";
 import explorer from "./img/Explorer.svg";
 import liquidity from "./img/Liquidity_provider.svg";
 import wallet from "./img/Wallet.svg";
-import "./PlatformSection.scss";
 
-export default class PlatformSection extends React.Component<any, any> {
+export default class FeatureSection extends React.Component<any, any> {
     public render() {
         return (
-            <div className="Platform-section">
+            <div className="Platform-feature-section">
                 <Container>
                     <div className="title-contaienr">
                         <span className="title">Platform</span>
@@ -26,6 +26,13 @@ export default class PlatformSection extends React.Component<any, any> {
                                     BlockChain network
                                 </span>
                             </div>
+                            <div className="mt-2">
+                                <span className="description2">
+                                    Public&permissioned/
+                                    <br />
+                                    powered by CodeChain engine
+                                </span>
+                            </div>
                         </div>
                         <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
@@ -33,6 +40,15 @@ export default class PlatformSection extends React.Component<any, any> {
                             </div>
                             <div>
                                 <span className="description">Console</span>
+                            </div>
+                            <div className="mt-2">
+                                <span className="description2">
+                                    Issue, transfer and manage
+                                    <br />
+                                    assets, users, votes, dividend
+                                    <br />
+                                    payouts, buyouts, lockups, ect.
+                                </span>
                             </div>
                         </div>
                         <div className="platform-item d-inline-block wow fadeInUp">
@@ -44,6 +60,13 @@ export default class PlatformSection extends React.Component<any, any> {
                                     Liquidity provider
                                 </span>
                             </div>
+                            <div className="mt-2">
+                                <span className="description2">
+                                    Algorithmic autonomous
+                                    <br />
+                                    liquidity reserve layer
+                                </span>
+                            </div>
                         </div>
                         <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
@@ -51,6 +74,13 @@ export default class PlatformSection extends React.Component<any, any> {
                             </div>
                             <div>
                                 <span className="description">Exchange</span>
+                            </div>
+                            <div className="mt-2">
+                                <span className="description2">
+                                    Customizable asset
+                                    <br />
+                                    trading platform
+                                </span>
                             </div>
                         </div>
                         <div className="platform-item d-inline-block wow fadeInUp">
@@ -60,6 +90,12 @@ export default class PlatformSection extends React.Component<any, any> {
                             <div>
                                 <span className="description">Wallet</span>
                             </div>
+                            <div className="mt-2">
+                                <span className="description2">
+                                    Easy transactions, voting,
+                                    <br />& management of asset portfolios
+                                </span>
+                            </div>
                         </div>
                         <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
@@ -67,6 +103,12 @@ export default class PlatformSection extends React.Component<any, any> {
                             </div>
                             <div>
                                 <span className="description">Explorer</span>
+                            </div>
+                            <div className="mt-2">
+                                <span className="description2">
+                                    Transaction tracking &<br />
+                                    transparent asset auditing
+                                </span>
                             </div>
                         </div>
                     </div>

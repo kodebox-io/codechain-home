@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
 import NotFound from "../NotFound/NotFound";
+import Platform from "../Platform/Platform";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import "./App.scss";
 const WOW = require("wowjs");
@@ -22,6 +23,7 @@ class App extends Component {
                         <div className="Content">
                             <Switch>
                                 <Route exact={true} path="/" component={Home} />
+                                <Route path="/platform" component={Platform} />
                                 <Route component={NotFound} />
                             </Switch>
                         </div>
