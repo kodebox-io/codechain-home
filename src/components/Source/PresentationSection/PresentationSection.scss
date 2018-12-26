@@ -8,7 +8,6 @@
   }
 
   .materials-container {
-    text-align: center;
     max-width: 729px;
     margin: 0 auto;
     margin-bottom: 48px;
@@ -24,6 +23,9 @@
       padding: 12px;
       margin-bottom: 20px;
       cursor: pointer;
+      &:hover {
+        background-color: $light-blue-grey;
+      }
 
       .icon-container {
         margin-bottom: 16px;
