@@ -24,39 +24,39 @@ export default class DocumentsSection extends React.Component<any, any> {
                                 document.
                             </span>
                         </div>
-                        <Row className="button-container">
-                            <Col lg="4">
-                                <a
-                                    target="_blank"
-                                    href="https://docs.google.com/presentation/d/1o59qQvoa83BLK42ynuVZ1PbX9qQ57f7obmueo9TP1MA/edit?usp=sharing"
-                                >
-                                    <div className="custom-btn reverse mb-3 mb-lg-0">
-                                        CodeChain at a glance
-                                    </div>
-                                </a>
-                            </Col>
-                            <Col lg="4">
-                                <a
-                                    target="_blank"
-                                    href="https://codechain.readthedocs.io/en/latest/"
-                                >
-                                    <div className="custom-btn reverse mb-3 mb-lg-0">
-                                        Manual
-                                    </div>
-                                </a>
-                            </Col>
-                            <Col lg="4">
-                                <a
-                                    target="_blank"
-                                    href="https://api.codechain.io/0.5.1/"
-                                >
-                                    <div className="custom-btn reverse mb-3 mb-lg-0">
-                                        API Document
-                                    </div>
-                                </a>
-                            </Col>
-                        </Row>
                     </div>
+                    <Row className="button-container">
+                        <Col lg="4">
+                            <a
+                                target="_blank"
+                                href="https://docs.google.com/presentation/d/1o59qQvoa83BLK42ynuVZ1PbX9qQ57f7obmueo9TP1MA/edit?usp=sharing"
+                            >
+                                <div className="custom-btn reverse mb-3 mb-lg-0">
+                                    CodeChain at a glance
+                                </div>
+                            </a>
+                        </Col>
+                        <Col lg="4">
+                            <a
+                                target="_blank"
+                                href="https://codechain.readthedocs.io/en/latest/"
+                            >
+                                <div className="custom-btn reverse mb-3 mb-lg-0">
+                                    Manual
+                                </div>
+                            </a>
+                        </Col>
+                        <Col lg="4">
+                            <a
+                                target="_blank"
+                                href="https://api.codechain.io/0.5.1/"
+                            >
+                                <div className="custom-btn reverse mb-3 mb-lg-0">
+                                    API Document
+                                </div>
+                            </a>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
         );
