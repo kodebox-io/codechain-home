@@ -8,7 +8,10 @@ export default class LogoSection extends React.Component<any, any> {
     public render() {
         return (
             <div className="Logo-section">
-                <div className="d-flex h-100 w-100 align-items-center justify-content-center">
+                <div
+                    className="d-flex h-100 w-100 align-items-center justify-content-center rellax"
+                    data-rellax-speed="1"
+                >
                     <div className="logo-content">
                         <div className="title">
                             <span>CodeChain</span>
@@ -26,9 +29,15 @@ export default class LogoSection extends React.Component<any, any> {
                         </div>
                     </div>
                 </div>
-                <div className="graph-background" />
+                <div
+                    className="graph-background rellax"
+                    data-rellax-speed="5"
+                />
                 <MediaQuery query="(min-width:768px)">
-                    <div className="computer-continer animated fadeInUp">
+                    <div
+                        className="computer-continer rellax"
+                        data-rellax-speed="2"
+                    >
                         <img src={laptop} />
                     </div>
                 </MediaQuery>
