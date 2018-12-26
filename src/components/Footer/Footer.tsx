@@ -47,18 +47,24 @@ export default class Footer extends React.Component<any, any> {
                         </Col>
                         <Col md={8}>
                             <div className="link-container">
-                                <div className="d-inline-block link-item-col mb-4">
-                                    <span className="link-item">Home</span>
+                                <div className="d-inline-block link-item-col mb-5">
+                                    <span className="link-item link-header">
+                                        Home
+                                    </span>
                                 </div>
-                                <div className="d-inline-block link-item-col mb-4">
-                                    <span className="link-item">Platform</span>
+                                <div className="d-inline-block link-item-col mb-5">
+                                    <span className="link-item link-header">
+                                        Platform
+                                    </span>
                                 </div>
                                 <MediaQuery query="(max-width:767px)">
                                     <br />
                                 </MediaQuery>
                                 <div className="d-inline-block link-item-col text-left">
                                     <div className="mb-4">
-                                        <span>Technology</span>
+                                        <span className="link-header">
+                                            Technology
+                                        </span>
                                     </div>
                                     <div className="mb-2">
                                         <span className="link-item">
@@ -76,7 +82,9 @@ export default class Footer extends React.Component<any, any> {
                                 </div>
                                 <div className="d-inline-block link-item-col text-left">
                                     <div className="mb-4">
-                                        <span>About us</span>
+                                        <span className="link-header">
+                                            About us
+                                        </span>
                                     </div>
                                     <div className="mb-2">
                                         <span className="link-item">
@@ -93,7 +101,9 @@ export default class Footer extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="d-inline-block link-item-col">
-                                    <span>Privacy policy</span>
+                                    <span className="link-header">
+                                        Privacy policy
+                                    </span>
                                 </div>
                             </div>
                         </Col>

@@ -16,7 +16,9 @@
     .link-item-col {
       vertical-align: top;
       margin-left: 40px;
-
+      .link-header {
+        font-weight: bold;
+      }
       .link-item:hover {
         cursor: pointer;
       }

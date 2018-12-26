@@ -17,6 +17,8 @@ interface State {
     isTechMenuOpen: boolean;
     isAboutMenuOpen: boolean;
     checkingTop: boolean;
+    isTechMobileMenuOpen: boolean;
+    isAboutMobileMenuOpen: boolean;
 }
 
 class Header extends React.Component<RouteComponentProps, State> {
@@ -27,7 +29,9 @@ class Header extends React.Component<RouteComponentProps, State> {
             isBlueHeader: true,
             isTechMenuOpen: false,
             isAboutMenuOpen: false,
-            checkingTop: true
+            checkingTop: true,
+            isTechMobileMenuOpen: false,
+            isAboutMobileMenuOpen: false
         };
     }
 
@@ -56,7 +60,9 @@ class Header extends React.Component<RouteComponentProps, State> {
             isOpen,
             isAboutMenuOpen,
             isTechMenuOpen,
-            checkingTop
+            checkingTop,
+            isAboutMobileMenuOpen,
+            isTechMobileMenuOpen
         } = this.state;
         return (
             <div
@@ -179,12 +185,53 @@ class Header extends React.Component<RouteComponentProps, State> {
                                     <span className="item-name">Platform</span>
                                 </div>
                                 <div className="menu-item">
-                                    <span className="item-name">
+                                    <span
+                                        className="item-name"
+                                        onClick={this.toggleTechMenuOnMobile}
+                                    >
                                         Technology
                                     </span>
+                                    {isTechMobileMenuOpen && (
+                                        <div>
+                                            <div>
+                                                <img src={dropWhite} />
+                                            </div>
+                                            <div>
+                                                <div className="menu-drop-item selected">
+                                                    <span>Source code</span>
+                                                </div>
+                                                <div className="menu-drop-item">
+                                                    <span>Contribute</span>
+                                                </div>
+                                                <div className="menu-drop-item">
+                                                    <span>Contributors</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="menu-item">
-                                    <span className="item-name">About us</span>
+                                    <span
+                                        className="item-name"
+                                        onClick={this.toggleAboutMenuOnMobile}
+                                    >
+                                        About us
+                                    </span>
+                                    {isAboutMobileMenuOpen && (
+                                        <div>
+                                            <div>
+                                                <img src={dropWhite} />
+                                            </div>
+                                            <div>
+                                                <div className="menu-drop-item selected">
+                                                    <span>Company</span>
+                                                </div>
+                                                <div className="menu-drop-item">
+                                                    <span>Blog</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="menu-item">
                                     <div className="custom-btn reverse paper-btn d-inline-block">
@@ -205,9 +252,21 @@ class Header extends React.Component<RouteComponentProps, State> {
         });
     };
 
+    private toggleTechMenuOnMobile = () => {
+        this.setState({
+            isTechMobileMenuOpen: !this.state.isTechMobileMenuOpen
+        });
+    };
+
     private toggleAboutMenu = () => {
         this.setState({
             isAboutMenuOpen: !this.state.isAboutMenuOpen
+        });
+    };
+
+    private toggleAboutMenuOnMobile = () => {
+        this.setState({
+            isAboutMobileMenuOpen: !this.state.isAboutMobileMenuOpen
         });
     };
 
