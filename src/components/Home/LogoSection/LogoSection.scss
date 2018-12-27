@@ -14,6 +14,12 @@
   background-attachment: fixed;
   position: relative;
 
+  @include respond_below(sm) {
+    & {
+      background-attachment: scroll;
+    }
+  }
+
   .logo-content {
     margin-bottom: 100px;
     padding: 0 15px 0 15px;

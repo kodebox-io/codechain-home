@@ -247,7 +247,9 @@ class Header extends React.Component<RouteComponentProps, State> {
                                     <img src={menuClose} />
                                 </div>
                                 <div className="logo-container">
-                                    <img src={logoWhite} />
+                                    <Link to="/">
+                                        <img src={logoWhite} />
+                                    </Link>
                                 </div>
                                 <div className="menu-item">
                                     <Link to="/platform">

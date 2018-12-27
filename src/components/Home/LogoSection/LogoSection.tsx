@@ -17,11 +17,17 @@ export default class LogoSection extends React.Component<any, any> {
     public render() {
         return (
             <div className="Logo-section">
-                <div
-                    className="graph-background rellax"
-                    data-rellax-speed="5"
-                />
+                <MediaQuery query="(max-width:769px)">
+                    <div
+                        className="graph-background rellax"
+                        data-rellax-speed="2"
+                    />
+                </MediaQuery>
                 <MediaQuery query="(min-width:768px)">
+                    <div
+                        className="graph-background rellax"
+                        data-rellax-speed="5"
+                    />
                     <div
                         className="computer-continer rellax"
                         data-rellax-speed="2"

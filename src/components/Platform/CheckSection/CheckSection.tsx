@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "./CheckSection.scss";
 
@@ -12,9 +13,11 @@ export default class CheckSection extends React.Component<any, any> {
                             <div className="d-md-flex align-items-center justify-content-center">
                                 <div className="more-text">Check it out</div>
                                 <div>
-                                    <div className="custom-btn more-btn reverse">
-                                        Source Code
-                                    </div>
+                                    <Link to="/source">
+                                        <div className="custom-btn more-btn reverse">
+                                            Source Code
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>
