@@ -93,7 +93,11 @@ class Header extends React.Component<RouteComponentProps, State> {
                     "white-header"} ${checkingTop && "transition"}`}
             >
                 <Link to="/">
-                    <img src={logo} />
+                    {isBlueHeader ? (
+                        <img src={logoWhite} />
+                    ) : (
+                        <img src={logo} />
+                    )}
                 </Link>
                 <MediaQuery query="(min-width:768px)">
                     <div className={`menu-item ml-auto`}>
