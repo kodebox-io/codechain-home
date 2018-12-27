@@ -151,7 +151,7 @@ export default class ContributeSection extends React.Component<any, any> {
                                             individual Contributor License
                                             Agreement (CLA)
                                         </a>
-                                        .Once we receive it, we'll be able to
+                                        . Once we receive it, we'll be able to
                                         accept your pull requests.
                                     </span>
                                 </div>
