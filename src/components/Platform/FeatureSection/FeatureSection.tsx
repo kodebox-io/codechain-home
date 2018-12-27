@@ -36,12 +36,12 @@ export default class FeatureSection extends React.Component<any, any> {
                             </div>
                             <div>
                                 <span className="description">
-                                    BlockChain network
+                                    Blockchain network
                                 </span>
                             </div>
                             <div className="mt-2">
                                 <span className="description2">
-                                    Public&permissioned/
+                                    Public & permissioned
                                     <br />
                                     powered by CodeChain engine
                                 </span>

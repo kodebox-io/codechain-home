@@ -23,7 +23,7 @@ export default class PlatformSection extends React.Component<any, any> {
                             </div>
                             <div>
                                 <span className="description">
-                                    BlockChain network
+                                    Blockchain network
                                 </span>
                             </div>
                         </div>
