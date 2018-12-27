@@ -23,13 +23,13 @@ export default class FeatureSection extends React.Component<any, any> {
                                 Feature complete
                             </span>
                         </div>
-                        <div>
+                        <div className="section-description-container">
                             <span className="section-description">
                                 The platform is fully-featured with
                             </span>
                         </div>
                     </div>
-                    <div>
+                    <div className="platform-item-container">
                         <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={network} />

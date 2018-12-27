@@ -17,7 +17,7 @@ export default class FeatureSection extends React.Component<any, any> {
                             <div>
                                 <img src={legal} />
                             </div>
-                            <div className="mb-2">
+                            <div className="mb-3">
                                 <span className="title">Legal compliance</span>
                             </div>
                             <div>
@@ -34,7 +34,7 @@ export default class FeatureSection extends React.Component<any, any> {
                             <div>
                                 <img src={programmable} />
                             </div>
-                            <div className="mb-2">
+                            <div className="mb-3">
                                 <span className="title">
                                     Programmable assets
                                 </span>
@@ -55,7 +55,7 @@ export default class FeatureSection extends React.Component<any, any> {
                             <div>
                                 <img src={increase} />
                             </div>
-                            <div className="mb-2">
+                            <div className="mb-3">
                                 <span className="title">
                                     Increased liquidity
                                 </span>
@@ -74,7 +74,7 @@ export default class FeatureSection extends React.Component<any, any> {
                             <div>
                                 <img src={transparent} />
                             </div>
-                            <div className="mb-2">
+                            <div className="mb-3">
                                 <span className="title">
                                     Transparent and immutable transactions
                                 </span>
@@ -89,7 +89,7 @@ export default class FeatureSection extends React.Component<any, any> {
                             <div>
                                 <img src={guaranteed} />
                             </div>
-                            <div className="mb-2">
+                            <div className="mb-3">
                                 <span className="title">
                                     Guaranteed privacy protection
                                 </span>

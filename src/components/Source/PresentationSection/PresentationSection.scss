@@ -8,20 +8,20 @@
   }
 
   .materials-container {
-    max-width: 729px;
+    max-width: 867px;
     margin: 0 auto;
     margin-bottom: 48px;
 
     .material-item {
-      width: 223px;
-      height: 166px;
+      width: 243px;
+      height: 180px;
       display: inline-block;
       vertical-align: top;
       background-color: $ice-blue;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 23px;
+      margin-right: 23px;
       padding: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 46px;
       cursor: pointer;
       &:hover {
         background-color: $light-blue-grey;
@@ -36,9 +36,6 @@
         .title {
           font-size: 1.25rem;
         }
-      }
-      .description {
-        font-weight: 300;
       }
     }
 

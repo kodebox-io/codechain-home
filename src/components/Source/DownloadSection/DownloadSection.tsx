@@ -25,7 +25,7 @@ export default class DownloadSection extends React.Component<any, any> {
                         <div className="mb-3">
                             <span className="section-title">Downloads</span>
                         </div>
-                        <div>
+                        <div className="section-description-container">
                             <span className="section-description">
                                 Try out the latest blockchain technologies in
                                 CodeChain.

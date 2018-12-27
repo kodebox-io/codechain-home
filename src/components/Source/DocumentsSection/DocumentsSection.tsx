@@ -15,7 +15,7 @@ export default class DocumentsSection extends React.Component<any, any> {
                         <div className="mb-3">
                             <span className="section-title">Document</span>
                         </div>
-                        <div className="section-description-container">
+                        <div className="section-description-container large">
                             <span className="section-description">
                                 Please read the manual if you would like to know
                                 the basic and intermediate functionality of

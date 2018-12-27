@@ -2,16 +2,20 @@
   padding: 160px 0 160px 0;
 
   .feature-item {
-    width: 290px;
+    width: 300px;
     margin: 50px 25px 50px 25px;
     vertical-align: top;
 
+    @media screen and (max-width: 450px) {
+      margin: 0 0 80px 0;
+    }
+
     .title {
-      font-size: 1.75rem;
+      font-size: 1.6rem;
     }
 
     .description {
-      font-weight: 300;
+      font-size: 1rem;
       line-height: 1.38;
     }
   }

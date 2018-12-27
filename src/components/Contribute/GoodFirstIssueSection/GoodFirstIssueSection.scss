@@ -45,8 +45,6 @@
         text-overflow: ellipsis;
       }
       .date-text {
-        font-weight: 300;
-
         @include respond_below(md) {
           & {
             margin-left: 28px;

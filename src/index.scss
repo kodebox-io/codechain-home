@@ -45,7 +45,6 @@ a {
   .section-index {
     color: $turquoise-blue;
     font-size: 2.5rem;
-    font-weight: 300;
   }
 
   .section-deco {
@@ -66,8 +65,11 @@ a {
     max-width: 498px;
     margin: 0 auto;
     .section-description {
-      font-weight: 300;
+      font-size: 1.05rem;
       color: black;
+    }
+    &.large {
+      max-width: 580px;
     }
   }
 
@@ -82,7 +84,6 @@ a {
       color: white;
     }
     .section-description {
-      font-weight: 400;
       color: white;
     }
   }

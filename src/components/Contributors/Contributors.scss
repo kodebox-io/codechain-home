@@ -12,13 +12,13 @@
   }
 
   .contributor-list {
-    max-width: 1002px;
+    max-width: 1032px;
     margin: 0 auto;
 
     .contributor-item {
       vertical-align: top;
       display: inline-block;
-      margin: 0 15px 30px 15px;
+      margin: 0 20px 40px 20px;
       border: 1px solid $turquoise-blue;
       width: 304px;
       height: 204px;
@@ -30,7 +30,7 @@
       }
 
       .name {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         color: $turquoise-blue;
         font-weight: bold;
       }
@@ -41,18 +41,12 @@
       }
 
       .nickname {
-        font-weight: 300;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         color: $turquoise-blue;
       }
 
       .company {
-        font-weight: 300;
         color: $turquoise-blue;
-      }
-
-      .part {
-        font-weight: 300;
       }
     }
 

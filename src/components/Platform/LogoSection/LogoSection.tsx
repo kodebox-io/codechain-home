@@ -1,4 +1,5 @@
 import * as React from "react";
+import MediaQuery from "react-responsive";
 import { Col, Container, Row } from "reactstrap";
 import logo from "./img/Logo2.svg";
 import "./LogoSection.scss";
@@ -13,8 +14,16 @@ export default class LogoSection extends React.Component<any, any> {
                     </div>
                     <div className="codechain-description-container">
                         <span className="codechain-description">
-                            CodeChain platform is an end-to-end solution for
-                            real-world asset digitization and tokenization.
+                            <MediaQuery query="(min-width:769px)">
+                                CodeChain platform is an end-to-end solution
+                                <br />
+                                for real-world asset digitization and
+                                tokenization.
+                            </MediaQuery>
+                            <MediaQuery query="(max-width:768px)">
+                                CodeChain platform is an end-to-end solution for
+                                real-world asset digitization and tokenization.
+                            </MediaQuery>
                         </span>
                     </div>
                     <Row>
@@ -29,7 +38,7 @@ export default class LogoSection extends React.Component<any, any> {
                                         Easy to use
                                     </span>
                                 </div>
-                                <div>
+                                <div className="section-description-container">
                                     <span className="section-description">
                                         You just need to register the asset,
                                         program the conditions and regulations
@@ -50,13 +59,13 @@ export default class LogoSection extends React.Component<any, any> {
                                         No issuance or trading fees
                                     </span>
                                 </div>
-                                <div>
+                                <div className="section-description-container">
                                     <span className="section-description">
-                                        The platform only charges network fees
-                                        that are needed for transaction
-                                        record-keeping. You can buy the network
-                                        fee tokens in bulk or pay as you go with
-                                        a credit card. Just like amazon cloud.
+                                        The platform only charges network
+                                        transaction fees. You can buy the
+                                        network fee tokens in bulk or pay as you
+                                        go with you credit card. Just like
+                                        amazon cloud.
                                     </span>
                                 </div>
                             </div>
