@@ -15,6 +15,11 @@
   .platform-item {
     width: 250px;
     margin: 0 40px 80px 40px;
+    vertical-align: top;
+
+    @media screen and (max-width: 450px) {
+      margin: 0 0 80px 0;
+    }
 
     .description {
       font-size: 1.75rem;

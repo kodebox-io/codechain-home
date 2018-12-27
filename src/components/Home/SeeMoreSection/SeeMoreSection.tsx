@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "./SeeMoreSection.scss";
 
@@ -12,9 +13,11 @@ export default class SeeMoreSection extends React.Component<any, any> {
                             <div className="d-md-flex align-items-center justify-content-center">
                                 <div className="more-text">See more</div>
                                 <div>
-                                    <div className="custom-btn more-btn">
-                                        Features
-                                    </div>
+                                    <Link to="/platform">
+                                        <div className="custom-btn more-btn">
+                                            Features
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>
