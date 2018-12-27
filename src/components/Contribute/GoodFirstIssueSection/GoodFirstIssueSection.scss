@@ -1,0 +1,54 @@
+@import "styles/variables.scss";
+@import "styles/mixin.scss";
+
+.Good-first-issue {
+  padding: 75px 0 120px 0;
+  background-color: $turquoise-blue;
+  color: white;
+
+  .good-first-issue-seciton-title-container {
+    margin-bottom: 84px;
+    .section-title {
+      font-size: 1.75rem;
+    }
+  }
+  .title-container {
+    margin-bottom: 44px;
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  .issue-list {
+    margin-bottom: 120px;
+
+    & > a:nth-child(1) > .issue-item {
+      border-top: 1px solid white;
+    }
+
+    .issue-item {
+      border-bottom: 1px solid white;
+      padding: 16px 0 16px 0;
+      margin: 0 8px 0 8px;
+
+      .check-container {
+        margin-right: 8px;
+      }
+
+      .issue-title-container {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .date-text {
+        font-weight: 300;
+
+        @include respond_below(md) {
+          & {
+            margin-left: 28px;
+          }
+        }
+      }
+    }
+  }
+}
