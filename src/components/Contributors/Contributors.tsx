@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { Container } from "reactstrap";
 import "./Contributors.scss";
 
@@ -115,6 +116,21 @@ export default class Contributors extends React.Component<any, any> {
                             {contributors.map(contributor =>
                                 this.getContributorItem(contributor)
                             )}
+                            <Link to="/contribute">
+                                <div className="contributor-item">
+                                    <div className="d-flex align-items-center">
+                                        <span className="name">
+                                            Interested in contributing?
+                                        </span>
+                                    </div>
+                                    <hr />
+                                    <div>
+                                        <span className="nickname">
+                                            Contribute now!
+                                        </span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </Container>
                 </div>
