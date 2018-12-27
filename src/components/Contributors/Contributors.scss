@@ -25,6 +25,10 @@
       padding: 15px 24px 15px 24px;
       background-color: white;
 
+      &:hover {
+        background-color: rgba(5, 170, 209, 0.12);
+      }
+
       .name {
         font-size: 1.25rem;
         color: $turquoise-blue;

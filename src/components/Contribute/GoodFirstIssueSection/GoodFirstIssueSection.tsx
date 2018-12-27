@@ -23,14 +23,12 @@ interface State {
             isFetching: boolean;
             error?: boolean | null;
             data?:
-                | [
-                      {
-                          title: string;
-                          url: string;
-                          number: number;
-                          updatedAt: string;
-                      }
-                  ]
+                | {
+                      title: string;
+                      url: string;
+                      number: number;
+                      updatedAt: string;
+                  }[]
                 | null;
         };
     };
@@ -56,34 +54,36 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
                     </div>
                     {_.keys(issues).map(projectName => {
                         const issue = issues[projectName];
-                        if (issue.isFetching) {
-                            return (
-                                <div key={projectName}>
-                                    <span>Loading...</span>
+                        return (
+                            <div key={projectName}>
+                                <div className="title-container">
+                                    <span className="title">{projectName}</span>
                                 </div>
-                            );
-                        } else if (issue.error) {
-                            return (
-                                <div key={projectName}>
-                                    <p>To be uploaded</p>
+                                <div>
+                                    {issue.isFetching ? (
+                                        <div>
+                                            <span>Loading...</span>
+                                        </div>
+                                    ) : issue.error ? (
+                                        <div>
+                                            <p>Github is not responding</p>
+                                        </div>
+                                    ) : issue.data!.length === 0 ? (
+                                        <div>
+                                            <p>To be uploaded</p>
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            <div className="issue-list">
+                                                {issue.data!.map(data =>
+                                                    this.getIssueItem(data)
+                                                )}
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
-                            );
-                        } else {
-                            return (
-                                <div key={projectName}>
-                                    <div className="title-container">
-                                        <span className="title">
-                                            {projectName}
-                                        </span>
-                                    </div>
-                                    <div className="issue-list">
-                                        {issue.data!.map(data =>
-                                            this.getIssueItem(data)
-                                        )}
-                                    </div>
-                                </div>
-                            );
-                        }
+                            </div>
+                        );
                     })}
                 </Container>
             </div>
