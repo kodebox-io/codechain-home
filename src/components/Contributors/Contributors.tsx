@@ -140,19 +140,19 @@ export default class Contributors extends React.Component<any, any> {
         return (
             <a href={item.link} target="_blank" key={item.nickname}>
                 <div className="contributor-item">
-                    <div>
+                    <div className="d-flex align-items-center">
                         <span className="name">{item.name}</span>
+                        {item.company && (
+                            <span className="company ml-auto">
+                                {item.company}
+                            </span>
+                        )}
                     </div>
                     <hr />
-                    <div className="mb-1">
+                    <div>
                         <span className="nickname">{item.nickname}</span>
                     </div>
-                    {item.company && (
-                        <div>
-                            <span className="company">{item.company}</span>
-                        </div>
-                    )}
-                    <div className="mt-2">
+                    <div className="mt-3">
                         <span className="part">{item.part}</span>
                     </div>
                 </div>

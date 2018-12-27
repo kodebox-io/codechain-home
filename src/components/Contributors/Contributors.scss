@@ -12,13 +12,13 @@
   }
 
   .contributor-list {
-    max-width: 972px;
+    max-width: 1002px;
     margin: 0 auto;
 
     .contributor-item {
       vertical-align: top;
       display: inline-block;
-      margin: 0 10px 20px 10px;
+      margin: 0 15px 30px 15px;
       border: 1px solid $turquoise-blue;
       width: 304px;
       height: 204px;
@@ -32,6 +32,7 @@
       .name {
         font-size: 1.25rem;
         color: $turquoise-blue;
+        font-weight: bold;
       }
 
       hr {
@@ -47,7 +48,6 @@
 
       .company {
         font-weight: 300;
-        font-size: 1.25rem;
         color: $turquoise-blue;
       }
 
