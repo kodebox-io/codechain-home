@@ -136,15 +136,6 @@ export default class PresentationSection extends React.Component<any, State> {
                                 Presentation materials
                             </span>
                         </div>
-                        <div className="section-description-container">
-                            <span className="section-description">
-                                Please read the manual if you would like to know
-                                the basic and intermediate functionality of
-                                CodeChain. If you would like to interact with
-                                CodeChain immediately, please refer to the API
-                                document.
-                            </span>
-                        </div>
                     </div>
                     <div className="materials-container">
                         {isExpended
