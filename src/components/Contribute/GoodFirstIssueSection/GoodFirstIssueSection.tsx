@@ -58,19 +58,19 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
                         const issue = issues[projectName];
                         if (issue.isFetching) {
                             return (
-                                <div key={`${issue}`}>
+                                <div key={projectName}>
                                     <span>Loading...</span>
                                 </div>
                             );
                         } else if (issue.error) {
                             return (
-                                <div key={`${issue}`}>
+                                <div key={projectName}>
                                     <p>To be uploaded</p>
                                 </div>
                             );
                         } else {
                             return (
-                                <div key={`${issue}`}>
+                                <div key={projectName}>
                                     <div className="title-container">
                                         <span className="title">
                                             {projectName}
@@ -97,7 +97,7 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
         updatedAt: string;
     }) => {
         return (
-            <a href={item.url} target="_blank">
+            <a href={item.url} target="_blank" key={item.number}>
                 <Row className="issue-item">
                     <Col md={7}>
                         <div className="d-flex align-items-center">

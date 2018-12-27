@@ -150,9 +150,14 @@ export default class Footer extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="d-inline-block link-item-col">
-                                    <span className="link-header">
-                                        Privacy policy
-                                    </span>
+                                    <a
+                                        target="_blank"
+                                        href="https://codechain.io/privacy.html"
+                                    >
+                                        <span className="link-header">
+                                            Privacy policy
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </Col>

@@ -292,14 +292,20 @@ class Header extends React.Component<RouteComponentProps, State> {
                                                         Page.Contribute &&
                                                         "selected"}`}
                                                 >
-                                                    <span>Contribute</span>
+                                                    <Link to="/contribute">
+                                                        <span>Contribute</span>
+                                                    </Link>
                                                 </div>
                                                 <div
                                                     className={`menu-drop-item ${this.getCurrentPage() ===
                                                         Page.Contributors &&
                                                         "selected"}`}
                                                 >
-                                                    <span>Contributors</span>
+                                                    <Link to="/contributors">
+                                                        <span>
+                                                            Contributors
+                                                        </span>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

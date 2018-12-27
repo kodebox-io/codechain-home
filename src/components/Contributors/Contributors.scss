@@ -1,0 +1,73 @@
+@import "styles/variables.scss";
+
+.Contributors {
+  padding: 48px 0 166px 0;
+  background: linear-gradient(0deg, $ice-blue 50%, transparent 0%);
+  .contributors-section-title-container {
+    margin-bottom: 126px;
+    .section-title {
+      font-size: 2.5rem;
+      color: $turquoise-blue;
+    }
+  }
+
+  .contributor-list {
+    max-width: 972px;
+    margin: 0 auto;
+
+    .contributor-item {
+      vertical-align: top;
+      display: inline-block;
+      margin: 0 10px 20px 10px;
+      border: 1px solid $turquoise-blue;
+      width: 304px;
+      height: 204px;
+      padding: 15px 24px 15px 24px;
+      background-color: white;
+
+      .name {
+        font-size: 1.25rem;
+        color: $turquoise-blue;
+      }
+
+      hr {
+        border-bottom: 1px solid $turquoise-blue;
+        border-top: 0;
+      }
+
+      .nickname {
+        font-weight: 300;
+        font-size: 1.25rem;
+        color: $turquoise-blue;
+      }
+
+      .company {
+        font-weight: 300;
+        font-size: 1.25rem;
+        color: $turquoise-blue;
+      }
+
+      .part {
+        font-weight: 300;
+      }
+    }
+
+    @media screen and (max-width: 1199px) {
+      .contributor-item {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.Stay-connected {
+  background-color: $turquoise-blue;
+  padding: 26px 0 26px 0;
+
+  .custom-btn {
+    width: 148px;
+    height: 40px;
+  }
+}

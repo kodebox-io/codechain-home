@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contribute from "../Contribute/Contribute";
+import Contributors from "../Contributors/Contributors";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
@@ -25,6 +26,10 @@ class App extends Component {
                                 <Route
                                     path="/contribute"
                                     component={Contribute}
+                                />
+                                <Route
+                                    path="/contributors"
+                                    component={Contributors}
                                 />
                                 <Route component={NotFound} />
                             </Switch>
