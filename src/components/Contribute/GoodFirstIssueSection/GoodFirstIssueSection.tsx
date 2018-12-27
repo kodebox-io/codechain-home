@@ -141,7 +141,7 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
                     const response = await axios.get(projectURL + issuePath);
                     const issues = response.data.map((data: any) => ({
                         title: data.title,
-                        url: data.url,
+                        url: data.html_url,
                         number: data.number,
                         updatedAt: data.updated_at
                     }));
