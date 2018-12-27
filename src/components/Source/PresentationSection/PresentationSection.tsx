@@ -163,11 +163,14 @@ export default class PresentationSection extends React.Component<any, State> {
                             className="custom-btn view-more-btn"
                             onClick={this.toggle}
                         >
-                            View More{" "}
                             {isExpended ? (
-                                <img src={expandLess} />
+                                <span>
+                                    View Less <img src={expandLess} />
+                                </span>
                             ) : (
-                                <img src={expandMore} />
+                                <span>
+                                    View More <img src={expandMore} />
+                                </span>
                             )}
                         </div>
                     </div>

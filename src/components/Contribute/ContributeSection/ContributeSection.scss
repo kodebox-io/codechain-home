@@ -1,0 +1,52 @@
+@import "styles/variables.scss";
+
+.Contribute {
+  padding: 48px 0 139px 0;
+
+  .contribute-container {
+    max-width: 970px;
+  }
+
+  .title-container {
+    margin-bottom: 126px;
+
+    .section-title {
+      font-size: 2.5rem;
+      color: $turquoise-blue;
+    }
+  }
+
+  .feature-item {
+    margin-bottom: 100px;
+    .image-container {
+      overflow: hidden;
+    }
+    .text-container {
+      .second-title {
+        color: $turquoise-blue;
+        font-size: 1.75rem;
+      }
+      .description {
+        font-weight: 300;
+        a {
+          color: $turquoise-blue;
+          font-weight: 400;
+        }
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      ul li::before {
+        content: "\2022";
+        color: $turquoise-blue;
+        font-weight: 300;
+        display: inline-block;
+        width: 1em;
+      }
+      ul li {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
