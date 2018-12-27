@@ -29,24 +29,33 @@ export default class FeatureSection extends React.Component<any, any> {
                             </span>
                         </div>
                     </div>
+
                     <div className="platform-item-container">
-                        <div className="platform-item d-inline-block wow fadeInUp">
-                            <div className="mb-3">
-                                <img src={network} />
+                        <a
+                            href="https://github.com/CodeChain-io/codechain"
+                            target="_blank"
+                        >
+                            <div className="platform-item d-inline-block wow fadeInUp active">
+                                <div className="mb-3">
+                                    <div className="platform-item-image-container">
+                                        <img src={network} />
+                                        <div className="overlay" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <span className="description">
+                                        Blockchain network
+                                    </span>
+                                </div>
+                                <div className="mt-2">
+                                    <span className="description2">
+                                        Public & permissioned
+                                        <br />
+                                        powered by CodeChain engine
+                                    </span>
+                                </div>
                             </div>
-                            <div>
-                                <span className="description">
-                                    Blockchain network
-                                </span>
-                            </div>
-                            <div className="mt-2">
-                                <span className="description2">
-                                    Public & permissioned
-                                    <br />
-                                    powered by CodeChain engine
-                                </span>
-                            </div>
-                        </div>
+                        </a>
                         <div className="platform-item d-inline-block wow fadeInUp">
                             <div className="mb-3">
                                 <img src={consoleImg} />
@@ -81,49 +90,77 @@ export default class FeatureSection extends React.Component<any, any> {
                                 </span>
                             </div>
                         </div>
-                        <div className="platform-item d-inline-block wow fadeInUp">
-                            <div className="mb-3">
-                                <img src={exchange} />
+                        <a
+                            href="https://github.com/CodeChain-io/codechain-exchange"
+                            target="_blank"
+                        >
+                            <div className="platform-item d-inline-block wow fadeInUp active">
+                                <div className="mb-3">
+                                    <div className="platform-item-image-container">
+                                        <img src={exchange} />
+                                        <div className="overlay" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <span className="description">
+                                        Exchange
+                                    </span>
+                                </div>
+                                <div className="mt-2">
+                                    <span className="description2">
+                                        Customizable asset
+                                        <br />
+                                        trading platform
+                                    </span>
+                                </div>
                             </div>
-                            <div>
-                                <span className="description">Exchange</span>
+                        </a>
+                        <a
+                            href="https://github.com/CodeChain-io/codechain-wallet"
+                            target="_blank"
+                        >
+                            <div className="platform-item d-inline-block wow fadeInUp active">
+                                <div className="mb-3">
+                                    <div className="platform-item-image-container">
+                                        <img src={wallet} />
+                                        <div className="overlay" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <span className="description">Wallet</span>
+                                </div>
+                                <div className="mt-2">
+                                    <span className="description2">
+                                        Easy transactions, voting,
+                                        <br />& management of asset portfolios
+                                    </span>
+                                </div>
                             </div>
-                            <div className="mt-2">
-                                <span className="description2">
-                                    Customizable asset
-                                    <br />
-                                    trading platform
-                                </span>
+                        </a>
+                        <a
+                            href="https://corgi.codechain.io/explorer"
+                            target="_blank"
+                        >
+                            <div className="platform-item d-inline-block wow fadeInUp active">
+                                <div className="mb-3">
+                                    <div className="platform-item-image-container">
+                                        <img src={explorer} />
+                                        <div className="overlay" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <span className="description">
+                                        Explorer
+                                    </span>
+                                </div>
+                                <div className="mt-2">
+                                    <span className="description2">
+                                        Transaction tracking &<br />
+                                        transparent asset auditing
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div className="platform-item d-inline-block wow fadeInUp">
-                            <div className="mb-3">
-                                <img src={wallet} />
-                            </div>
-                            <div>
-                                <span className="description">Wallet</span>
-                            </div>
-                            <div className="mt-2">
-                                <span className="description2">
-                                    Easy transactions, voting,
-                                    <br />& management of asset portfolios
-                                </span>
-                            </div>
-                        </div>
-                        <div className="platform-item d-inline-block wow fadeInUp">
-                            <div className="mb-3">
-                                <img src={explorer} />
-                            </div>
-                            <div>
-                                <span className="description">Explorer</span>
-                            </div>
-                            <div className="mt-2">
-                                <span className="description2">
-                                    Transaction tracking &<br />
-                                    transparent asset auditing
-                                </span>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </Container>
             </div>
