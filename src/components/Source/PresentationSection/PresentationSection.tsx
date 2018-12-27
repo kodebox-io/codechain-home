@@ -139,11 +139,11 @@ export default class PresentationSection extends React.Component<any, State> {
                     </div>
                     <div className="materials-container">
                         {isExpended
-                            ? MaterialData.map(data =>
-                                  this.createMaterialItem(data)
+                            ? MaterialData.map((data, index) =>
+                                  this.createMaterialItem(data, index)
                               )
-                            : MaterialData.slice(0, 3).map(data =>
-                                  this.createMaterialItem(data)
+                            : MaterialData.slice(0, 3).map((data, index) =>
+                                  this.createMaterialItem(data, index)
                               )}
                     </div>
                     <div>
@@ -173,9 +173,9 @@ export default class PresentationSection extends React.Component<any, State> {
         });
     };
 
-    private createMaterialItem = (data: MaterialItem) => {
+    private createMaterialItem = (data: MaterialItem, index: number) => {
         return (
-            <a target="_blank" href={data.link} key={data.title}>
+            <a target="_blank" href={data.link} key={index}>
                 <div className="material-item text-left">
                     <div className="icon-container">
                         <img src={paper} />

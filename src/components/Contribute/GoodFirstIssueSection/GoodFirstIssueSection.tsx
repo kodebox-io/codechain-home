@@ -17,6 +17,8 @@ const projectList = [
     }
 ];
 
+const storageKey = "good-first-issues";
+
 interface State {
     issues: {
         [name: string]: {
@@ -42,7 +44,7 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
         };
     }
     public componentDidMount() {
-        this.fetchIssues();
+        this.loadIssues();
     }
     public render() {
         const { issues } = this.state;
@@ -123,7 +125,7 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
         );
     };
 
-    private fetchIssues = async () => {
+    private loadIssues = async () => {
         const issuePath = "/issues?labels=good+first+issue";
         await Promise.all(
             projectList.map(async project => {
@@ -138,7 +140,9 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
                 });
                 const projectURL = project.url;
                 try {
-                    const response = await axios.get(projectURL + issuePath);
+                    const response = await this.fetchIssues(
+                        projectURL + issuePath
+                    );
                     const issues = response.data.map((data: any) => ({
                         title: data.title,
                         url: data.html_url,
@@ -168,5 +172,20 @@ export default class GoodFirstIssueSection extends React.Component<any, State> {
                 }
             })
         );
+    };
+
+    private fetchIssues = async (url: string): Promise<any> => {
+        const savedData = sessionStorage.getItem(storageKey + url);
+        if (savedData) {
+            try {
+                const savedObject = JSON.parse(savedData);
+                return savedObject;
+            } catch (e) {
+                console.log(e);
+            }
+        }
+        const response = await axios.get(url);
+        sessionStorage.setItem(storageKey + url, JSON.stringify(response));
+        return response;
     };
 }
