@@ -25,9 +25,14 @@ export default class CheckSection extends React.Component<any, any> {
                             <div className="d-md-flex align-items-center justify-content-center">
                                 <div className="more-text">Read more</div>
                                 <div>
-                                    <div className="custom-btn more-btn reverse">
-                                        White paper
-                                    </div>
+                                    <a
+                                        target="_blank"
+                                        href="/CodeChain_white_paper_v1.pdf"
+                                    >
+                                        <div className="custom-btn more-btn reverse">
+                                            White paper
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>

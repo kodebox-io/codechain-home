@@ -216,12 +216,14 @@ class Header extends React.Component<RouteComponentProps, State> {
                         </Popover>
                     </div>
                     <div className="menu-item">
-                        <div
-                            className={`custom-btn paper-btn ${isBlueHeader &&
-                                "reverse"}`}
-                        >
-                            White Paper
-                        </div>
+                        <a target="_blank" href="/CodeChain_white_paper_v1.pdf">
+                            <div
+                                className={`custom-btn paper-btn ${isBlueHeader &&
+                                    "reverse"}`}
+                            >
+                                White Paper
+                            </div>
+                        </a>
                     </div>
                 </MediaQuery>
                 <MediaQuery query="(max-width:767px)">
@@ -347,9 +349,14 @@ class Header extends React.Component<RouteComponentProps, State> {
                                     )}
                                 </div>
                                 <div className="menu-item">
-                                    <div className="custom-btn reverse paper-btn d-inline-block">
-                                        White Paper
-                                    </div>
+                                    <a
+                                        target="_blank"
+                                        href="/CodeChain_white_paper_v1.pdf"
+                                    >
+                                        <div className="custom-btn reverse paper-btn d-inline-block">
+                                            White Paper
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </ModalBody>
