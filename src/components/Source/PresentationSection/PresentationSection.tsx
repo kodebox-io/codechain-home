@@ -187,7 +187,7 @@ export default class PresentationSection extends React.Component<any, State> {
 
     private createMaterialItem = (data: MaterialItem) => {
         return (
-            <a target="_blank" href={data.link}>
+            <a target="_blank" href={data.link} key={data.title}>
                 <div className="material-item text-left">
                     <div className="icon-container">
                         <img src={paper} />
