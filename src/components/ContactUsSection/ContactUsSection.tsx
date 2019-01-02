@@ -13,7 +13,13 @@ interface State {
     isMessageValid?: boolean | null;
 }
 
-export default class ContactUsSection extends React.Component<any, any> {
+export default class ContactUsSection extends React.Component<any, State> {
+    private submitFormRef: React.RefObject<HTMLFormElement>;
+    private submitNameRef: React.RefObject<HTMLInputElement>;
+    private submitEmailRef: React.RefObject<HTMLInputElement>;
+    private submitCompanyRef: React.RefObject<HTMLInputElement>;
+    private submitMessageRef: React.RefObject<HTMLTextAreaElement>;
+
     constructor(props: any) {
         super(props);
         this.state = {
@@ -26,6 +32,11 @@ export default class ContactUsSection extends React.Component<any, any> {
             isCompanyValid: undefined,
             isMessageValid: undefined
         };
+        this.submitFormRef = React.createRef<HTMLFormElement>();
+        this.submitNameRef = React.createRef<HTMLInputElement>();
+        this.submitEmailRef = React.createRef<HTMLInputElement>();
+        this.submitCompanyRef = React.createRef<HTMLInputElement>();
+        this.submitMessageRef = React.createRef<HTMLTextAreaElement>();
     }
     public render() {
         const {
@@ -108,12 +119,35 @@ export default class ContactUsSection extends React.Component<any, any> {
                             </div>
                         </div>
                     </div>
+                    <form
+                        className=""
+                        ref={this.submitFormRef}
+                        action="https://formspree.io/support@kodebox.io"
+                        method="POST"
+                    >
+                        <input
+                            type="text"
+                            name="name"
+                            ref={this.submitNameRef}
+                        />
+                        <input
+                            type="email"
+                            name="_replyto"
+                            ref={this.submitEmailRef}
+                        />
+                        <input
+                            type="text"
+                            name="company"
+                            ref={this.submitCompanyRef}
+                        />
+                        <textarea name="message" ref={this.submitMessageRef} />
+                    </form>
                 </Container>
             </div>
         );
     }
 
-    private handleSubmit = () => {
+    private handleSubmit = async () => {
         if (!this.checkName()) {
             return;
         }
@@ -126,6 +160,11 @@ export default class ContactUsSection extends React.Component<any, any> {
         if (!this.checkMessage()) {
             return;
         }
+        this.submitNameRef.current!.value = this.state.name;
+        this.submitEmailRef.current!.value = this.state.email;
+        this.submitCompanyRef.current!.value = this.state.company;
+        this.submitMessageRef.current!.value = this.state.message;
+        this.submitFormRef.current!.submit();
     };
 
     private checkName = () => {
@@ -204,7 +243,7 @@ export default class ContactUsSection extends React.Component<any, any> {
     };
 
     private handleCompanyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({ company: e.target.value, isComapnyValid: undefined });
+        this.setState({ company: e.target.value, isCompanyValid: undefined });
     };
 
     private handleMessageChange = (
