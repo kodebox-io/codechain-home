@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="198px" height="198px" viewBox="0 0 198 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Liquidity provider</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 197.9998 0 197.9998 197.9998 0 197.9998"></polygon>
+        <polygon id="path-3" points="0 198 198 198 198 0 0 0"></polygon>
+    </defs>
+    <g id="Liquidity-provider" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-24">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M197.9998,98.9998 C197.9998,153.6768 153.6768,197.9998 98.9998,197.9998 C44.3238,197.9998 -0.0002,153.6768 -0.0002,98.9998 C-0.0002,44.3238 44.3238,-0.0002 98.9998,-0.0002 C153.6768,-0.0002 197.9998,44.3238 197.9998,98.9998" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M72.4696,92.3006 L72.4686,92.3006 C57.7286,92.3006 45.7786,80.3506 45.7786,65.6106 C45.7786,50.8686 57.7286,38.9186 72.4686,38.9186 L72.4696,38.9186 C87.2096,38.9186 99.1596,50.8686 99.1596,65.6106 C99.1596,80.3506 87.2096,92.3006 72.4696,92.3006" id="Fill-4" fill="#E4EFF1"></path>
+            <path d="M67.6258,92.3006 L67.6248,92.3006 C52.8848,92.3006 40.9348,80.3506 40.9348,65.6106 C40.9348,50.8686 52.8848,38.9186 67.6248,38.9186 L67.6258,38.9186 C82.3658,38.9186 94.3158,50.8686 94.3158,65.6106 C94.3158,80.3506 82.3658,92.3006 67.6258,92.3006 Z" id="Stroke-6" stroke="#05AAD1" stroke-width="2"></path>
+            <path d="M77.6395,73.3777 C73.3485,77.6687 66.3925,77.6687 62.1025,73.3777 C57.8115,69.0877 57.8115,62.1317 62.1025,57.8417 C66.3925,53.5507 73.3485,53.5507 77.6395,57.8417" id="Stroke-8" stroke="#05AAD1" stroke-width="9"></path>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <g id="Clip-11"></g>
+            <polygon id="Fill-10" fill="#05AAD1" mask="url(#mask-4)" points="67.073 57.121 70.734 57.121 70.734 46.23 67.073 46.23"></polygon>
+            <polygon id="Fill-12" fill="#05AAD1" mask="url(#mask-4)" points="67.073 84.141 70.734 84.141 70.734 73.251 67.073 73.251"></polygon>
+            <polygon id="Fill-13" fill="#BCCFD1" mask="url(#mask-4)" points="147.85 148.286 163.429 148.286 163.429 85.592 147.85 85.592"></polygon>
+            <polygon id="Fill-14" fill="#E4EFF1" mask="url(#mask-4)" points="122.296 148.286 137.875 148.286 137.875 121.413 122.296 121.413"></polygon>
+            <polygon id="Fill-15" fill="#BCCFD1" mask="url(#mask-4)" points="96.741 148.286 112.319 148.286 112.319 112.977 96.741 112.977"></polygon>
+            <polygon id="Fill-16" fill="#BCCFD1" mask="url(#mask-4)" points="71.185 148.286 86.763 148.286 86.763 130.064 71.185 130.064"></polygon>
+            <polygon id="Fill-17" fill="#E4EFF1" mask="url(#mask-4)" points="46.503 148.286 62.082 148.286 62.082 141.887 46.503 141.887"></polygon>
+            <polygon id="Stroke-18" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)" points="144.359 144.445 159.938 144.445 159.938 81.751 144.359 81.751"></polygon>
+            <polygon id="Stroke-19" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)" points="118.805 144.445 134.384 144.445 134.384 117.572 118.805 117.572"></polygon>
+            <polygon id="Stroke-20" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)" points="93.249 144.445 108.828 144.445 108.828 109.136 93.249 109.136"></polygon>
+            <polygon id="Stroke-21" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)" points="67.694 144.445 83.272 144.445 83.272 126.223 67.694 126.223"></polygon>
+            <polygon id="Stroke-22" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)" points="43.012 144.445 58.591 144.445 58.591 138.047 43.012 138.047"></polygon>
+            <polyline id="Stroke-23" stroke="#05AAD1" stroke-width="2" mask="url(#mask-4)" points="51.6317 130.2947 101.8947 93.8147 124.9667 100.1187 152.9327 57.8997"></polyline>
+        </g>
+    </g>
+</svg>
