@@ -56,5 +56,15 @@
       width: 459px;
       height: auto;
     }
+
+    @media screen and (max-width: 500px) {
+      & {
+        bottom: -35px;
+        img {
+          width: 250px;
+          height: auto;
+        }
+      }
+    }
   }
 }
