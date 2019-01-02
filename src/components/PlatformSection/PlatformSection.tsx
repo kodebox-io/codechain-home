@@ -22,10 +22,9 @@ export default class PlatformSection extends React.Component<any, any> {
                         </div>
                         <div className="section-description-container">
                             <span className="section-description reverse">
-                                The platform only charges network transaction
-                                fees. You can buy the network fee tokens in bulk
-                                or pay as you go with your credit card. Just
-                                like amazon cloud.
+                                full-fledged vertical technology stack that
+                                covers everything from security token issuance
+                                to post-issuance governance
                             </span>
                         </div>
                     </div>

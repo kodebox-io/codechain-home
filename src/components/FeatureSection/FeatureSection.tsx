@@ -21,10 +21,9 @@ export default class FeatureSection extends React.Component<any, any> {
                         </div>
                         <div className="section-description-container">
                             <span className="section-description">
-                                The platform only charges network transaction
-                                fees. You can buy the network fee tokens in bulk
-                                or pay as you go with your credit card. Just
-                                like amazon cloud.
+                                blockchain platform tailored to support legal
+                                requirements and privacy for the next generation
+                                digital securities
                             </span>
                         </div>
                     </div>
