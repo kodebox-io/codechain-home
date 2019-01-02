@@ -121,14 +121,6 @@ export default class Footer extends React.Component<any, any> {
                             </Link>
                         </div>
                         <div className="link-item-col">
-                            <a
-                                target="_blank"
-                                href="https://medium.com/codechain"
-                            >
-                                <span className="link-header">Blog</span>
-                            </a>
-                        </div>
-                        <div className="link-item-col">
                             <Link
                                 to="#contact"
                                 // tslint:disable-next-line:jsx-no-lambda
@@ -138,6 +130,14 @@ export default class Footer extends React.Component<any, any> {
                             >
                                 <span className="link-header">Contact</span>
                             </Link>
+                        </div>
+                        <div className="link-item-col">
+                            <a
+                                target="_blank"
+                                href="https://medium.com/codechain"
+                            >
+                                <span className="link-header">Blog</span>
+                            </a>
                         </div>
                         <div className="link-item-col">
                             <a target="_blank" href="https://kodebox.io">
