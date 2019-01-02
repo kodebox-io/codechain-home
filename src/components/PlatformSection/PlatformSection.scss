@@ -1,0 +1,77 @@
+@import "styles/variables.scss";
+@import "styles/mixin.scss";
+
+.Platform-section {
+  padding: 84px 0 91px 0;
+  background-color: $turquoise-blue;
+  color: white;
+  text-align: center;
+
+  .section-name-container {
+    margin-bottom: 97px;
+  }
+
+  .platform-item-container {
+    margin: 0 -60px 0 -60px;
+    .platform-item {
+      width: 280px;
+      margin: 0 60px 80px 60px;
+      vertical-align: top;
+
+      .platform-item-image-container {
+        position: relative;
+      }
+
+      .description {
+        font-size: 1.55rem;
+      }
+
+      .description2 {
+        line-height: 1.22;
+      }
+
+      &.active {
+        cursor: pointer;
+      }
+      &:hover {
+        .overlay {
+          background-color: rgba(5, 170, 209, 0.12);
+        }
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      & {
+        margin: 0;
+        .platform-item {
+          margin: 0 0 80px 0;
+        }
+      }
+    }
+  }
+
+  .architecture-container {
+    margin-top: 112px;
+
+    .architecture-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .button-container {
+    margin-top: 112px;
+
+    .custom-btn {
+      width: 322px;
+      height: 56px;
+      margin: 0 12px 0 12px;
+    }
+
+    @include respond_below(md) {
+      .custom-btn {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

@@ -1,13 +1,24 @@
 import * as React from "react";
 import MediaQuery from "react-responsive";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { Col, Container, Row } from "reactstrap";
 import "./Footer.scss";
 import logo from "./img/CodechainLogo_White.svg";
 import facebook from "./img/facebook.svg";
 import github from "./img/github.svg";
 import gitter from "./img/gitter.svg";
+import medium from "./img/medium.svg";
 import twitter from "./img/twitter.svg";
+
+const HeaderHeight = 76;
+const scrollWithOffset = (el: any, offset: number) => {
+    const elementPosition = el.offsetTop - offset;
+    window.scroll({
+        top: elementPosition,
+        left: 0,
+        behavior: "smooth"
+    });
+};
 
 export default class Footer extends React.Component<any, any> {
     public render() {
@@ -15,28 +26,27 @@ export default class Footer extends React.Component<any, any> {
             <div className="Footer">
                 <Container>
                     <Row>
-                        <Col md={4}>
+                        <Col md={7}>
                             <div>
                                 <img src={logo} />
                             </div>
                             <div className="mt-4">
-                                <span>
-                                    CodeChain and CodeChain logo are
-                                    <br />
-                                    trademarks of Kodebox, Inc
-                                </span>
-                            </div>
-                            <div className="mt-4">
                                 <div>
-                                    <span className="font-weight-bold">
+                                    <span className="font-weight-bold mr-3">
                                         Contact
                                     </span>
-                                </div>
-                                <div>
                                     <span>Email us: support@kodebox.io</span>
                                 </div>
                             </div>
-                            <div className="mt-4">
+                            <div className="mt-2">
+                                <span>
+                                    CodeChain and CodeChain logo are trademarks
+                                    of Kodebox, Inc
+                                </span>
+                            </div>
+                        </Col>
+                        <Col md={5}>
+                            <div className="link-icon-container">
                                 <a
                                     target="_blank"
                                     href="https://github.com/CodeChain-io/codechain"
@@ -73,95 +83,68 @@ export default class Footer extends React.Component<any, any> {
                                         className="mr-3 link-icon"
                                     />
                                 </a>
-                            </div>
-                        </Col>
-                        <Col md={8}>
-                            <div className="link-container">
-                                <div className="d-inline-block link-item-col mb-5">
-                                    <Link to="/">
-                                        <span className="link-item link-header">
-                                            Home
-                                        </span>
-                                    </Link>
-                                </div>
-                                <div className="d-inline-block link-item-col mb-5">
-                                    <Link to="/platform">
-                                        <span className="link-item link-header">
-                                            Platform
-                                        </span>
-                                    </Link>
-                                </div>
-                                <MediaQuery query="(max-width:767px)">
-                                    <br />
-                                </MediaQuery>
-                                <div className="d-inline-block link-item-col text-left">
-                                    <div className="mb-4">
-                                        <span className="link-header">
-                                            Technology
-                                        </span>
-                                    </div>
-                                    <div className="mb-2">
-                                        <Link to="/source">
-                                            <span className="link-item">
-                                                Source code
-                                            </span>
-                                        </Link>
-                                    </div>
-                                    <div className="mb-2">
-                                        <Link to="/contribute">
-                                            <span className="link-item">
-                                                Contribute
-                                            </span>
-                                        </Link>
-                                    </div>
-                                    <div className="mb-2">
-                                        <Link to="/contributors">
-                                            <span className="link-item">
-                                                Contributors
-                                            </span>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="d-inline-block link-item-col text-left">
-                                    <div className="mb-4">
-                                        <span className="link-header">
-                                            About us
-                                        </span>
-                                    </div>
-                                    <div className="mb-2">
-                                        <a
-                                            target="_blank"
-                                            href="https://kodebox.io"
-                                        >
-                                            <span className="link-item">
-                                                Company
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div className="mb-2">
-                                        <a
-                                            target="_blank"
-                                            href="https://medium.com/codechain"
-                                        >
-                                            <span className="link-item">
-                                                Blog
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="d-inline-block link-item-col">
-                                    <a
-                                        target="_blank"
-                                        href="https://codechain.io/privacy.html"
-                                    >
-                                        <span className="link-header">
-                                            Privacy policy
-                                        </span>
-                                    </a>
-                                </div>
+                                <a
+                                    target="_blank"
+                                    href="https://medium.com/codechain"
+                                >
+                                    <img
+                                        src={medium}
+                                        className="mr-3 link-icon"
+                                    />
+                                </a>
                             </div>
                         </Col>
                     </Row>
+                    <div className="link-container">
+                        <div className="link-item-col">
+                            <Link
+                                to="#feature"
+                                // tslint:disable-next-line:jsx-no-lambda
+                                scroll={el =>
+                                    scrollWithOffset(el, HeaderHeight)
+                                }
+                            >
+                                <span className="link-header">
+                                    Why CodeChain
+                                </span>
+                            </Link>
+                        </div>
+                        <div className="link-item-col">
+                            <Link
+                                to="#platform"
+                                // tslint:disable-next-line:jsx-no-lambda
+                                scroll={el =>
+                                    scrollWithOffset(el, HeaderHeight)
+                                }
+                            >
+                                <span className="link-header">Platform</span>
+                            </Link>
+                        </div>
+                        <div className="link-item-col">
+                            <a
+                                target="_blank"
+                                href="https://medium.com/codechain"
+                            >
+                                <span className="link-header">Blog</span>
+                            </a>
+                        </div>
+                        <div className="link-item-col">
+                            <Link
+                                to="#contact"
+                                // tslint:disable-next-line:jsx-no-lambda
+                                scroll={el =>
+                                    scrollWithOffset(el, HeaderHeight)
+                                }
+                            >
+                                <span className="link-header">Contact</span>
+                            </Link>
+                        </div>
+                        <div className="link-item-col">
+                            <a target="_blank" href="https://kodebox.io">
+                                <span className="link-header">Kodebox</span>
+                            </a>
+                        </div>
+                    </div>
                 </Container>
             </div>
         );

@@ -10,7 +10,7 @@
 
   .menu-item {
     color: white;
-    margin-left: 40px;
+    margin-left: 32px;
     cursor: pointer;
 
     .paper-btn {
@@ -27,12 +27,6 @@
 
     .menu-item {
       color: $turquoise-blue;
-
-      .menu-item-header {
-        &.selected {
-          font-weight: bold;
-        }
-      }
     }
   }
 }
@@ -99,9 +93,9 @@
         cursor: pointer;
       }
       .menu-item {
-        margin-top: 61px;
+        margin-top: 46px;
         .item-name {
-          font-size: 1.5rem;
+          font-size: 1.33rem;
           cursor: pointer;
         }
         .paper-btn {
@@ -112,9 +106,6 @@
           font-weight: 1.125rem;
           margin-bottom: 8px;
           cursor: pointer;
-        }
-        .selected {
-          font-weight: 400;
         }
       }
     }

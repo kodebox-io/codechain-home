@@ -1,9 +1,8 @@
 import * as React from "react";
-import FeatureSection from "./FeatureSection/FeatureSection";
+import FeatureSection from "../FeatureSection/FeatureSection";
+import LogoSection from "../LogoSection/LogoSection";
+import PlatformSection from "../PlatformSection/PlatformSection";
 import "./Home.scss";
-import LogoSection from "./LogoSection/LogoSection";
-import PlatformSection from "./PlatformSection/PlatformSection";
-import SeeMoreSection from "./SeeMoreSection/SeeMoreSection";
 const WOW = require("wowjs");
 
 export default class Home extends React.Component<any, any> {
@@ -17,7 +16,6 @@ export default class Home extends React.Component<any, any> {
                 <LogoSection />
                 <FeatureSection />
                 <PlatformSection />
-                <SeeMoreSection />
             </div>
         );
     }
