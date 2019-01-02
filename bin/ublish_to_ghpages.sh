@@ -4,14 +4,14 @@ DIR=$(dirname "$0")
 
 cd $DIR/..
 
+echo "Deleting old publication"
+rm -rf build
+
 if [[ $(git status -s) ]]
 then
     echo "The working directory is dirty. Please commit any pending changes."
     exit 1;
 fi
-
-echo "Deleting old publication"
-rm -rf build
 
 echo "Start to build project"
 mkdir build
