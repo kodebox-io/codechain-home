@@ -31,10 +31,9 @@ rm -rf .git/worktrees/deploy/
 
 git worktree add -B gh-pages deploy origin/gh-pages
 
-echo "codechain.io" > deploy/CNAME
-
 echo "Updating gh-pages branch"
-mv build/* deploy/
+cp -rf build/* deploy
+echo "codechain.io" > deploy/CNAME
 cd deploy && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
 git push origin
 
