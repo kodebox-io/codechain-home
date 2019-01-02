@@ -120,7 +120,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                         </div>
                     </div>
                     <form
-                        className=""
+                        className="d-none"
                         ref={this.submitFormRef}
                         action="https://formspree.io/support@kodebox.io"
                         method="POST"
