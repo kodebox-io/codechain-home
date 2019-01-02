@@ -134,10 +134,7 @@ export default class PlatformSection extends React.Component<any, any> {
                         </div>
                     </div>
                     <div className="architecture-container">
-                        <img
-                            src={architecture}
-                            className="architecture-img wow fadeIn"
-                        />
+                        <img src={architecture} className="architecture-img" />
                     </div>
                     <div className="button-container">
                         <a

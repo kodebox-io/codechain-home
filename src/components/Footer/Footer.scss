@@ -33,6 +33,9 @@
     }
 
     @include respond-below(sm) {
+      & {
+        margin-top: 72px;
+      }
       .link-item-col {
         display: block;
         margin-bottom: 28px;

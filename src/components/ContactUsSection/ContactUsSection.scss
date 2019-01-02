@@ -16,10 +16,27 @@
 
     input {
       height: 48px;
+      border-radius: 2px;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none !important;
+      -webkit-appearance: none;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      border: 1px solid $turquoise-blue;
+    }
+
+    input.error,
+    textarea.error {
+      border: 1px solid #d1050a;
     }
 
     textarea {
       resize: none;
+      border-radius: 2px;
     }
 
     ::placeholder {
