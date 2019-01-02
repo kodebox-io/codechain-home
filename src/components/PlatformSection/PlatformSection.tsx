@@ -62,7 +62,7 @@ export default class PlatformSection extends React.Component<any, any> {
                                     <br />
                                     assets, users, votes, dividend
                                     <br />
-                                    payouts, buyouts, lockups, ect.
+                                    payouts, buyouts, lockups, etc.
                                 </span>
                             </div>
                         </div>

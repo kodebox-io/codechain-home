@@ -19,6 +19,14 @@ export default class FeatureSection extends React.Component<any, any> {
                                 Why CodeChain?
                             </span>
                         </div>
+                        <div className="section-description-container">
+                            <span className="section-description">
+                                The platform only charges network transaction
+                                fees. You can buy the network fee tokens in bulk
+                                or pay as you go with your credit card. Just
+                                like amazon cloud.
+                            </span>
+                        </div>
                     </div>
                     <div className="text-center">
                         <div className="feature-item d-inline-block wow fadeInUp">
