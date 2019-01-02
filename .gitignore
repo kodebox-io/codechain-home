@@ -9,8 +9,7 @@
 /coverage
 
 # production
-# Remoe build dir from the gitignore for the github page
-# /build
+/build
 
 # misc
 .DS_Store
