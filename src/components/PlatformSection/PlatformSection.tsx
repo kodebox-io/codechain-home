@@ -145,7 +145,10 @@ export default class PlatformSection extends React.Component<any, any> {
                                 Source Code
                             </div>
                         </a>
-                        <a target="_blank" href="/CodeChain_white_paper_v1.pdf">
+                        <a
+                            target="_blank"
+                            href="/CodeChain_white_paper_v0.1.0.pdf"
+                        >
                             <div className="custom-btn reverse">
                                 White Paper
                             </div>

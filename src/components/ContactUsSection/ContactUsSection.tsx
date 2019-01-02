@@ -70,7 +70,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                     name="name"
                                     className={`form-control ${isNameValid ===
                                         false && "error"}`}
-                                    placeholder="Name"
+                                    placeholder="Name (required)"
                                     type="text"
                                     value={name}
                                     onChange={this.handleNameChange}
@@ -80,7 +80,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                 <input
                                     className={`form-control ${isEmailValid ===
                                         false && "error"}`}
-                                    placeholder="Email"
+                                    placeholder="Email (required)"
                                     type="email"
                                     name="email"
                                     value={email}
@@ -91,7 +91,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                 <input
                                     className={`form-control ${isCompanyValid ===
                                         false && "error"}`}
-                                    placeholder="Company"
+                                    placeholder="Company (required)"
                                     name="company"
                                     type="text"
                                     value={company}
@@ -102,7 +102,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                 <textarea
                                     className={`form-control ${isMessageValid ===
                                         false && "error"}`}
-                                    placeholder="Message"
+                                    placeholder="Message (required)"
                                     name="message"
                                     rows={7}
                                     value={message}
@@ -122,6 +122,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                     <form
                         className="d-none"
                         ref={this.submitFormRef}
+                        target="_blank"
                         action="https://formspree.io/support@kodebox.io"
                         method="POST"
                     >
@@ -165,6 +166,20 @@ export default class ContactUsSection extends React.Component<any, State> {
         this.submitCompanyRef.current!.value = this.state.company;
         this.submitMessageRef.current!.value = this.state.message;
         this.submitFormRef.current!.submit();
+        this.clearForm();
+    };
+
+    private clearForm = () => {
+        this.setState({
+            name: "",
+            email: "",
+            company: "",
+            message: "",
+            isCompanyValid: undefined,
+            isEmailValid: undefined,
+            isMessageValid: undefined,
+            isNameValid: undefined
+        });
     };
 
     private checkName = () => {

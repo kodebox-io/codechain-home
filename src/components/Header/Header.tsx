@@ -102,7 +102,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                         </a>
                     </div>
                     <div className="menu-item">
-                        <a target="_blank" href="/CodeChain_white_paper_v1.pdf">
+                        <a target="_blank" href="https://kodebox.io">
                             <div
                                 className={`custom-btn paper-btn ${isBlueHeader &&
                                     "reverse"}`}
@@ -203,7 +203,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                 <div className="menu-item">
                                     <a
                                         target="_blank"
-                                        href="/CodeChain_white_paper_v1.pdf"
+                                        href="https://kodebox.io"
                                     >
                                         <div className="custom-btn reverse paper-btn d-inline-block">
                                             Kodebox

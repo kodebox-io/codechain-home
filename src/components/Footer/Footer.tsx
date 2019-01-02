@@ -49,7 +49,7 @@ export default class Footer extends React.Component<any, any> {
                             <div className="link-icon-container">
                                 <a
                                     target="_blank"
-                                    href="https://github.com/CodeChain-io/codechain"
+                                    href="https://github.com/CodeChain-io"
                                 >
                                     <img
                                         src={github}
