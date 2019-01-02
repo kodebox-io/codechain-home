@@ -29,15 +29,6 @@
       .description2 {
         line-height: 1.22;
       }
-
-      &.active {
-        cursor: pointer;
-      }
-      &:hover {
-        .overlay {
-          background-color: rgba(5, 170, 209, 0.12);
-        }
-      }
     }
 
     @media screen and (max-width: 450px) {
