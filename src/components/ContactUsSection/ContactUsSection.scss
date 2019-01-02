@@ -1,0 +1,57 @@
+@import "styles/variables.scss";
+
+.Contact-us-section {
+  padding: 102px 0 112px 0;
+
+  .section-name-container {
+    margin-bottom: 60px;
+    .section-description-container {
+      max-width: 500px;
+    }
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    max-width: 532px;
+
+    input {
+      height: 48px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $light-blue-grey;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $light-blue-grey;
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $light-blue-grey;
+    }
+
+    .submit-btn-container {
+      margin-top: 52px;
+      text-align: center;
+      .submit-btn {
+        background-color: $turquoise-blue;
+        border-radius: 2px;
+        width: 196px;
+        height: 56px;
+        align-items: center !important;
+        justify-content: center !important;
+        display: inline-flex !important;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

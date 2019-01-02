@@ -197,7 +197,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                         href="https://medium.com/codechain"
                                         target="_blank"
                                     >
-                                        <span>Blog</span>
+                                        <span className="item-name">Blog</span>
                                     </a>
                                 </div>
                                 <div className="menu-item">

@@ -1,4 +1,5 @@
 import * as React from "react";
+import ContactUsSection from "../ContactUsSection/ContactUsSection";
 import FeatureSection from "../FeatureSection/FeatureSection";
 import LogoSection from "../LogoSection/LogoSection";
 import PlatformSection from "../PlatformSection/PlatformSection";
@@ -16,6 +17,7 @@ export default class Home extends React.Component<any, any> {
                 <LogoSection />
                 <FeatureSection />
                 <PlatformSection />
+                <ContactUsSection />
             </div>
         );
     }
