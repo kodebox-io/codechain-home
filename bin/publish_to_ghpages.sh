@@ -31,9 +31,16 @@ rm -rf .git/worktrees/deploy/
 
 git worktree add -B gh-pages deploy origin/gh-pages
 
+echo "Removing existing files"
+rm -rf deploy/*
+
 echo "Updating gh-pages branch"
 cp -rf build/* deploy
+
+echo "Createing CNAME File"
+
 echo "codechain.io" > deploy/CNAME
+
 cd deploy && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
 git push origin
 
