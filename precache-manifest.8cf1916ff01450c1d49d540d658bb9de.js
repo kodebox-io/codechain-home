@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/increased_liquidity.8275df4f.svg"
   },
   {
-    "revision": "d7bd37a261fff1038697",
-    "url": "/static/css/main.a5cabcf0.chunk.css"
+    "revision": "af7eb99ac4248dece5f3",
+    "url": "/static/css/main.689ee3eb.chunk.css"
   },
   {
     "revision": "87222baef88444e4c1b44eae95f83f62",
     "url": "/static/media/building.87222bae.png"
   },
   {
-    "revision": "9dcbf805a4fb6c1963a2",
-    "url": "/static/js/1.9dcbf805.chunk.js"
+    "revision": "7f9c56c334fa3a97e796",
+    "url": "/static/js/1.7f9c56c3.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -22,10 +22,6 @@ self.__precacheManifest = [
   {
     "revision": "630f622f732de89f6febab23a64b0531",
     "url": "/static/media/CodechainLogo_White.630f622f.svg"
-  },
-  {
-    "revision": "1d88780f1f92a382814ab557c78a95b0",
-    "url": "/static/media/facebook.1d88780f.svg"
   },
   {
     "revision": "11edc2fb4520728432890a5bd40464f2",
@@ -64,8 +60,8 @@ self.__precacheManifest = [
     "url": "/static/media/guaranteed_privacy_protection.95ad46d1.svg"
   },
   {
-    "revision": "d7bd37a261fff1038697",
-    "url": "/static/js/main.d7bd37a2.chunk.js"
+    "revision": "af7eb99ac4248dece5f3",
+    "url": "/static/js/main.af7eb99a.chunk.js"
   },
   {
     "revision": "71de2254aad4cd656bb32584870bd119",
@@ -120,11 +116,11 @@ self.__precacheManifest = [
     "url": "/static/media/graph.038d3be2.png"
   },
   {
-    "revision": "9dcbf805a4fb6c1963a2",
-    "url": "/static/css/1.0f32ef37.chunk.css"
+    "revision": "7f9c56c334fa3a97e796",
+    "url": "/static/css/1.bbcf0a37.chunk.css"
   },
   {
-    "revision": "34db69eec109f9f62b6fbaa0490746e2",
+    "revision": "5d8bb99b9e7c81a159f6e3df697a129d",
     "url": "/index.html"
   }
 ];
