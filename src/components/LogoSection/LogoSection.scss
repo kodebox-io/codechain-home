@@ -4,6 +4,7 @@
 .Logo-section {
   background-color: $turquoise-blue;
   height: calc(100vh - #{$header-height});
+  min-height: 600px;
   overflow: visible;
   text-align: center;
   color: white;
