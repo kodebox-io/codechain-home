@@ -54,13 +54,15 @@
     margin-top: 112px;
 
     .custom-btn {
-      width: 322px;
+      width: 280px;
       height: 56px;
       margin: 0 12px 0 12px;
     }
 
     @include respond_below(md) {
       .custom-btn {
+        display: flex !important;
+        margin: 0 auto;
         margin-bottom: 12px;
       }
     }
