@@ -4,7 +4,6 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Col, Container, Row } from "reactstrap";
 import "./Footer.scss";
 import logo from "./img/CodechainLogo_White.svg";
-import facebook from "./img/facebook.svg";
 import github from "./img/github.svg";
 import gitter from "./img/gitter.svg";
 import medium from "./img/medium.svg";
@@ -71,15 +70,6 @@ export default class Footer extends React.Component<any, any> {
                                 >
                                     <img
                                         src={twitter}
-                                        className="mr-3 link-icon"
-                                    />
-                                </a>
-                                <a
-                                    target="_blank"
-                                    href="https://www.facebook.com/codechain/"
-                                >
-                                    <img
-                                        src={facebook}
                                         className="mr-3 link-icon"
                                     />
                                 </a>
