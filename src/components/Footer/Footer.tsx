@@ -52,7 +52,7 @@ export default class Footer extends React.Component<any, any> {
                                 >
                                     <img
                                         src={github}
-                                        className="mr-3 link-icon"
+                                        className="mr-3 mr-md-0 ml-0 ml-md-3 link-icon"
                                     />
                                 </a>
                                 <a
@@ -61,7 +61,7 @@ export default class Footer extends React.Component<any, any> {
                                 >
                                     <img
                                         src={gitter}
-                                        className="mr-3 link-icon"
+                                        className="mr-3 mr-md-0 ml-0 ml-md-3 link-icon"
                                     />
                                 </a>
                                 <a
@@ -70,7 +70,7 @@ export default class Footer extends React.Component<any, any> {
                                 >
                                     <img
                                         src={twitter}
-                                        className="mr-3 link-icon"
+                                        className="mr-3 mr-md-0 ml-0 ml-md-3 link-icon"
                                     />
                                 </a>
                                 <a
@@ -79,7 +79,7 @@ export default class Footer extends React.Component<any, any> {
                                 >
                                     <img
                                         src={medium}
-                                        className="mr-3 link-icon"
+                                        className="mr-3 mr-md-0 ml-0 ml-md-3 link-icon"
                                     />
                                 </a>
                             </div>
