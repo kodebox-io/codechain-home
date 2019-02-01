@@ -1,6 +1,6 @@
 import * as React from "react";
 import MediaQuery from "react-responsive";
-import { RouteComponentProps, withRouter } from "react-router-dom";
+import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import { Modal, ModalBody } from "reactstrap";
 import "./Header.scss";
@@ -66,7 +66,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                 <MediaQuery query="(min-width:768px)">
                     <div className={`menu-item ml-auto`}>
                         <NavLink
-                            to="#feature"
+                            to="/#feature"
                             activeClassName="selected"
                             // tslint:disable-next-line:jsx-no-lambda
                             scroll={el => scrollWithOffset(el, HeaderHeight)}
@@ -78,7 +78,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                     </div>
                     <div className="menu-item">
                         <NavLink
-                            to="#platform"
+                            to="/#platform"
                             activeClassName="selected"
                             // tslint:disable-next-line:jsx-no-lambda
                             scroll={el => scrollWithOffset(el, HeaderHeight)}
@@ -88,7 +88,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                     </div>
                     <div className="menu-item">
                         <NavLink
-                            to="#contact"
+                            to="/#contact"
                             activeClassName="selected"
                             // tslint:disable-next-line:jsx-no-lambda
                             scroll={el => scrollWithOffset(el, HeaderHeight)}
@@ -101,15 +101,11 @@ class Header extends React.Component<RouteComponentProps, State> {
                             <span>Blog</span>
                         </a>
                     </div>
+                    <div className="divider" />
                     <div className="menu-item">
-                        <a target="_blank" href="https://kodebox.io">
-                            <div
-                                className={`custom-btn paper-btn ${isBlueHeader &&
-                                    "reverse"}`}
-                            >
-                                Kodebox
-                            </div>
-                        </a>
+                        <Link to="/about">
+                            <span>About Us</span>
+                        </Link>
                     </div>
                 </MediaQuery>
                 <MediaQuery query="(max-width:767px)">
@@ -200,15 +196,13 @@ class Header extends React.Component<RouteComponentProps, State> {
                                         <span className="item-name">Blog</span>
                                     </a>
                                 </div>
+                                <div className="divider-vertical" />
                                 <div className="menu-item">
-                                    <a
-                                        target="_blank"
-                                        href="https://kodebox.io"
-                                    >
-                                        <div className="custom-btn reverse paper-btn d-inline-block">
-                                            Kodebox
-                                        </div>
-                                    </a>
+                                    <Link to="/about">
+                                        <span className="item-name">
+                                            About Us
+                                        </span>
+                                    </Link>
                                 </div>
                             </div>
                         </ModalBody>
