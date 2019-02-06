@@ -96,16 +96,17 @@ class Header extends React.Component<RouteComponentProps, State> {
                             <span className="menu-item-header">Contact</span>
                         </NavLink>
                     </div>
-                    <div className="menu-item">
-                        <a href="https://medium.com/codechain" target="_blank">
-                            <span>Blog</span>
-                        </a>
-                    </div>
                     <div className="divider" />
                     <div className="menu-item">
                         <Link to="/about">
                             <span>About Us</span>
                         </Link>
+                    </div>
+                    <div className="divider" />
+                    <div className="menu-item">
+                        <a href="https://medium.com/codechain" target="_blank">
+                            <span>Blog</span>
+                        </a>
                     </div>
                 </MediaQuery>
                 <MediaQuery query="(max-width:767px)">
@@ -188,14 +189,6 @@ class Header extends React.Component<RouteComponentProps, State> {
                                         </span>
                                     </NavLink>
                                 </div>
-                                <div className="menu-item">
-                                    <a
-                                        href="https://medium.com/codechain"
-                                        target="_blank"
-                                    >
-                                        <span className="item-name">Blog</span>
-                                    </a>
-                                </div>
                                 <div className="divider-vertical" />
                                 <div className="menu-item">
                                     <Link to="/about">
@@ -203,6 +196,15 @@ class Header extends React.Component<RouteComponentProps, State> {
                                             About Us
                                         </span>
                                     </Link>
+                                </div>
+                                <div className="divider-vertical" />
+                                <div className="menu-item">
+                                    <a
+                                        href="https://medium.com/codechain"
+                                        target="_blank"
+                                    >
+                                        <span className="item-name">Blog</span>
+                                    </a>
                                 </div>
                             </div>
                         </ModalBody>
