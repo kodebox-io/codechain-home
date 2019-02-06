@@ -1,0 +1,48 @@
+@import "styles/variables.scss";
+.Event-item {
+  padding: 0 14px 28px 14px;
+
+  .content {
+    position: relative;
+    height: 325px;
+    border: 1px solid $turquoise-blue;
+
+    .image {
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .info-container {
+      padding: 12px;
+      .sub-title-container {
+        span {
+          font-size: 0.8rem;
+        }
+      }
+
+      .title-container {
+        margin-top: 4px;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      padding: 8px;
+      width: 100%;
+      left: 0;
+      color: white;
+      font-size: 0.8rem;
+
+      &.past {
+        background-color: rgba(63, 63, 63, 0.867);
+      }
+
+      &.upcoming {
+        background-color: $turquoise-blue;
+      }
+    }
+  }
+}

@@ -3,21 +3,24 @@ import csv from "csvtojson";
 import * as React from "react";
 import Slider from "react-slick";
 import { Container } from "reactstrap";
-import TalkItem from "./TalkItem/TalkItem";
-import "./TalksSection.scss";
+import EventItem from "./EventItem/EventItem";
+import "./EventsSection.scss";
 
-const TALK_LIST_FILE_PATH =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQtstYc3_eEpblu0zq9tM-E8atlklg1DSw843v_KYC5iLkdDA5DaieHeRVcCiEesLAVV2a2vwe23W6w/pub?gid=0&single=true&output=csv";
+const EVENT_LIST_FILE_PATH =
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRLIAdMeJsYl-y5ouV1TnN2PEDf4HRYhXrRVedKpf7ZNNP54WxX1klQm-wOHLJ5f2HoM63jlldSrJ1B/pub?gid=0&single=true&output=csv";
 
-export interface Talk {
+export interface Event {
     id: number;
+    subTitle: string;
     title: string;
-    date: string;
+    startDate: string;
+    endDate: string;
     link: string;
+    photo: string;
 }
 
 interface State {
-    talks?: Talk[] | null;
+    events?: Event[] | null;
 }
 
 const settings = {
@@ -44,39 +47,42 @@ const settings = {
     ]
 };
 
-export default class TalksSection extends React.Component<any, State> {
+export default class EventsSection extends React.Component<any, State> {
     constructor(props: any) {
         super(props);
         this.state = {
-            talks: undefined
+            events: undefined
         };
     }
     public async componentDidMount() {
         try {
-            const talks = await this.loadTalks();
+            const events = await this.loadEvents();
             this.setState({
-                talks
+                events
             });
         } catch (e) {
             console.error(e);
         }
     }
     public render() {
-        const { talks } = this.state;
+        const { events } = this.state;
         return (
-            <div className="Talks-section">
+            <div className="Events-section">
                 <Container>
                     <div className="section-name-container">
                         <div className="section-title-container">
-                            <span className="section-title reverse">Talks</span>
+                            <span className="section-title">Events</span>
                         </div>
                     </div>
                     <div>
-                        {talks ? (
+                        {events ? (
                             <div>
                                 <Slider {...settings}>
-                                    {talks.map(talk => (
-                                        <TalkItem key={talk.id} talk={talk} />
+                                    {events.map(event => (
+                                        <EventItem
+                                            key={event.id}
+                                            event={event}
+                                        />
                                     ))}
                                 </Slider>
                             </div>
@@ -90,10 +96,10 @@ export default class TalksSection extends React.Component<any, State> {
             </div>
         );
     }
-    private loadTalks = (): Promise<Talk[]> => {
+    private loadEvents = (): Promise<Event[]> => {
         return new Promise((resolve, reject) => {
             axios
-                .get<string>(TALK_LIST_FILE_PATH)
+                .get<string>(EVENT_LIST_FILE_PATH)
                 .then(result => {
                     csv()
                         .fromString(result.data)

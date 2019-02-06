@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+
+.Events-section {
+  padding: 160px 0 160px 0;
+
+  .section-name-container {
+    margin-bottom: 50px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: $turquoise-blue;
+  }
+}
