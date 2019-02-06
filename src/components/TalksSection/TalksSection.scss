@@ -1,0 +1,10 @@
+@import "styles/variables.scss";
+.Talks-section {
+  padding: 160px 0 160px 0;
+  background-color: $turquoise-blue;
+  color: white;
+
+  .section-name-container {
+    margin-bottom: 50px;
+  }
+}

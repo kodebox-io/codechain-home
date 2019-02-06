@@ -1,5 +1,6 @@
 import * as React from "react";
 import AboutUsSection from "../AboutUsSection/AboutUsSection";
+import TalksSection from "../TalksSection/TalksSection";
 import TeamSection from "../TeamSection/TeamSection";
 const WOW = require("wowjs");
 
@@ -14,6 +15,7 @@ export default class About extends React.Component<any, any> {
             <div>
                 <AboutUsSection />
                 <TeamSection />
+                <TalksSection />
             </div>
         );
     }
