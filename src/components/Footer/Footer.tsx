@@ -88,7 +88,7 @@ export default class Footer extends React.Component<any, any> {
                     <div className="link-container">
                         <div className="link-item-col">
                             <Link
-                                to="#feature"
+                                to="/#feature"
                                 // tslint:disable-next-line:jsx-no-lambda
                                 scroll={el =>
                                     scrollWithOffset(el, HeaderHeight)
@@ -101,7 +101,7 @@ export default class Footer extends React.Component<any, any> {
                         </div>
                         <div className="link-item-col">
                             <Link
-                                to="#platform"
+                                to="/#platform"
                                 // tslint:disable-next-line:jsx-no-lambda
                                 scroll={el =>
                                     scrollWithOffset(el, HeaderHeight)
@@ -112,7 +112,7 @@ export default class Footer extends React.Component<any, any> {
                         </div>
                         <div className="link-item-col">
                             <Link
-                                to="#contact"
+                                to="/#contact"
                                 // tslint:disable-next-line:jsx-no-lambda
                                 scroll={el =>
                                     scrollWithOffset(el, HeaderHeight)
@@ -122,16 +122,16 @@ export default class Footer extends React.Component<any, any> {
                             </Link>
                         </div>
                         <div className="link-item-col">
+                            <Link to="/about">
+                                <span className="link-header">About us</span>
+                            </Link>
+                        </div>
+                        <div className="link-item-col">
                             <a
                                 target="_blank"
                                 href="https://medium.com/codechain"
                             >
                                 <span className="link-header">Blog</span>
-                            </a>
-                        </div>
-                        <div className="link-item-col">
-                            <a target="_blank" href="https://kodebox.io">
-                                <span className="link-header">Kodebox</span>
                             </a>
                         </div>
                     </div>
