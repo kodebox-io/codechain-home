@@ -1,0 +1,19 @@
+@import "styles/variables.scss";
+.About-us {
+  padding: 60px 0 100px 0;
+  background-color: $turquoise-blue;
+  color: white;
+
+  .title-container {
+    margin-bottom: 30px;
+    span {
+      font-size: 2.5rem;
+    }
+  }
+  .description-container {
+    max-width: 510px;
+    span {
+      font-size: 1.2rem;
+    }
+  }
+}

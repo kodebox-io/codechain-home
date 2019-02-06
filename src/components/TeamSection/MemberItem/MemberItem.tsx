@@ -6,6 +6,7 @@ import JoinUs from "./img/join-us.jpg";
 import Medium from "./img/medium.png";
 import Twitter from "./img/twitter.png";
 import "./MemberItem.scss";
+const WOW = require("wowjs");
 
 const GOOGLE_DRIVE_URL = "https://drive.google.com/uc?export=view&id=";
 
@@ -14,10 +15,14 @@ interface Props {
 }
 
 export default class MemberItem extends React.Component<Props, any> {
+    public componentDidMount() {
+        const wow = new WOW.WOW();
+        wow.init();
+    }
     public render() {
         const { member } = this.props;
         return (
-            <Col className="Member-item" lg={4} md={6}>
+            <Col className="Member-item wow fadeInUp" lg={4} md={6}>
                 <div className="member-img-container">
                     {member ? (
                         <img
