@@ -99,7 +99,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                     <div className="divider" />
                     <div className="menu-item">
                         <Link to="/about">
-                            <span>About us</span>
+                            <span>About Us</span>
                         </Link>
                     </div>
                     <div className="divider" />
@@ -193,7 +193,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                 <div className="menu-item">
                                     <Link to="/about" onClick={this.toggle}>
                                         <span className="item-name">
-                                            About us
+                                            About Us
                                         </span>
                                     </Link>
                                 </div>

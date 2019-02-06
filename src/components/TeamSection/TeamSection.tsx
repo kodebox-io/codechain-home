@@ -46,7 +46,7 @@ export default class TeamSection extends React.Component<any, State> {
                 <Container>
                     <div className="section-name-container">
                         <div className="section-title-container">
-                            <span className="section-title">TEAM</span>
+                            <span className="section-title">Team</span>
                         </div>
                     </div>
                     <div className="member-list-container">

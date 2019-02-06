@@ -8,7 +8,7 @@ export default class AboutUsSection extends React.Component<any, any> {
             <div className="About-us">
                 <Container>
                     <div className="title-container">
-                        <span>About us</span>
+                        <span>About Us</span>
                     </div>
                     <div className="description-container">
                         <span>

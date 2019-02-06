@@ -23,7 +23,10 @@ export default class EventItem extends React.Component<Props, any> {
                                 style={{
                                     backgroundImage: `url(${GOOGLE_DRIVE_URL}${
                                         event.photo
-                                    })`
+                                    })`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center center",
+                                    backgroundSize: "cover"
                                 }}
                             />
                             <div className="info-container">

@@ -123,7 +123,7 @@ export default class Footer extends React.Component<any, any> {
                         </div>
                         <div className="link-item-col">
                             <Link to="/about">
-                                <span className="link-header">About us</span>
+                                <span className="link-header">About Us</span>
                             </Link>
                         </div>
                         <div className="link-item-col">

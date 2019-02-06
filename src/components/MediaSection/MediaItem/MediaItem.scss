@@ -1,0 +1,32 @@
+.Media-item {
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid white;
+  .info-container {
+    color: white;
+    flex: 1;
+    margin-right: 18px;
+
+    .title-container {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .date-container {
+      span {
+        font-size: 0.8rem;
+      }
+    }
+    .text-container {
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .photo {
+    width: 170px;
+    height: 150px;
+  }
+}
