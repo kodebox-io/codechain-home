@@ -8,6 +8,8 @@ import "./MediaSection.scss";
 const MEDIA_LIST_FILE_PATH =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2MKrl-YFy26ceynEi3xc_j1yY7IQNx7ACTiJCHtlsck0qFdS8VtINhFsGMxLNki39ebYVw0FfJMAL/pub?gid=0&single=true&output=csv";
 
+const VIEW_COUNT = 6;
+
 export interface Media {
     id: number;
     title: string;
@@ -20,12 +22,14 @@ export interface Media {
 
 interface State {
     mediaList?: Media[] | null;
+    isOpen: boolean;
 }
 export default class MediaSection extends React.Component<any, State> {
     constructor(props: any) {
         super(props);
         this.state = {
-            mediaList: undefined
+            mediaList: undefined,
+            isOpen: false
         };
     }
     public async componentDidMount() {
@@ -39,7 +43,7 @@ export default class MediaSection extends React.Component<any, State> {
         }
     }
     public render() {
-        const { mediaList } = this.state;
+        const { mediaList, isOpen } = this.state;
         return (
             <div className="Media-section">
                 <Container>
@@ -52,14 +56,27 @@ export default class MediaSection extends React.Component<any, State> {
                     </div>
                     <div>
                         {mediaList ? (
-                            mediaList.map(media => (
-                                <MediaItem key={media.id} media={media} />
-                            ))
+                            mediaList
+                                .slice(
+                                    0,
+                                    isOpen ? mediaList.length : VIEW_COUNT
+                                )
+                                .map(media => (
+                                    <MediaItem key={media.id} media={media} />
+                                ))
                         ) : (
                             <div className="text-center">
                                 <div className="loader" />
                             </div>
                         )}
+                        <div className="text-center">
+                            <button
+                                onClick={this.toggle}
+                                className="btn custom-btn reverse"
+                            >
+                                {isOpen ? "View less" : "View more"}
+                            </button>
+                        </div>
                     </div>
                 </Container>
             </div>
@@ -76,5 +93,8 @@ export default class MediaSection extends React.Component<any, State> {
                 })
                 .catch(reject);
         });
+    };
+    private toggle = () => {
+        this.setState({ isOpen: !this.state.isOpen });
     };
 }
