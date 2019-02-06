@@ -1,0 +1,62 @@
+.Member-item {
+  text-align: center;
+  margin-bottom: 60px;
+  .member-img-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 16px;
+    .photo {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      .photo {
+        width: 320px;
+        height: 320px;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .name-container {
+    margin-bottom: 3px;
+    span {
+      font-size: 1.2rem;
+    }
+  }
+
+  .part-container {
+    span {
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+  }
+
+  .divider {
+    width: 120px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  .link-container {
+    img {
+      width: 23px;
+      height: 23px;
+      margin-right: 5px;
+      margin-left: 5px;
+      filter: opacity(70%);
+      cursor: pointer;
+
+      &:hover {
+        filter: opacity(40%);
+      }
+    }
+  }
+}

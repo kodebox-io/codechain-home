@@ -87,3 +87,27 @@ a {
     }
   }
 }
+
+.loader {
+  display: inline-block;
+  border: 3px solid $turquoise-blue;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 2s linear infinite;
+
+  &.reverse {
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -52,7 +52,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                     "white-header"} ${checkingTop && "transition"}`}
             >
                 <NavLink
-                    to="#home"
+                    to="/#home"
                     activeClassName="selected"
                     // tslint:disable-next-line:jsx-no-lambda
                     scroll={el => scrollWithOffset(el, HeaderHeight)}
@@ -133,7 +133,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                 </div>
                                 <div className="logo-container">
                                     <NavLink
-                                        to="#home"
+                                        to="/#home"
                                         activeClassName="selected"
                                         // tslint:disable-next-line:jsx-no-lambda
                                         scroll={el =>
@@ -146,7 +146,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                 </div>
                                 <div className="menu-item">
                                     <NavLink
-                                        to="#feature"
+                                        to="/#feature"
                                         activeClassName="selected"
                                         // tslint:disable-next-line:jsx-no-lambda
                                         scroll={el =>
@@ -161,7 +161,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                 </div>
                                 <div className="menu-item">
                                     <NavLink
-                                        to="#platform"
+                                        to="/#platform"
                                         activeClassName="selected"
                                         // tslint:disable-next-line:jsx-no-lambda
                                         scroll={el =>
@@ -176,7 +176,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                 </div>
                                 <div className="menu-item">
                                     <NavLink
-                                        to="#contact"
+                                        to="/#contact"
                                         activeClassName="selected"
                                         // tslint:disable-next-line:jsx-no-lambda
                                         scroll={el =>
@@ -191,7 +191,7 @@ class Header extends React.Component<RouteComponentProps, State> {
                                 </div>
                                 <div className="divider-vertical" />
                                 <div className="menu-item">
-                                    <Link to="/about">
+                                    <Link to="/about" onClick={this.toggle}>
                                         <span className="item-name">
                                             About Us
                                         </span>
