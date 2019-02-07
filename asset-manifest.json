@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.18b05a36.chunk.css",
-  "main.js": "/static/js/main.0f118562.chunk.js",
-  "main.js.map": "/static/js/main.0f118562.chunk.js.map",
+  "main.js": "/static/js/main.097859c9.chunk.js",
+  "main.js.map": "/static/js/main.097859c9.chunk.js.map",
   "static/css/1.b500045f.chunk.css": "/static/css/1.b500045f.chunk.css",
   "static/js/1.ab2b181a.chunk.js": "/static/js/1.ab2b181a.chunk.js",
   "static/js/1.ab2b181a.chunk.js.map": "/static/js/1.ab2b181a.chunk.js.map",
@@ -33,9 +33,9 @@
   "static/media/Wallet.svg": "/static/media/Wallet.3fffdd30.svg",
   "static/media/LogoSection.scss": "/static/media/building.87222bae.png",
   "static/media/index.scss": "/static/media/slick.f97e3bbf.svg",
-  "static/css/main.18b05a36.chunk.css.map": "/static/css/main.18b05a36.chunk.css.map",
   "static/css/1.b500045f.chunk.css.map": "/static/css/1.b500045f.chunk.css.map",
+  "static/css/main.18b05a36.chunk.css.map": "/static/css/main.18b05a36.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.8b13dd7beb40d8b5d3ae99528fe2eb5a.js": "/precache-manifest.8b13dd7beb40d8b5d3ae99528fe2eb5a.js",
+  "precache-manifest.6db404ea8ce5dd7f92ae1efc66002b8e.js": "/precache-manifest.6db404ea8ce5dd7f92ae1efc66002b8e.js",
   "service-worker.js": "/service-worker.js"
 }
