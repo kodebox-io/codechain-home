@@ -2,7 +2,7 @@ import * as React from "react";
 import { Media } from "../MediaSection";
 import "./MediaItem.scss";
 
-const GOOGLE_DRIVE_URL = "https://drive.google.com/uc?export=view&id=";
+const MEDIA_PHOTO_PATH = "/about/mediaPhoto/";
 
 interface Props {
     media: Media;
@@ -30,9 +30,9 @@ export default class MediaItem extends React.Component<Props, any> {
                         <div
                             className="photo"
                             style={{
-                                background: `url(${GOOGLE_DRIVE_URL}${
+                                background: `url(${MEDIA_PHOTO_PATH}${
                                     media.photo
-                                })`,
+                                }.png)`,
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center center",
                                 backgroundSize: "cover"

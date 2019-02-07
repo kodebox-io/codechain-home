@@ -3,7 +3,7 @@ import * as React from "react";
 import { Event } from "../EventsSection";
 import "./EventItem.scss";
 
-const GOOGLE_DRIVE_URL = "https://drive.google.com/uc?export=view&id=";
+const EVENT_PHOTO_PATH = "/about/eventPhoto/";
 
 interface Props {
     event: Event;
@@ -21,9 +21,9 @@ export default class EventItem extends React.Component<Props, any> {
                             <div
                                 className="image"
                                 style={{
-                                    backgroundImage: `url(${GOOGLE_DRIVE_URL}${
+                                    backgroundImage: `url(${EVENT_PHOTO_PATH}${
                                         event.photo
-                                    })`,
+                                    }.png)`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundPosition: "center center",
                                     backgroundSize: "cover"

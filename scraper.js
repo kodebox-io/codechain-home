@@ -2,6 +2,9 @@ const axios = require("axios");
 const csv = require("csvtojson");
 const fs = require("fs-extra");
 const path = require("path");
+const request = require("request");
+
+const GOOGLE_DRIVE_URL = "https://drive.google.com/uc?export=view&id=";
 
 const MEMBER_LIST_SHEET_PATH =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vSQ_aUvcUpZeAIY7lFMjhGaREos-w_SNjLROq6sLR6Cn9vYTpQ0YmHrtq0epAHyMf2jVQLgC1UC27Ca/pub?output=csv";
@@ -23,13 +26,30 @@ const MEMBER_LIST_FILE_PATH = path.resolve(
   __dirname,
   "./public/about/members.json"
 );
+
+const MEMBER_LIST_PHOTO_PATH = path.resolve(
+  __dirname,
+  "./public/about/memberPhoto"
+);
+
 const MEDIA_LIST_FILE_PATH = path.resolve(
   __dirname,
   "./public/about/media.json"
 );
+
+const MEDIA_LIST_PHOTO_PATH = path.resolve(
+  __dirname,
+  "./public/about/mediaPhoto"
+);
+
 const EVENT_LIST_FILE_PATH = path.resolve(
   __dirname,
   "./public/about/events.json"
+);
+
+const EVENT_LIST_PHOTO_PATH = path.resolve(
+  __dirname,
+  "./public/about/eventPhoto"
 );
 
 function loadEvents() {
@@ -120,6 +140,7 @@ async function scrapMedia() {
   let savedMedia;
   try {
     await fs.ensureFile(MEDIA_LIST_FILE_PATH);
+    await fs.ensureDir(MEDIA_LIST_PHOTO_PATH);
     savedMedia = await fs.readJson(MEDIA_LIST_FILE_PATH, { spaces: "\t" });
   } catch (e) {
     console.error(e);
@@ -128,6 +149,14 @@ async function scrapMedia() {
     console.info("Media list are updated!");
     try {
       await fs.writeJson(MEDIA_LIST_FILE_PATH, newMedia, { spaces: "\t" });
+      await Promise.all(
+        newMedia.map(media => {
+          return downloadImage(
+            `${GOOGLE_DRIVE_URL}${media.photo}`,
+            `${path.join(MEDIA_LIST_PHOTO_PATH, media.photo)}.png`
+          );
+        })
+      );
     } catch (e) {
       console.error(e);
     }
@@ -145,6 +174,7 @@ async function scrapMembers() {
   let savedMember;
   try {
     await fs.ensureFile(MEMBER_LIST_FILE_PATH);
+    await fs.ensureDir(MEMBER_LIST_PHOTO_PATH);
     savedMember = await fs.readJson(MEMBER_LIST_FILE_PATH, { spaces: "\t" });
   } catch (e) {
     console.error(e);
@@ -153,6 +183,14 @@ async function scrapMembers() {
     console.info("Members are updated!");
     try {
       await fs.writeJson(MEMBER_LIST_FILE_PATH, newMembers, { spaces: "\t" });
+      await Promise.all(
+        newMembers.map(member => {
+          return downloadImage(
+            `${GOOGLE_DRIVE_URL}${member.photo}`,
+            `${path.join(MEMBER_LIST_PHOTO_PATH, member.photo)}.png`
+          );
+        })
+      );
     } catch (e) {
       console.error(e);
     }
@@ -170,6 +208,7 @@ async function scrapEvents() {
   let savedEvents;
   try {
     await fs.ensureFile(EVENT_LIST_FILE_PATH);
+    await fs.ensureDir(EVENT_LIST_PHOTO_PATH);
     savedEvents = await fs.readJson(EVENT_LIST_FILE_PATH, { spaces: "\t" });
   } catch (e) {
     console.error(e);
@@ -178,10 +217,40 @@ async function scrapEvents() {
     console.info("Events are updated!");
     try {
       await fs.writeJson(EVENT_LIST_FILE_PATH, newEvents, { spaces: "\t" });
+      await Promise.all(
+        newEvents.map(event => {
+          return downloadImage(
+            `${GOOGLE_DRIVE_URL}${event.photo}`,
+            `${path.join(EVENT_LIST_PHOTO_PATH, event.photo)}.png`
+          );
+        })
+      );
     } catch (e) {
       console.error(e);
     }
   }
+}
+
+function downloadImage(url, savePath) {
+  return new Promise((resolve, reject) => {
+    request.head(url, (error, response, _) => {
+      if (error) {
+        return reject(error);
+      }
+      const realImageUrl = response.request.href;
+      request(realImageUrl, { encoding: "binary" }, async (error, _, body) => {
+        if (error) {
+          return reject(error);
+        }
+        try {
+          await fs.writeFile(savePath, body, "binary");
+          return resolve();
+        } catch (e) {
+          return reject(e);
+        }
+      });
+    });
+  });
 }
 
 async function scrapAll() {

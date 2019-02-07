@@ -8,7 +8,7 @@ import Twitter from "./img/twitter.png";
 import "./MemberItem.scss";
 const WOW = require("wowjs");
 
-const GOOGLE_DRIVE_URL = "https://drive.google.com/uc?export=view&id=";
+const MEMBER_PHOTO_PATH = "/about/memberPhoto/";
 
 interface Props {
     member?: Member;
@@ -26,7 +26,7 @@ export default class MemberItem extends React.Component<Props, any> {
                 <div className="member-img-container">
                     {member ? (
                         <img
-                            src={`${GOOGLE_DRIVE_URL}${member.photo}`}
+                            src={`${MEMBER_PHOTO_PATH}${member.photo}.png`}
                             className="photo"
                         />
                     ) : (
