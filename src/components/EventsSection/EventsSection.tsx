@@ -6,8 +6,7 @@ import { Container } from "reactstrap";
 import EventItem from "./EventItem/EventItem";
 import "./EventsSection.scss";
 
-const EVENT_LIST_FILE_PATH =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRLIAdMeJsYl-y5ouV1TnN2PEDf4HRYhXrRVedKpf7ZNNP54WxX1klQm-wOHLJ5f2HoM63jlldSrJ1B/pub?gid=0&single=true&output=csv";
+const EVENT_LIST_FILE_PATH = "/about/events.json";
 
 export interface Event {
     id: number;
@@ -99,11 +98,9 @@ export default class EventsSection extends React.Component<any, State> {
     private loadEvents = (): Promise<Event[]> => {
         return new Promise((resolve, reject) => {
             axios
-                .get<string>(EVENT_LIST_FILE_PATH)
+                .get<Event[]>(EVENT_LIST_FILE_PATH)
                 .then(result => {
-                    csv()
-                        .fromString(result.data)
-                        .then(resolve);
+                    resolve(result.data);
                 })
                 .catch(reject);
         });

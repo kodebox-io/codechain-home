@@ -6,8 +6,7 @@ import { Container } from "reactstrap";
 import TalkItem from "./TalkItem/TalkItem";
 import "./TalksSection.scss";
 
-const TALK_LIST_FILE_PATH =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQtstYc3_eEpblu0zq9tM-E8atlklg1DSw843v_KYC5iLkdDA5DaieHeRVcCiEesLAVV2a2vwe23W6w/pub?gid=0&single=true&output=csv";
+const TALK_LIST_FILE_PATH = "/about/talks.json";
 
 export interface Talk {
     id: number;
@@ -93,11 +92,9 @@ export default class TalksSection extends React.Component<any, State> {
     private loadTalks = (): Promise<Talk[]> => {
         return new Promise((resolve, reject) => {
             axios
-                .get<string>(TALK_LIST_FILE_PATH)
+                .get<Talk[]>(TALK_LIST_FILE_PATH)
                 .then(result => {
-                    csv()
-                        .fromString(result.data)
-                        .then(resolve);
+                    resolve(result.data);
                 })
                 .catch(reject);
         });

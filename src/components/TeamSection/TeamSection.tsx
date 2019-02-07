@@ -6,8 +6,7 @@ import Row from "reactstrap/lib/Row";
 import MemberItem from "./MemberItem/MemberItem";
 import "./TeamSection.scss";
 
-const MEMBER_LIST_FILE_PATH =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSQ_aUvcUpZeAIY7lFMjhGaREos-w_SNjLROq6sLR6Cn9vYTpQ0YmHrtq0epAHyMf2jVQLgC1UC27Ca/pub?output=csv";
+const MEMBER_LIST_FILE_PATH = "/about/members.json";
 
 export interface Member {
     name: string;
@@ -73,11 +72,9 @@ export default class TeamSection extends React.Component<any, State> {
     private loadMembers = (): Promise<Member[]> => {
         return new Promise((resolve, reject) => {
             axios
-                .get<string>(MEMBER_LIST_FILE_PATH)
+                .get<Member[]>(MEMBER_LIST_FILE_PATH)
                 .then(result => {
-                    csv()
-                        .fromString(result.data)
-                        .then(resolve);
+                    resolve(result.data);
                 })
                 .catch(reject);
         });

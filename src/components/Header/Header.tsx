@@ -96,14 +96,12 @@ class Header extends React.Component<RouteComponentProps, State> {
                             <span className="menu-item-header">Contact</span>
                         </NavLink>
                     </div>
-                    {/*
                     <div className="divider" />
                     <div className="menu-item">
                         <Link to="/about">
                             <span>About Us</span>
                         </Link>
                     </div>
-                        */}
                     <div className="divider" />
                     <div className="menu-item">
                         <a href="https://medium.com/codechain" target="_blank">

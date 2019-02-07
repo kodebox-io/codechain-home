@@ -5,8 +5,7 @@ import { Container } from "reactstrap";
 import MediaItem from "./MediaItem/MediaItem";
 import "./MediaSection.scss";
 
-const MEDIA_LIST_FILE_PATH =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2MKrl-YFy26ceynEi3xc_j1yY7IQNx7ACTiJCHtlsck0qFdS8VtINhFsGMxLNki39ebYVw0FfJMAL/pub?gid=0&single=true&output=csv";
+const MEDIA_LIST_FILE_PATH = "/about/media.json";
 
 const VIEW_COUNT = 6;
 
@@ -85,11 +84,9 @@ export default class MediaSection extends React.Component<any, State> {
     private loadMediaList = (): Promise<Media[]> => {
         return new Promise((resolve, reject) => {
             axios
-                .get<string>(MEDIA_LIST_FILE_PATH)
+                .get<Media[]>(MEDIA_LIST_FILE_PATH)
                 .then(result => {
-                    csv()
-                        .fromString(result.data)
-                        .then(resolve);
+                    resolve(result.data);
                 })
                 .catch(reject);
         });
