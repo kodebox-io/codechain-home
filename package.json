@@ -28,8 +28,8 @@
   },
   "scripts": {
     "scrap": "node scraper",
-    "start": "yarn run scrap && react-scripts start",
-    "build": "react-scripts build && yarn run scrap",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "tslint -p tsconfig.json && prettier 'src/**/*.{ts,tsx,scss,json,html,js,jsx}' -l",
