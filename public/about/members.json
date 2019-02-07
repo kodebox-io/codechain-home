@@ -1,1 +1,146 @@
-[{"id":"1","name":"Kwang Yul Seo","part":"CEO","medium":"https://medium.com/@kwangseo","github":"https://github.com/kseo","twitter":"","photo":"1EPbmHFVDdfhze6H88kallDNYtRcJn9oW"},{"id":"2","name":"Mi Sun Cho","part":"COO","medium":"https://medium.com/@kodebox_cho","github":"","twitter":"https://https://twitter.com/kodebox_cho","photo":"1_pfh3ivH_7JNw5uv17iTOFFYt5aDSX8i"},{"id":"3","name":"Juhyung Park","part":"Software Engineer","medium":"https://medium.com/@majecty","github":"https://github.com/majecty","twitter":"","photo":"1G_-hsPxmJ9dXkuN1wJRb_E-jgMlwv521"},{"id":"4","name":"JinGyeong Jeong","part":"Software Engineer","medium":"https://medium.com/@jjgjoojis","github":"https://github.com/joojis","twitter":"","photo":"1tgDjmb6isfYtetLYBpEsW_gCKtFOgwf6"},{"id":"5","name":"Seulgi Kim","part":"Software Engineer","medium":"https://medium.com/@seulgi.kim","github":"https://github.com/sgkim126","twitter":"","photo":"1eNV45CsY0qEOuL1GFE4NRBFFot9-j8mh"},{"id":"6","name":"Seung Woo Kim","part":"Software Engineer","medium":"https://medium.com/@koreanboy1120","github":"https://github.com/ScarletBlue","twitter":"","photo":"1ZWURt31z6cFSGc1yy1BwMwqpV6ra1mnU"},{"id":"7","name":"Gilyoung Kim","part":"Software Engineer","medium":"https://medium.com/@xpdlf1004","github":"https://github.com/xpdlf1004","twitter":"","photo":"16RF5Iq1RbUSdWO-W41zEILOqiQyGWt1b"},{"id":"8","name":"Joon Mo Yang","part":"Software Engineer","medium":"https://medium.com/@joonmo.yang","github":"https://github.com/Kais-DkM","twitter":"","photo":"1sxo1YkAdBe87-fKLPlkqYNJuty_iJ4dY"},{"id":"9","name":"Hyunsik Jeong","part":"Software Engineer","medium":"https://medium.com/@rbtree","github":"https://github.com/jhs7jhs","twitter":"","photo":"1WEOnMpV6PGmWcdGbwYpwskpFG7IQIJgL"},{"id":"10","name":"SeongChan Lee","part":"Software Engineer","medium":"https://medium.com/@foriequal0","github":"https://github.com/foriequal0","twitter":"","photo":"1LRatiDdz5Jhpy3wi5tkjQb_eIPxK1icp"},{"id":"11","name":"Seunghee Baek","part":"Designer","medium":"https://medium.com/@tammy17","github":"https://github.com/tammy17","twitter":"","photo":"1yt-sixBc5pTxGH7agLPtt8QgzImhcERX"},{"id":"12","name":"Sein Gwon","part":"Designer","medium":"https://medium.com/@sein.gwon","github":"https://github.com/SeinGwo","twitter":"","photo":"1NuAYkCrwuu-bnbd8RJfRDmQeTOIhkItB"},{"id":"13","name":"Jae Won Park","part":"Business Development Lead","medium":"https://medium.com/@charforme52","github":"","twitter":"https://twitter.com/JaewonPark4","photo":"1GBzTk_MAd5EGAGXJ4b_SWWu0Y1tzy-3s"},{"id":"14","name":"Seonpyo Kim","part":"Software Engineer","medium":"https://medium.com/@tomandjerry_76061","github":"https://github.com/HoOngEe","twitter":"","photo":"16H5m9eGiULPiMabTvz1tGDUZThtjCs75"},{"id":"15","name":"Seongjae Choi","part":"Software Engineer","medium":"https://medium.com/@cubist","github":"https://github.com/cubismic","twitter":"","photo":"1PAn3fth7Iev_j100lNcdDRwicfUDFJvo"},{"id":"16","name":"Yunseon Jang","part":"Product Manager","medium":"https://medium.com/@yseon95","github":"https://github.com/YunseonJang","twitter":"https://twitter.com/@crypto_leah","photo":"1sgZaz_Bf6zRyESgittfrEPAPvVnZ2i4u"}]
+[
+	{
+		"id": "1",
+		"name": "Kwang Yul Seo",
+		"part": "CEO",
+		"medium": "https://medium.com/@kwangseo",
+		"github": "https://github.com/kseo",
+		"twitter": "",
+		"photo": "1EPbmHFVDdfhze6H88kallDNYtRcJn9oW"
+	},
+	{
+		"id": "2",
+		"name": "Mi Sun Cho",
+		"part": "COO",
+		"medium": "https://medium.com/@kodebox_cho",
+		"github": "",
+		"twitter": "https://https://twitter.com/kodebox_cho",
+		"photo": "1_pfh3ivH_7JNw5uv17iTOFFYt5aDSX8i"
+	},
+	{
+		"id": "3",
+		"name": "Juhyung Park",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@majecty",
+		"github": "https://github.com/majecty",
+		"twitter": "",
+		"photo": "1G_-hsPxmJ9dXkuN1wJRb_E-jgMlwv521"
+	},
+	{
+		"id": "4",
+		"name": "JinGyeong Jeong",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@jjgjoojis",
+		"github": "https://github.com/joojis",
+		"twitter": "",
+		"photo": "1tgDjmb6isfYtetLYBpEsW_gCKtFOgwf6"
+	},
+	{
+		"id": "5",
+		"name": "Seulgi Kim",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@seulgi.kim",
+		"github": "https://github.com/sgkim126",
+		"twitter": "",
+		"photo": "1eNV45CsY0qEOuL1GFE4NRBFFot9-j8mh"
+	},
+	{
+		"id": "6",
+		"name": "Seung Woo Kim",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@koreanboy1120",
+		"github": "https://github.com/ScarletBlue",
+		"twitter": "",
+		"photo": "1ZWURt31z6cFSGc1yy1BwMwqpV6ra1mnU"
+	},
+	{
+		"id": "7",
+		"name": "Gilyoung Kim",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@xpdlf1004",
+		"github": "https://github.com/xpdlf1004",
+		"twitter": "",
+		"photo": "16RF5Iq1RbUSdWO-W41zEILOqiQyGWt1b"
+	},
+	{
+		"id": "8",
+		"name": "Joon Mo Yang",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@joonmo.yang",
+		"github": "https://github.com/Kais-DkM",
+		"twitter": "",
+		"photo": "1sxo1YkAdBe87-fKLPlkqYNJuty_iJ4dY"
+	},
+	{
+		"id": "9",
+		"name": "Hyunsik Jeong",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@rbtree",
+		"github": "https://github.com/jhs7jhs",
+		"twitter": "",
+		"photo": "1WEOnMpV6PGmWcdGbwYpwskpFG7IQIJgL"
+	},
+	{
+		"id": "10",
+		"name": "SeongChan Lee",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@foriequal0",
+		"github": "https://github.com/foriequal0",
+		"twitter": "",
+		"photo": "1LRatiDdz5Jhpy3wi5tkjQb_eIPxK1icp"
+	},
+	{
+		"id": "11",
+		"name": "Seunghee Baek",
+		"part": "Designer",
+		"medium": "https://medium.com/@tammy17",
+		"github": "https://github.com/tammy17",
+		"twitter": "",
+		"photo": "1yt-sixBc5pTxGH7agLPtt8QgzImhcERX"
+	},
+	{
+		"id": "12",
+		"name": "Sein Gwon",
+		"part": "Designer",
+		"medium": "https://medium.com/@sein.gwon",
+		"github": "https://github.com/SeinGwo",
+		"twitter": "",
+		"photo": "1NuAYkCrwuu-bnbd8RJfRDmQeTOIhkItB"
+	},
+	{
+		"id": "13",
+		"name": "Jae Won Park",
+		"part": "Business Development Lead",
+		"medium": "https://medium.com/@charforme52",
+		"github": "",
+		"twitter": "https://twitter.com/JaewonPark4",
+		"photo": "1GBzTk_MAd5EGAGXJ4b_SWWu0Y1tzy-3s"
+	},
+	{
+		"id": "14",
+		"name": "Seonpyo Kim",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@tomandjerry_76061",
+		"github": "https://github.com/HoOngEe",
+		"twitter": "",
+		"photo": "16H5m9eGiULPiMabTvz1tGDUZThtjCs75"
+	},
+	{
+		"id": "15",
+		"name": "Seongjae Choi",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@cubist",
+		"github": "https://github.com/cubismic",
+		"twitter": "",
+		"photo": "1PAn3fth7Iev_j100lNcdDRwicfUDFJvo"
+	},
+	{
+		"id": "16",
+		"name": "Yunseon Jang",
+		"part": "Product Manager",
+		"medium": "https://medium.com/@yseon95",
+		"github": "https://github.com/YunseonJang",
+		"twitter": "https://twitter.com/@crypto_leah",
+		"photo": "1sgZaz_Bf6zRyESgittfrEPAPvVnZ2i4u"
+	}
+]

@@ -95,14 +95,14 @@ async function scrapTalks() {
   let savedTalks;
   try {
     await fs.ensureFile(TALK_LIST_FILE_PATH);
-    savedTalks = await fs.readJson(TALK_LIST_FILE_PATH);
+    savedTalks = await fs.readJson(TALK_LIST_FILE_PATH, { spaces: "\t" });
   } catch (e) {
     console.error(e);
   }
   if (JSON.stringify(newTalks) !== JSON.stringify(savedTalks)) {
     console.info("Talks are updated!");
     try {
-      await fs.writeJson(TALK_LIST_FILE_PATH, newTalks);
+      await fs.writeJson(TALK_LIST_FILE_PATH, newTalks, { spaces: "\t" });
     } catch (e) {
       console.error(e);
     }
@@ -120,14 +120,14 @@ async function scrapMedia() {
   let savedMedia;
   try {
     await fs.ensureFile(MEDIA_LIST_FILE_PATH);
-    savedMedia = await fs.readJson(MEDIA_LIST_FILE_PATH);
+    savedMedia = await fs.readJson(MEDIA_LIST_FILE_PATH, { spaces: "\t" });
   } catch (e) {
     console.error(e);
   }
   if (JSON.stringify(newMedia) !== JSON.stringify(savedMedia)) {
     console.info("Media list are updated!");
     try {
-      await fs.writeJson(MEDIA_LIST_FILE_PATH, newMedia);
+      await fs.writeJson(MEDIA_LIST_FILE_PATH, newMedia, { spaces: "\t" });
     } catch (e) {
       console.error(e);
     }
@@ -145,14 +145,14 @@ async function scrapMembers() {
   let savedMember;
   try {
     await fs.ensureFile(MEMBER_LIST_FILE_PATH);
-    savedMember = await fs.readJson(MEMBER_LIST_FILE_PATH);
+    savedMember = await fs.readJson(MEMBER_LIST_FILE_PATH, { spaces: "\t" });
   } catch (e) {
     console.error(e);
   }
   if (JSON.stringify(newMembers) !== JSON.stringify(savedMember)) {
     console.info("Members are updated!");
     try {
-      await fs.writeJson(MEMBER_LIST_FILE_PATH, newMembers);
+      await fs.writeJson(MEMBER_LIST_FILE_PATH, newMembers, { spaces: "\t" });
     } catch (e) {
       console.error(e);
     }
@@ -170,14 +170,14 @@ async function scrapEvents() {
   let savedEvents;
   try {
     await fs.ensureFile(EVENT_LIST_FILE_PATH);
-    savedEvents = await fs.readJson(EVENT_LIST_FILE_PATH);
+    savedEvents = await fs.readJson(EVENT_LIST_FILE_PATH, { spaces: "\t" });
   } catch (e) {
     console.error(e);
   }
   if (JSON.stringify(newEvents) !== JSON.stringify(savedEvents)) {
     console.info("Events are updated!");
     try {
-      await fs.writeJson(EVENT_LIST_FILE_PATH, newEvents);
+      await fs.writeJson(EVENT_LIST_FILE_PATH, newEvents, { spaces: "\t" });
     } catch (e) {
       console.error(e);
     }
