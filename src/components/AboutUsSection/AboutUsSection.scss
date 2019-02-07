@@ -1,8 +1,9 @@
 @import "styles/variables.scss";
 .About-us {
-  padding: 60px 0 100px 0;
+  padding: 100px 0 140px 0;
   background-color: $turquoise-blue;
   color: white;
+  text-align: center;
 
   .title-container {
     margin-bottom: 30px;
@@ -11,6 +12,7 @@
     }
   }
   .description-container {
+    display: inline-block;
     max-width: 510px;
     span {
       font-size: 1.2rem;
