@@ -73,6 +73,15 @@
 	},
 	{
 		"id": "9",
+		"name": "GeunWoo Kim",
+		"part": "Software Engineer",
+		"medium": "https://medium.com/@posgnu",
+		"github": "https://github.com/GNUp",
+		"twitter": "",
+		"photo": "1leiMCKkGtUsAaT8ClZsGe4eyDMWpbkCo"
+	},
+	{
+		"id": "10",
 		"name": "Hyunsik Jeong",
 		"part": "Software Engineer",
 		"medium": "https://medium.com/@rbtree",
@@ -81,7 +90,7 @@
 		"photo": "1WEOnMpV6PGmWcdGbwYpwskpFG7IQIJgL"
 	},
 	{
-		"id": "10",
+		"id": "11",
 		"name": "SeongChan Lee",
 		"part": "Software Engineer",
 		"medium": "https://medium.com/@foriequal0",
@@ -90,7 +99,7 @@
 		"photo": "1LRatiDdz5Jhpy3wi5tkjQb_eIPxK1icp"
 	},
 	{
-		"id": "13",
+		"id": "12",
 		"name": "Jae Won Park",
 		"part": "Business Development Lead",
 		"medium": "https://medium.com/@charforme52",
@@ -99,7 +108,7 @@
 		"photo": "1GBzTk_MAd5EGAGXJ4b_SWWu0Y1tzy-3s"
 	},
 	{
-		"id": "14",
+		"id": "13",
 		"name": "Seonpyo Kim",
 		"part": "Software Engineer",
 		"medium": "https://medium.com/@tomandjerry_76061",
@@ -108,7 +117,7 @@
 		"photo": "16H5m9eGiULPiMabTvz1tGDUZThtjCs75"
 	},
 	{
-		"id": "15",
+		"id": "14",
 		"name": "Seongjae Choi",
 		"part": "Software Engineer",
 		"medium": "https://medium.com/@cubist",
@@ -117,7 +126,7 @@
 		"photo": "1PAn3fth7Iev_j100lNcdDRwicfUDFJvo"
 	},
 	{
-		"id": "16",
+		"id": "15",
 		"name": "Yunseon Jang",
 		"part": "Product Manager",
 		"medium": "https://medium.com/@yseon95",
