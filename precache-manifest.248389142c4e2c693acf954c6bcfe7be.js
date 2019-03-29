@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "06aa196a01968594393e",
-    "url": "/static/css/main.ffdc68f2.chunk.css"
+    "revision": "ab9f6ceb5b0aaab6a60bb275554899bd",
+    "url": "/static/media/no_issuance.ab9f6ceb.svg"
   },
   {
-    "revision": "06aa196a01968594393e",
-    "url": "/static/js/main.06aa196a.chunk.js"
+    "revision": "e78a18ee88d3bda53539",
+    "url": "/static/css/main.caca5a6d.chunk.css"
   },
   {
-    "revision": "26c78f83add5ccda5ea9",
-    "url": "/static/css/1.51e2e85f.chunk.css"
+    "revision": "f97e3bbf73254b0112091d0192f17aec",
+    "url": "/static/media/slick.f97e3bbf.svg"
   },
   {
-    "revision": "26c78f83add5ccda5ea9",
-    "url": "/static/js/1.26c78f83.chunk.js"
+    "revision": "ccc904b53a42e76b146f",
+    "url": "/static/js/1.ccc904b5.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -22,10 +22,6 @@ self.__precacheManifest = [
   {
     "revision": "630f622f732de89f6febab23a64b0531",
     "url": "/static/media/CodechainLogo_White.630f622f.svg"
-  },
-  {
-    "revision": "18024f9eacf0e0d106d0ded9f7b63bdb",
-    "url": "/static/media/join-us.18024f9e.jpg"
   },
   {
     "revision": "11edc2fb4520728432890a5bd40464f2",
@@ -72,8 +68,8 @@ self.__precacheManifest = [
     "url": "/static/media/legal_compliance.71de2254.svg"
   },
   {
-    "revision": "ab9f6ceb5b0aaab6a60bb275554899bd",
-    "url": "/static/media/no_issuance.ab9f6ceb.svg"
+    "revision": "e78a18ee88d3bda53539",
+    "url": "/static/js/main.e78a18ee.chunk.js"
   },
   {
     "revision": "13154c8b9c597cc8a4484507262a6910",
@@ -124,23 +120,23 @@ self.__precacheManifest = [
     "url": "/static/media/building.87222bae.png"
   },
   {
-    "revision": "ced611daf7709cc778da928fec876475",
-    "url": "/static/media/slick.ced611da.eot"
-  },
-  {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
     "url": "/static/media/slick.b7c9e1e4.woff"
   },
   {
-    "revision": "f97e3bbf73254b0112091d0192f17aec",
-    "url": "/static/media/slick.f97e3bbf.svg"
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/static/media/slick.ced611da.eot"
   },
   {
     "revision": "d41f55a78e6f49a5512878df1737e58a",
     "url": "/static/media/slick.d41f55a7.ttf"
   },
   {
-    "revision": "ff81cc36430d6e6978e0a198e719dc83",
+    "revision": "ccc904b53a42e76b146f",
+    "url": "/static/css/1.1f837f1e.chunk.css"
+  },
+  {
+    "revision": "38feb5006672f9b14ff868089a7b5596",
     "url": "/index.html"
   }
 ];
