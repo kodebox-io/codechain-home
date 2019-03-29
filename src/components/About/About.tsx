@@ -16,7 +16,6 @@ export default class About extends React.Component<any, any> {
         return (
             <div>
                 <AboutUsSection />
-                <TeamSection />
                 <TalksSection />
                 <EventsSection />
                 <MediaSection />
