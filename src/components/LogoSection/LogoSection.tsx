@@ -37,13 +37,29 @@ export default class LogoSection extends React.Component<any, any> {
                                 digitization
                             </span>
                         </div>
-                        <div className="d-flex justify-content-center">
+                        <div>
                             <a
                                 target="_blank"
                                 href="/CodeChain_white_paper_v0.1.0.pdf"
                             >
                                 <div className="custom-btn reverse paper-btn">
                                     White Paper
+                                </div>
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://explorer.codechain.io"
+                            >
+                                <div className="custom-btn reverse paper-btn">
+                                    Explorer
+                                </div>
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://wallet.codechain.io"
+                            >
+                                <div className="custom-btn reverse paper-btn">
+                                    Wallet
                                 </div>
                             </a>
                         </div>
