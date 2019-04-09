@@ -1,0 +1,29 @@
+{
+    "platform": {
+        "content": "코드체인 플랫폼은 디지털 자산의 발행부터 그 후 생애주기 까지 전 과정을 관리합니다"
+    },
+    "blockchain": {
+        "title": "블록체인 네트워크<br/>(Blockchain Network)",
+        "content": "코드체인 엔진에 의해 작동되는<br/>퍼블릭&퍼미션드 블록체인"
+    },
+    "console": {
+        "title": "콘솔<br/>(Console)",
+        "content": "자산 발행 및 거래, 투표,<br/>배당, 환매, 락업기능 지원"
+    },
+    "liquidity": {
+        "title": "유동성 리저브<br/>(Liquidity Provider)",
+        "content": "알고리즘에 의해 자동화된<br/>유동성 리저브 레이어"
+    },
+    "exchange": {
+        "title": "거래 플랫폼<br/>(Exchange)",
+        "content": "디지털 자산 거래 플랫폼<br/>커스터마이징 지원"
+    },
+    "wallet": {
+        "title": "지갑<br/>(Wallet)",
+        "content": "용이한 거래, 투표,<br/>자산 포트폴리오 관리"
+    },
+    "explorer": {
+        "title": "익스플로러<br/>(Explorer)",
+        "content": "거래 기록 추적과<br/>투명한 자산 감사 기능 지원"
+    }
+}

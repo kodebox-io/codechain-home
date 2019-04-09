@@ -1,8 +1,10 @@
 import * as React from "react";
+import { Trans } from "react-i18next";
 import laptop from "./img/laptop.png";
 import "./LogoSection.scss";
 const Rellax = require("rellax");
-export default class LogoSection extends React.Component<any, any> {
+
+export default class LogoSection extends React.Component {
     public componentDidMount() {
         const rellax = new Rellax(".rellax", {
             speed: -2,
@@ -32,10 +34,7 @@ export default class LogoSection extends React.Component<any, any> {
                             <span>CodeChain</span>
                         </div>
                         <div className="description">
-                            <span>
-                                an end-to-end solution for real-world asset
-                                digitization
-                            </span>
+                            <Trans i18nKey="logo:subtitle" />
                         </div>
                         <div>
                             <a

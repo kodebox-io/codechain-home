@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Trans } from "react-i18next";
 import { Container } from "reactstrap";
 import network from "./img/Blockchain_network.svg";
 import consoleImg from "./img/Console.svg";
@@ -9,7 +10,7 @@ import architecture from "./img/Platform_architecture-01.png";
 import wallet from "./img/Wallet.svg";
 import "./PlatformSection.scss";
 
-export default class PlatformSection extends React.Component<any, any> {
+export default class PlatformSection extends React.Component {
     public render() {
         return (
             <div className="Platform-section" id="platform">
@@ -22,9 +23,7 @@ export default class PlatformSection extends React.Component<any, any> {
                         </div>
                         <div className="section-description-container">
                             <span className="section-description reverse">
-                                full-fledged vertical technology stack that
-                                covers everything from security token issuance
-                                to post-issuance governance
+                                <Trans i18nKey="platform:platform.content" />
                             </span>
                         </div>
                     </div>
@@ -37,14 +36,12 @@ export default class PlatformSection extends React.Component<any, any> {
                             </div>
                             <div>
                                 <span className="description">
-                                    Blockchain network
+                                    <Trans i18nKey="platform:blockchain.title" />
                                 </span>
                             </div>
                             <div className="mt-2">
                                 <span className="description2">
-                                    Public & permissioned
-                                    <br />
-                                    powered by CodeChain engine
+                                    <Trans i18nKey="platform:blockchain.content" />
                                 </span>
                             </div>
                         </div>
@@ -53,15 +50,13 @@ export default class PlatformSection extends React.Component<any, any> {
                                 <img src={consoleImg} />
                             </div>
                             <div>
-                                <span className="description">Console</span>
+                                <span className="description">
+                                    <Trans i18nKey="platform:console.title" />
+                                </span>
                             </div>
                             <div className="mt-2">
                                 <span className="description2">
-                                    Issue, transfer and manage
-                                    <br />
-                                    assets, users, votes, dividend
-                                    <br />
-                                    payouts, buyouts, lockups, etc.
+                                    <Trans i18nKey="platform:console.content" />
                                 </span>
                             </div>
                         </div>
@@ -71,14 +66,12 @@ export default class PlatformSection extends React.Component<any, any> {
                             </div>
                             <div>
                                 <span className="description">
-                                    Liquidity provider
+                                    <Trans i18nKey="platform:liquidity.title" />
                                 </span>
                             </div>
                             <div className="mt-2">
                                 <span className="description2">
-                                    Algorithmic autonomous
-                                    <br />
-                                    liquidity reserve layer
+                                    <Trans i18nKey="platform:liquidity.content" />
                                 </span>
                             </div>
                         </div>
@@ -89,13 +82,13 @@ export default class PlatformSection extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div>
-                                <span className="description">Exchange</span>
+                                <span className="description">
+                                    <Trans i18nKey="platform:exchange.title" />
+                                </span>
                             </div>
                             <div className="mt-2">
                                 <span className="description2">
-                                    Customizable asset
-                                    <br />
-                                    trading platform
+                                    <Trans i18nKey="platform:exchange.content" />
                                 </span>
                             </div>
                         </div>
@@ -106,12 +99,13 @@ export default class PlatformSection extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div>
-                                <span className="description">Wallet</span>
+                                <span className="description">
+                                    <Trans i18nKey="platform:wallet.title" />
+                                </span>
                             </div>
                             <div className="mt-2">
                                 <span className="description2">
-                                    Easy transactions, voting &<br />
-                                    management of asset portfolios
+                                    <Trans i18nKey="platform:wallet.content" />
                                 </span>
                             </div>
                         </div>
@@ -122,12 +116,13 @@ export default class PlatformSection extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div>
-                                <span className="description">Explorer</span>
+                                <span className="description">
+                                    <Trans i18nKey="platform:explorer.title" />
+                                </span>
                             </div>
                             <div className="mt-2">
                                 <span className="description2">
-                                    Transaction tracking &<br />
-                                    transparent asset auditing
+                                    <Trans i18nKey="platform:explorer.content" />
                                 </span>
                             </div>
                         </div>

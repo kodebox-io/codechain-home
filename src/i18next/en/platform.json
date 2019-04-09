@@ -1,0 +1,29 @@
+{
+    "platform": {
+        "content": "full-fledged vertical technology stack that covers everything from security token issuance to post-issuance governance"
+    },
+    "blockchain": {
+        "title": "Blockchain network",
+        "content": "Public & permissioned<br />powered by CodeChain engine"
+    },
+    "console": {
+        "title": "Console",
+        "content": "Issue, transfer and manage<br />assets, users, votes, dividend<br />payouts, buyouts, lockups, etc."
+    },
+    "liquidity": {
+        "title": "Liquidity provider",
+        "content": "Algorithmic autonomous<br />liquidity reserve layer"
+    },
+    "exchange": {
+        "title": "Exchange",
+        "content": "Customizable asset<br />trading platform"
+    },
+    "wallet": {
+        "title": "Wallet",
+        "content": "Easy transactions, voting &<br />management of asset portfolios"
+    },
+    "explorer": {
+        "title": "Explorer",
+        "content": "Transaction tracking &<br />transparent asset auditing"
+    }
+}

@@ -1,6 +1,9 @@
 import * as React from "react";
+import { Trans, withTranslation, WithTranslation } from "react-i18next";
 import { Container } from "reactstrap";
 import "./ContactUsSection.scss";
+
+type Props = WithTranslation;
 
 interface State {
     name: string;
@@ -13,14 +16,14 @@ interface State {
     isMessageValid?: boolean | null;
 }
 
-export default class ContactUsSection extends React.Component<any, State> {
+class ContactUsSection extends React.Component<Props, State> {
     private submitFormRef: React.RefObject<HTMLFormElement>;
     private submitNameRef: React.RefObject<HTMLInputElement>;
     private submitEmailRef: React.RefObject<HTMLInputElement>;
     private submitCompanyRef: React.RefObject<HTMLInputElement>;
     private submitMessageRef: React.RefObject<HTMLTextAreaElement>;
 
-    constructor(props: any) {
+    constructor(props: Props) {
         super(props);
         this.state = {
             name: "",
@@ -39,6 +42,7 @@ export default class ContactUsSection extends React.Component<any, State> {
         this.submitMessageRef = React.createRef<HTMLTextAreaElement>();
     }
     public render() {
+        const { t } = this.props;
         const {
             name,
             email,
@@ -49,6 +53,7 @@ export default class ContactUsSection extends React.Component<any, State> {
             isCompanyValid,
             isMessageValid
         } = this.state;
+        const required = t("contact:required");
         return (
             <div className="Contact-us-section" id="contact">
                 <Container>
@@ -58,8 +63,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                         </div>
                         <div className="section-description-container">
                             <span className="section-description">
-                                For all inquiries or requests, please get in
-                                touch! Let's explore how we can collaborate.
+                                <Trans i18nKey={"contact:content"} />
                             </span>
                         </div>
                     </div>
@@ -70,7 +74,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                     name="name"
                                     className={`form-control ${isNameValid ===
                                         false && "error"}`}
-                                    placeholder="Name (required)"
+                                    placeholder={`Name (${required})`}
                                     type="text"
                                     value={name}
                                     onChange={this.handleNameChange}
@@ -80,7 +84,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                 <input
                                     className={`form-control ${isEmailValid ===
                                         false && "error"}`}
-                                    placeholder="Email (required)"
+                                    placeholder={`Email (${required})`}
                                     type="email"
                                     name="email"
                                     value={email}
@@ -91,7 +95,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                 <input
                                     className={`form-control ${isCompanyValid ===
                                         false && "error"}`}
-                                    placeholder="Company (required)"
+                                    placeholder={`Company (${required})`}
                                     name="company"
                                     type="text"
                                     value={company}
@@ -102,7 +106,7 @@ export default class ContactUsSection extends React.Component<any, State> {
                                 <textarea
                                     className={`form-control ${isMessageValid ===
                                         false && "error"}`}
-                                    placeholder="Message (required)"
+                                    placeholder={`Message (${required})`}
                                     name="message"
                                     rows={7}
                                     value={message}
@@ -267,3 +271,5 @@ export default class ContactUsSection extends React.Component<any, State> {
         this.setState({ message: e.target.value, isMessageValid: undefined });
     };
 }
+
+export default withTranslation("contact")(ContactUsSection);

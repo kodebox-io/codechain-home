@@ -1,0 +1,25 @@
+{
+    "codechain": {
+        "content": "blockchain platform tailored to support legal requirements and privacy for the next generation digital securities"
+    },
+    "legal": {
+        "title": "Legal compliance",
+        "content": "Token-level built-in<br />support for regulatory<br />compliant issuance and<br />transactions (KYC/AML)"
+    },
+    "asset": {
+        "title": "Programmable assets",
+        "content": "Instant dividend or interest<br />payouts, buybacks, voting,<br />asset composition/<br />decomposition/recomposition"
+    },
+    "liquidity": {
+        "title": "Increased liquidity",
+        "content": "Native support for<br />algorithm- based<br />autonomous liquidity<br />reserve mechanism"
+    },
+    "public": {
+        "title": "Public blockchain",
+        "content": "Blockchain offers decentralized,<br />secure, transparent, and<br />immutable transactions"
+    },
+    "privacy": {
+        "title": "Privacy protection",
+        "content": "Chain-level control<br />over privacy for<br />assets and owners"
+    }
+}
