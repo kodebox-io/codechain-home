@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Trans } from "react-i18next";
+import { withTranslation, WithTranslation, Trans } from "react-i18next";
 import { Container } from "reactstrap";
 import network from "./img/Blockchain_network.svg";
 import consoleImg from "./img/Console.svg";
@@ -10,8 +10,11 @@ import architecture from "./img/Platform_architecture-01.png";
 import wallet from "./img/Wallet.svg";
 import "./PlatformSection.scss";
 
-export default class PlatformSection extends React.Component {
+type Props = WithTranslation;
+
+class PlatformSection extends React.Component<Props> {
     public render() {
+        console.log()
         return (
             <div className="Platform-section" id="platform">
                 <Container>
@@ -154,3 +157,5 @@ export default class PlatformSection extends React.Component {
         );
     }
 }
+
+export default withTranslation()(PlatformSection);

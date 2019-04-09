@@ -1,11 +1,14 @@
 import * as React from "react";
 import MediaQuery from "react-responsive";
+import { withTranslation, WithTranslation } from "react-i18next";
 import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 import { NavHashLink as NavLink } from "react-router-hash-link";
-import { Modal, ModalBody } from "reactstrap";
+import { Popover, PopoverBody, Modal, ModalBody } from "reactstrap";
 import "./Header.scss";
 import menuClose from "./img/Close.svg";
 import logoWhite from "./img/CodechainLogo_White.svg";
+import down from "./img/down.svg";
+import globe from "./img/globe.svg";
 import logo from "./img/logo.svg";
 import menuWhite from "./img/menu.svg";
 import menuBlue from "./img/menu2.svg";
@@ -14,6 +17,7 @@ interface State {
     isOpen: boolean;
     isBlueHeader: boolean;
     checkingTop: boolean;
+    isLangOpen: boolean;
 }
 
 const HeaderHeight = 76;
@@ -26,10 +30,13 @@ const scrollWithOffset = (el: any, offset: number) => {
     });
 };
 
-class Header extends React.Component<RouteComponentProps, State> {
-    constructor(props: RouteComponentProps) {
+type Props = RouteComponentProps & WithTranslation;
+
+class Header extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
         this.state = {
+            isLangOpen: false,
             isOpen: false,
             isBlueHeader: true,
             checkingTop: true
@@ -45,7 +52,12 @@ class Header extends React.Component<RouteComponentProps, State> {
     }
 
     public render() {
+        const { i18n } = this.props;
         const { isBlueHeader, isOpen, checkingTop } = this.state;
+
+        const selectedText = i18n.language === "ko" ? "한글" : "Eng";
+        const remainingText = i18n.language === "ko" ? "Eng" : "한글";
+        const remainingLang = i18n.language === "en" ? "ko" : "en";
         return (
             <div
                 className={`d-flex align-items-center Header ${!isBlueHeader &&
@@ -107,6 +119,34 @@ class Header extends React.Component<RouteComponentProps, State> {
                         <a href="https://medium.com/codechain" target="_blank">
                             <span>Blog</span>
                         </a>
+                    </div>
+                    <div
+                        id="language-change-btn"
+                        className="d-flex align-items-center menu-item"
+                        onClick={this.toggleLangButton}
+                    >
+                        <img className="globe" src={globe} />
+                        <span className="item-name">
+                            {selectedText}
+                        </span>
+                        <Popover
+                          hideArrow
+                          placement="bottom"
+                          isOpen={this.state.isLangOpen}
+                          target="language-change-btn"
+                          toggle={this.toggleLangButton}
+                          className="lang-popover"
+                        >
+                            <PopoverBody>
+                                <span
+                                    className="item-name"
+                                    onClick={() => this.changeLanguage(remainingLang)}
+                                >
+                                    {remainingText}
+                                </span>
+                          </PopoverBody>
+                        </Popover>
+                        <img className="down" src={down} />
                     </div>
                 </MediaQuery>
                 <MediaQuery query="(max-width:767px)">
@@ -206,6 +246,23 @@ class Header extends React.Component<RouteComponentProps, State> {
                                         <span className="item-name">Blog</span>
                                     </a>
                                 </div>
+                                <div className="menu-item">
+                                    <div className="d-flex justify-content-center">
+                                        <span
+                                            className="item-name"
+                                            onClick={() => this.changeLanguage("en")}
+                                        >
+                                            ENG
+                                        </span>
+                                        <div style={{width: 20}} className="divider" />
+                                        <span
+                                            className="item-name"
+                                            onClick={() => this.changeLanguage("ko")}
+                                        >
+                                            KOR
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </ModalBody>
                     </Modal>
@@ -214,11 +271,24 @@ class Header extends React.Component<RouteComponentProps, State> {
         );
     }
 
+    private toggleLangButton = () => {
+        this.setState({
+            isLangOpen: !this.state.isLangOpen
+        })
+    }
+
     private toggle = () => {
         this.setState({
             isOpen: !this.state.isOpen
         });
     };
+
+    private changeLanguage = (lang: string) => {
+        const { i18n } = this.props;
+        i18n.changeLanguage(lang);
+        this.toggleLangButton();
+        this.toggle();
+    }
 
     private handleScroll = () => {
         const { isBlueHeader, checkingTop } = this.state;
@@ -238,4 +308,4 @@ class Header extends React.Component<RouteComponentProps, State> {
     };
 }
 
-export default withRouter(Header);
+export default withTranslation()(withRouter(Header));

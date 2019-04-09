@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Trans } from "react-i18next";
+import { withTranslation, WithTranslation, Trans } from "react-i18next";
 import { Container } from "reactstrap";
 import "./FeatureSection.scss";
 import guaranteed from "./img/guaranteed_privacy_protection.svg";
@@ -8,7 +8,9 @@ import legal from "./img/legal_compliance.svg";
 import programmable from "./img/programmable_assets.svg";
 import transparent from "./img/transparent_and_immutable_transactions.svg";
 
-export default class FeatureSection extends React.Component<any, any> {
+type Props = WithTranslation;
+
+class FeatureSection extends React.Component<Props> {
     public render() {
         return (
             <div className="Feature-section" id="feature">
@@ -107,3 +109,5 @@ export default class FeatureSection extends React.Component<any, any> {
         );
     }
 }
+
+export default withTranslation()(FeatureSection);
