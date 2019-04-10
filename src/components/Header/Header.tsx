@@ -57,7 +57,7 @@ class Header extends React.Component<Props, State> {
 
         const selectedText = i18n.language === "ko" ? "한국어" : "Eng";
         const remainingText = i18n.language === "ko" ? "Eng" : "한국어";
-        const remainingLang = i18n.language === "en" ? "ko" : "en";
+        const remainingLang = i18n.language === "ko" ? "en" : "ko";
         return (
             <div
                 className={`d-flex align-items-center Header ${!isBlueHeader &&
