@@ -1,14 +1,14 @@
+import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
+import Language from "@material-ui/icons/Language";
 import * as React from "react";
-import MediaQuery from "react-responsive";
 import { withTranslation, WithTranslation } from "react-i18next";
+import MediaQuery from "react-responsive";
 import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 import { NavHashLink as NavLink } from "react-router-hash-link";
-import { Popover, PopoverBody, Modal, ModalBody } from "reactstrap";
+import { Modal, ModalBody, Popover, PopoverBody } from "reactstrap";
 import "./Header.scss";
 import menuClose from "./img/Close.svg";
 import logoWhite from "./img/CodechainLogo_White.svg";
-import down from "./img/down.svg";
-import globe from "./img/globe.svg";
 import logo from "./img/logo.svg";
 import menuWhite from "./img/menu.svg";
 import menuBlue from "./img/menu2.svg";
@@ -55,8 +55,8 @@ class Header extends React.Component<Props, State> {
         const { i18n } = this.props;
         const { isBlueHeader, isOpen, checkingTop } = this.state;
 
-        const selectedText = i18n.language === "ko" ? "한글" : "Eng";
-        const remainingText = i18n.language === "ko" ? "Eng" : "한글";
+        const selectedText = i18n.language === "ko" ? "한국어" : "Eng";
+        const remainingText = i18n.language === "ko" ? "Eng" : "한국어";
         const remainingLang = i18n.language === "en" ? "ko" : "en";
         return (
             <div
@@ -120,33 +120,36 @@ class Header extends React.Component<Props, State> {
                             <span>Blog</span>
                         </a>
                     </div>
+                    <div className="divider" />
                     <div
                         id="language-change-btn"
                         className="d-flex align-items-center menu-item"
                         onClick={this.toggleLangButton}
                     >
-                        <img className="globe" src={globe} />
-                        <span className="item-name">
-                            {selectedText}
-                        </span>
+                        <Language className="language-icon" />
+                        <span className="item-name">{selectedText}</span>
                         <Popover
-                          hideArrow
-                          placement="bottom"
-                          isOpen={this.state.isLangOpen}
-                          target="language-change-btn"
-                          toggle={this.toggleLangButton}
-                          className="lang-popover"
+                            hideArrow={true}
+                            placement="bottom"
+                            isOpen={this.state.isLangOpen}
+                            target="language-change-btn"
+                            toggle={this.toggleLangButton}
+                            className={`lang-popover ${!isBlueHeader &&
+                                "white-header"}`}
                         >
                             <PopoverBody>
                                 <span
                                     className="item-name"
-                                    onClick={() => this.changeLanguage(remainingLang)}
+                                    // tslint:disable-next-line:jsx-no-lambda
+                                    onClick={() =>
+                                        this.changeLanguage(remainingLang)
+                                    }
                                 >
                                     {remainingText}
                                 </span>
-                          </PopoverBody>
+                            </PopoverBody>
                         </Popover>
-                        <img className="down" src={down} />
+                        <ArrowDropDown />
                     </div>
                 </MediaQuery>
                 <MediaQuery query="(max-width:767px)">
@@ -246,20 +249,30 @@ class Header extends React.Component<Props, State> {
                                         <span className="item-name">Blog</span>
                                     </a>
                                 </div>
+                                <div className="divider-vertical" />
                                 <div className="menu-item">
                                     <div className="d-flex justify-content-center">
                                         <span
                                             className="item-name"
-                                            onClick={() => this.changeLanguage("en")}
+                                            // tslint:disable-next-line:jsx-no-lambda
+                                            onClick={() =>
+                                                this.changeLanguage("en")
+                                            }
                                         >
-                                            ENG
+                                            Eng
                                         </span>
-                                        <div style={{width: 20}} className="divider" />
+                                        <div
+                                            style={{ width: 20 }}
+                                            className="divider"
+                                        />
                                         <span
                                             className="item-name"
-                                            onClick={() => this.changeLanguage("ko")}
+                                            // tslint:disable-next-line:jsx-no-lambda
+                                            onClick={() =>
+                                                this.changeLanguage("ko")
+                                            }
                                         >
-                                            KOR
+                                            한국어
                                         </span>
                                     </div>
                                 </div>
@@ -274,8 +287,8 @@ class Header extends React.Component<Props, State> {
     private toggleLangButton = () => {
         this.setState({
             isLangOpen: !this.state.isLangOpen
-        })
-    }
+        });
+    };
 
     private toggle = () => {
         this.setState({
@@ -288,7 +301,7 @@ class Header extends React.Component<Props, State> {
         i18n.changeLanguage(lang);
         this.toggleLangButton();
         this.toggle();
-    }
+    };
 
     private handleScroll = () => {
         const { isBlueHeader, checkingTop } = this.state;

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
     "@types/csvtojson": "^1.1.5",
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",

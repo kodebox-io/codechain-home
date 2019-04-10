@@ -4,10 +4,16 @@
   background-color: transparent !important;
   border-color: transparent !important;
   cursor: pointer;
-  margin-left: 6px;
+  margin-top: 2px !important;
   .popover-body {
     color: white;
     padding: 0;
+  }
+
+  &.white-header {
+    .item-name {
+      color: $turquoise-blue;
+    }
   }
 }
 
@@ -18,6 +24,11 @@
   position: fixed;
   width: 100%;
   background-color: $turquoise-blue;
+
+  .language-icon {
+    font-size: 1.1rem;
+    margin-right: 6px;
+  }
 
   .menu-item {
     color: white;
@@ -128,7 +139,7 @@
         cursor: pointer;
       }
       .menu-item {
-        margin-top: 46px;
+        margin-top: 30px;
         .item-name {
           font-size: 1.33rem;
           cursor: pointer;
@@ -146,7 +157,7 @@
 
       .divider-vertical {
         display: inline-block;
-        margin-top: 46px;
+        margin-top: 30px;
         width: 200px;
         height: 1px;
         background-color: white;
