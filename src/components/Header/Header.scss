@@ -3,11 +3,19 @@
 .lang-popover {
   background-color: transparent !important;
   border-color: transparent !important;
+  right: 0;
+  width: 70px;
   cursor: pointer;
   margin-top: 2px !important;
   .popover-body {
+    margin-right: 8px;
     color: white;
     padding: 0;
+    text-align: right;
+  }
+
+  .korean-text {
+    padding-right: 8px;
   }
 
   &.white-header {
