@@ -8,18 +8,18 @@
   cursor: pointer;
   margin-top: 2px !important;
   .popover-body {
-    margin-right: 8px;
+    margin-right: 5px;
     color: white;
     padding: 0;
     text-align: right;
   }
-
-  .korean-text {
-    padding-right: 8px;
+  .eng-text {
+    padding-right: 3px;
   }
 
   &.white-header {
     .item-name {
+      width: 70px;
       color: $turquoise-blue;
     }
   }

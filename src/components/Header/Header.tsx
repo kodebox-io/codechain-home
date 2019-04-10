@@ -55,12 +55,12 @@ class Header extends React.Component<Props, State> {
         const { i18n } = this.props;
         const { isBlueHeader, isOpen, checkingTop } = this.state;
 
-        const selectedText = i18n.language === "ko" ? "한국어" : "Eng";
+        const selectedText = i18n.language === "ko" ? "한국어" : "English";
         const remainingText =
             i18n.language === "ko" ? (
-                "Eng"
+                <div className="eng-text">English</div>
             ) : (
-                <div className="korean-text">한국어</div>
+                "한국어"
             );
         const remainingLang = i18n.language === "ko" ? "en" : "ko";
         return (
@@ -264,7 +264,7 @@ class Header extends React.Component<Props, State> {
                                                 this.changeLanguage("en")
                                             }
                                         >
-                                            Eng
+                                            English
                                         </span>
                                         <div
                                             style={{ width: 20 }}
