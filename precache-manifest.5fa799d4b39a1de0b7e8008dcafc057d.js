@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "13154c8b9c597cc8a4484507262a6910",
-    "url": "/static/media/programmable_assets.13154c8b.svg"
+    "revision": "71de2254aad4cd656bb32584870bd119",
+    "url": "/static/media/legal_compliance.71de2254.svg"
   },
   {
-    "revision": "b6bcc192157e63b676fa",
-    "url": "/static/css/main.f045b69d.chunk.css"
+    "revision": "9ce53c64179343081ef3",
+    "url": "/static/css/main.76bf8192.chunk.css"
   },
   {
     "revision": "d41f55a78e6f49a5512878df1737e58a",
     "url": "/static/media/slick.d41f55a7.ttf"
   },
   {
-    "revision": "e37be19a5881ab2a0292",
-    "url": "/static/js/1.e37be19a.chunk.js"
+    "revision": "ed14d439097d039e358a",
+    "url": "/static/js/1.ed14d439.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -34,6 +34,10 @@ self.__precacheManifest = [
   {
     "revision": "e5a5b160310514b2f52e92eb87740da8",
     "url": "/static/media/medium.e5a5b160.svg"
+  },
+  {
+    "revision": "afaec1a75e4ab6ea685657d7399abf37",
+    "url": "/static/media/telegram.afaec1a7.svg"
   },
   {
     "revision": "a2682b664bad1f5def1c61bd07a6129a",
@@ -64,12 +68,12 @@ self.__precacheManifest = [
     "url": "/static/media/increased_liquidity.8275df4f.svg"
   },
   {
-    "revision": "71de2254aad4cd656bb32584870bd119",
-    "url": "/static/media/legal_compliance.71de2254.svg"
+    "revision": "9ce53c64179343081ef3",
+    "url": "/static/js/main.9ce53c64.chunk.js"
   },
   {
-    "revision": "b6bcc192157e63b676fa",
-    "url": "/static/js/main.b6bcc192.chunk.js"
+    "revision": "13154c8b9c597cc8a4484507262a6910",
+    "url": "/static/media/programmable_assets.13154c8b.svg"
   },
   {
     "revision": "05eaaf6ead12d8476554370b2c3c4e43",
@@ -128,11 +132,11 @@ self.__precacheManifest = [
     "url": "/static/media/slick.f97e3bbf.svg"
   },
   {
-    "revision": "e37be19a5881ab2a0292",
-    "url": "/static/css/1.543e534a.chunk.css"
+    "revision": "ed14d439097d039e358a",
+    "url": "/static/css/1.f69f83b3.chunk.css"
   },
   {
-    "revision": "45b8fe6547b6090b1d4ffb2059f8ec5d",
+    "revision": "b307aa4c832db31ae14638f339d27385",
     "url": "/index.html"
   }
 ];
