@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { I18nextProvider } from 'react-i18next';
+import { I18nextProvider } from "react-i18next";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import i18next from "../../i18next";
 import About from "../About/About";
+import FAQ from "../FAQ";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
@@ -23,6 +24,11 @@ class App extends Component {
                                     exact={true}
                                     path="/about"
                                     component={About}
+                                />
+                                <Route
+                                    exact={true}
+                                    path="/faq"
+                                    component={FAQ}
                                 />
                                 <Route component={NotFound} />
                             </Switch>

@@ -3,5 +3,7 @@
 .App {
   .Content {
     padding-top: $header-height;
+    min-height: 100vh;
+    background-color: $turquoise-blue;
   }
 }

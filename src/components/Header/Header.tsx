@@ -80,7 +80,7 @@ class Header extends React.Component<Props, State> {
                         <img src={logo} />
                     )}
                 </NavLink>
-                <MediaQuery query="(min-width:768px)">
+                <MediaQuery query="(min-width:1108px)">
                     <div className={`menu-item ml-auto`}>
                         <NavLink
                             to="/#feature"
@@ -121,6 +121,12 @@ class Header extends React.Component<Props, State> {
                     </div>
                     <div className="divider" />
                     <div className="menu-item">
+                        <Link to="/faq">
+                            <span>FAQs</span>
+                        </Link>
+                    </div>
+                    <div className="divider" />
+                    <div className="menu-item">
                         <a href="https://medium.com/codechain" target="_blank">
                             <span>Blog</span>
                         </a>
@@ -157,7 +163,7 @@ class Header extends React.Component<Props, State> {
                         <ArrowDropDown />
                     </div>
                 </MediaQuery>
-                <MediaQuery query="(max-width:767px)">
+                <MediaQuery query="(max-width:1107px)">
                     <div className="menu-item ml-auto" onClick={this.toggle}>
                         {isBlueHeader ? (
                             <img src={menuWhite} />
@@ -243,6 +249,12 @@ class Header extends React.Component<Props, State> {
                                         <span className="item-name">
                                             About Us
                                         </span>
+                                    </Link>
+                                </div>
+                                <div className="divider-vertical" />
+                                <div className="menu-item">
+                                    <Link to="/faq" onClick={this.toggle}>
+                                        <span className="item-name">FAQs</span>
                                     </Link>
                                 </div>
                                 <div className="divider-vertical" />
