@@ -1,0 +1,20 @@
+.Categories {
+  padding: 40px 0 80px 0;
+  text-align: center;
+  color: white;
+
+  .description {
+    margin-bottom: 60px;
+    span {
+      font-size: 1.2rem;
+    }
+  }
+
+  .category-item {
+    padding: 15px 40px 15px 40px;
+    border: 1px solid white;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+  }
+}

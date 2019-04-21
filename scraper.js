@@ -18,6 +18,9 @@ const MEDIA_LIST_SHEET_PATH =
 const EVENT_LIST_SHEET_PATH =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vRLIAdMeJsYl-y5ouV1TnN2PEDf4HRYhXrRVedKpf7ZNNP54WxX1klQm-wOHLJ5f2HoM63jlldSrJ1B/pub?gid=0&single=true&output=csv";
 
+const FAQ_LIST_SHEET_PATH =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQtmG_TVITt8bLX7FQYyAmLvZkG2AVfsG67P4U22uRzgq7OcvnjHpp4xkG31-2pWcZDQja3Q_O7ZRe2/pub?gid=0&single=true&output=csv";
+
 const TALK_LIST_FILE_PATH = path.resolve(
   __dirname,
   "./public/about/talks.json"
@@ -36,6 +39,8 @@ const MEDIA_LIST_FILE_PATH = path.resolve(
   __dirname,
   "./public/about/media.json"
 );
+
+const FAQ_LIST_FILE_PATH = path.relative(__dirname, "./public/faq.json");
 
 const MEDIA_LIST_PHOTO_PATH = path.resolve(
   __dirname,
@@ -95,6 +100,19 @@ function loadMediaList() {
   return new Promise((resolve, reject) => {
     axios
       .get(MEDIA_LIST_SHEET_PATH)
+      .then(result => {
+        csv()
+          .fromString(result.data)
+          .then(resolve);
+      })
+      .catch(reject);
+  });
+}
+
+function loadFAQList() {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(FAQ_LIST_SHEET_PATH)
       .then(result => {
         csv()
           .fromString(result.data)
@@ -231,6 +249,31 @@ async function scrapEvents() {
   }
 }
 
+async function scrapFAQ() {
+  let newFaq;
+  try {
+    newFaq = await loadFAQList();
+  } catch (e) {
+    console.error(e);
+    return;
+  }
+  let savedFaq;
+  try {
+    await fs.ensureFile(FAQ_LIST_FILE_PATH);
+    savedFaq = await fs.readJson(FAQ_LIST_FILE_PATH, { spaces: "\t" });
+  } catch (e) {
+    console.error(e);
+  }
+  if (JSON.stringify(newFaq) !== JSON.stringify(savedFaq)) {
+    console.info("FAQ are updated!");
+    try {
+      await fs.writeJson(FAQ_LIST_FILE_PATH, newFaq, { spaces: "\t" });
+    } catch (e) {
+      console.error(e);
+    }
+  }
+}
+
 function downloadImage(url, savePath) {
   return new Promise((resolve, reject) => {
     request.head(url, (error, response, _) => {
@@ -259,6 +302,7 @@ async function scrapAll() {
   await scrapMedia();
   await scrapMembers();
   await scrapEvents();
+  await scrapFAQ();
   console.info("Finish scraper");
 }
 

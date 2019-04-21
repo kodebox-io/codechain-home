@@ -1,0 +1,10 @@
+{
+    "search": {
+        "title": "Search for Resources",
+        "no_result": "no result",
+        "placeholder": "Enter your search terms..."
+    },
+    "category": {
+        "description": "Or <b>Browse</b> categories"
+    }
+}

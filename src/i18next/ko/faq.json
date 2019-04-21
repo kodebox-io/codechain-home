@@ -1,0 +1,10 @@
+{
+    "search": {
+        "title": "자주묻는 질문 검색",
+        "no_result": "결과가 없습니다.",
+        "placeholder": "검색할 단어를 입력하세요..."
+    },
+    "category": {
+        "description": "또는 카테고리에서 찾기"
+    }
+}

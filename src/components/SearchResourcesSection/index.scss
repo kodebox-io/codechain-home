@@ -1,0 +1,28 @@
+@import "styles/variables.scss";
+
+.Search-resources-section {
+  padding: 180px 0px 60px 0px;
+
+  .section-name-container {
+    margin-bottom: 60px;
+  }
+  .select-container {
+    margin: 0 auto;
+    max-width: 900px;
+    .custom-select__control {
+      border: none;
+      height: 50px;
+      padding-left: 12px;
+    }
+    .custom-select__indicator {
+      color: $turquoise-blue;
+    }
+
+    .custom-select__menu {
+      .custom-select__menu-list {
+        color: $turquoise-blue;
+        text-align: left;
+      }
+    }
+  }
+}
