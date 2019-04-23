@@ -1,7 +1,14 @@
+@import "styles/mixin.scss";
+
 .Media-item {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid white;
+
+  .custom-flex-container {
+    display: flex;
+  }
+
   .info-container {
     color: white;
     flex: 1;
@@ -29,5 +36,15 @@
   .photo {
     width: 170px;
     height: 150px;
+  }
+
+  @include respond-below(sm) {
+    .custom-flex-container {
+      display: block;
+    }
+
+    .photo {
+      margin-top: 14px;
+    }
   }
 }

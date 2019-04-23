@@ -1,8 +1,8 @@
 {
     "search": {
-        "title": "Search for Resources",
+        "title": "How it Works",
         "no_result": "no result",
-        "placeholder": "Enter your search terms..."
+        "placeholder": "Enter your search terms."
     },
     "category": {
         "description": "Or <b>Browse</b> categories"

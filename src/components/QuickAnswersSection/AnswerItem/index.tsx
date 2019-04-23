@@ -4,6 +4,8 @@ import * as React from "react";
 import { withTranslation, WithTranslation } from "react-i18next";
 import { RawFaqData } from "../../FAQ";
 import "./index.scss";
+const showdown = require("showdown");
+const converter = new showdown.Converter({ tables: "true" });
 
 interface OwnProps {
     data: RawFaqData;
@@ -40,13 +42,16 @@ class AnswerItem extends React.Component<Props, State> {
                     {isOpen ? <ArrowDropUp /> : <ArrowDropDown />}
                 </div>
                 {isOpen && (
-                    <div className={"answer-item-answer-container"}>
-                        <span>
-                            {i18n.language === "ko"
-                                ? data.answer_ko
-                                : data.answer_en}
-                        </span>
-                    </div>
+                    <div
+                        className={"answer-item-answer-container"}
+                        dangerouslySetInnerHTML={{
+                            __html: converter.makeHtml(
+                                i18n.language === "ko"
+                                    ? data.answer_ko
+                                    : data.answer_en
+                            )
+                        }}
+                    />
                 )}
             </div>
         );

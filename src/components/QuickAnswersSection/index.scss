@@ -4,17 +4,6 @@
   padding: 80px 0px 80px 0px;
   background-color: white;
 
-  .container {
-    max-width: 1000px;
-  }
-
-  .quick-answer-title {
-    font-size: 1.2rem;
-    margin-bottom: 60px;
-    text-align: center;
-    color: $turquoise-blue;
-  }
-
   .answer-container {
     padding: 0px 0px 60px 0px;
 
@@ -22,7 +11,7 @@
       margin-bottom: 12px;
       span {
         color: $turquoise-blue;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: bold;
       }
     }

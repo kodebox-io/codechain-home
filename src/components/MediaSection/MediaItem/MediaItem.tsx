@@ -13,7 +13,7 @@ export default class MediaItem extends React.Component<Props, any> {
         return (
             <div className="Media-item">
                 <a href={media.link} target="_blank">
-                    <div className="d-flex">
+                    <div className="custom-flex-container">
                         <div className="info-container">
                             <div className="title-container">
                                 <span>{media.title}</span>
