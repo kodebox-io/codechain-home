@@ -40,7 +40,7 @@ const MEDIA_LIST_FILE_PATH = path.resolve(
   "./public/about/media.json"
 );
 
-const FAQ_LIST_FILE_PATH = path.relative(__dirname, "./public/faq.json");
+const FAQ_LIST_FILE_PATH = path.resolve(__dirname, "./public/faq.json");
 
 const MEDIA_LIST_PHOTO_PATH = path.resolve(
   __dirname,
