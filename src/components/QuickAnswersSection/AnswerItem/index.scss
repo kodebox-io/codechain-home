@@ -4,7 +4,6 @@
 .Answer-item {
   padding: 24px 0px 24px 0px;
   border-bottom: 1px solid #e2e2e2;
-  cursor: pointer;
 
   &.selected {
     border-bottom: 1px solid #05acd152;
@@ -13,6 +12,7 @@
   .answer-item-question-container {
     font-weight: bold;
     font-size: 1.1rem;
+    cursor: pointer;
   }
 
   .answer-item-question-container.selected {
@@ -22,9 +22,14 @@
     margin-top: 20px;
     white-space: pre-line;
 
+    a {
+      color: $turquoise-blue !important;
+    }
+
     table {
       width: 100%;
       border: 1px solid #bbbbbb;
+
       th,
       td {
         padding: 12px;

@@ -5,7 +5,10 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import { RawFaqData } from "../../FAQ";
 import "./index.scss";
 const showdown = require("showdown");
-const converter = new showdown.Converter({ tables: "true" });
+const converter = new showdown.Converter({
+    tables: "true",
+    openLinksInNewWindow: true
+});
 
 interface OwnProps {
     data: RawFaqData;
@@ -27,12 +30,12 @@ class AnswerItem extends React.Component<Props, State> {
         return (
             <div
                 className={`Answer-item ${isOpen && "selected"}`}
-                onClick={this.toggle}
                 id={`question-${data.id}`}
             >
                 <div
                     className={`answer-item-question-container ${isOpen &&
                         "selected"}`}
+                    onClick={this.toggle}
                 >
                     <span>
                         {i18n.language === "ko"
