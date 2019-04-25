@@ -122,7 +122,7 @@ class Header extends React.Component<Props, State> {
                     <div className="divider" />
                     <div className="menu-item">
                         <Link to="/faq">
-                            <span>FAQs</span>
+                            <span>How it Works</span>
                         </Link>
                     </div>
                     <div className="divider" />
@@ -254,7 +254,9 @@ class Header extends React.Component<Props, State> {
                                 <div className="divider-vertical" />
                                 <div className="menu-item">
                                     <Link to="/faq" onClick={this.toggle}>
-                                        <span className="item-name">FAQs</span>
+                                        <span className="item-name">
+                                            How it Works
+                                        </span>
                                     </Link>
                                 </div>
                                 <div className="divider-vertical" />

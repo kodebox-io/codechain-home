@@ -1,7 +1,6 @@
 import * as _ from "lodash";
 import * as React from "react";
 import { withTranslation, WithTranslation } from "react-i18next";
-import { Container } from "reactstrap";
 import { RawFaqData } from "../FAQ";
 import AnswerItem from "./AnswerItem";
 import "./index.scss";
@@ -20,38 +19,31 @@ class QuickAnswersSection extends React.Component<Props> {
         const groupData = data && this.parseData(data);
         return (
             <div className="Quick-answers">
-                <Container>
-                    {groupData ? (
-                        Object.keys(groupData).map((categoryId, index) => (
-                            <div key={index} className="answer-container">
-                                <div
-                                    className="category-title-container"
-                                    id={`category-${categoryId}`}
-                                >
-                                    <span>
-                                        {i18n.language === "ko"
-                                            ? groupData[categoryId][0]
-                                                  .categoryName_ko
-                                            : groupData[categoryId][0]
-                                                  .categoryName_en}
-                                    </span>
-                                </div>
-                                {groupData[categoryId].map(
-                                    (d, questionIndex) => (
-                                        <AnswerItem
-                                            data={d}
-                                            key={questionIndex}
-                                        />
-                                    )
-                                )}
+                {groupData ? (
+                    Object.keys(groupData).map((categoryId, index) => (
+                        <div key={index} className="answer-container">
+                            <div
+                                className="category-title-container"
+                                id={`category-${categoryId}`}
+                            >
+                                <span>
+                                    {i18n.language === "ko"
+                                        ? groupData[categoryId][0]
+                                              .categoryName_ko
+                                        : groupData[categoryId][0]
+                                              .categoryName_en}
+                                </span>
                             </div>
-                        ))
-                    ) : (
-                        <div className="text-center">
-                            <div className="loader reverse" />
+                            {groupData[categoryId].map((d, questionIndex) => (
+                                <AnswerItem data={d} key={questionIndex} />
+                            ))}
                         </div>
-                    )}
-                </Container>
+                    ))
+                ) : (
+                    <div className="text-center">
+                        <div className="loader reverse" />
+                    </div>
+                )}
             </div>
         );
     }

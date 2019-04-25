@@ -2,7 +2,7 @@
     "search": {
         "title": "How it Works",
         "no_result": "no result",
-        "placeholder": "Enter your search terms."
+        "placeholder": "Enter your keyword."
     },
     "category": {
         "description": "Or <b>Browse</b> categories"

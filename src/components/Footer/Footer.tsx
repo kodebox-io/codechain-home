@@ -137,6 +137,13 @@ export default class Footer extends React.Component<any, any> {
                             </Link>
                         </div>
                         <div className="link-item-col">
+                            <Link to="/faq">
+                                <span className="link-header">
+                                    How it Works
+                                </span>
+                            </Link>
+                        </div>
+                        <div className="link-item-col">
                             <a
                                 target="_blank"
                                 href="https://medium.com/codechain"

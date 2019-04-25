@@ -1,14 +1,39 @@
 @import "styles/variables.scss";
+@import "styles/mixin.scss";
 
 .Search-resources-section {
-  padding: 180px 0px 60px 0px;
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  align-items: center;
 
   .section-name-container {
     margin-bottom: 60px;
   }
+  .search-resource-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0px 48px 0px 48px;
+  }
+
+  .select-wrapper {
+    padding: 0px 48px 0px 48px;
+    margin-left: auto;
+  }
+
+  @include respond-below(sm) {
+    .search-resource-title {
+      padding: 0px 24px 0px 24px;
+    }
+
+    .select-wrapper {
+      display: none;
+    }
+  }
+
   .select-container {
-    margin: 0 auto;
-    max-width: 900px;
+    width: 400px;
+
     .custom-select__control {
       border: none;
       height: 50px;
@@ -19,6 +44,7 @@
     }
 
     .custom-select__menu {
+      margin-top: 4px;
       .custom-select__menu-list {
         color: $turquoise-blue;
         text-align: left;

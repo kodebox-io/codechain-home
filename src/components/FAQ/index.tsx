@@ -3,6 +3,7 @@ import * as React from "react";
 import CategoriesSection from "../CategoriesSection";
 import QuickAnswersSection from "../QuickAnswersSection";
 import SearchResourcesSection from "../SearchResourcesSection";
+import "./index.scss";
 
 export interface RawFaqData {
     id: string;
@@ -40,16 +41,22 @@ class FAQ extends React.Component<any, State> {
     public render() {
         const { faqData } = this.state;
         return (
-            <div>
+            <div className="Faq">
                 <SearchResourcesSection
                     data={faqData}
                     onSelect={this.handleSelectQuestion}
                 />
-                <CategoriesSection
-                    data={faqData}
-                    onSelect={this.handleSelectCategory}
-                />
-                <QuickAnswersSection data={faqData} />
+                <div className="faq-content-container">
+                    <div className="faq-left">
+                        <CategoriesSection
+                            data={faqData}
+                            onSelect={this.handleSelectCategory}
+                        />
+                    </div>
+                    <div className="faq-right">
+                        <QuickAnswersSection data={faqData} />
+                    </div>
+                </div>
             </div>
         );
     }

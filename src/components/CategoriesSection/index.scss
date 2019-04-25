@@ -1,7 +1,8 @@
 .Categories {
-  padding: 40px 0 80px 0;
+  padding: 80px 48px 80px 48px;
   text-align: center;
-  color: white;
+  background-color: white;
+  height: 100%;
 
   .description {
     margin-bottom: 60px;
@@ -12,14 +13,10 @@
 
   .category-item {
     border: 1px solid white;
-    display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     width: 100%;
     cursor: pointer;
     font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    height: 80px;
-    justify-content: center;
+    text-align: left;
   }
 }

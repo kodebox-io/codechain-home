@@ -1,0 +1,26 @@
+@import "styles/variables.scss";
+@import "styles/mixin.scss";
+
+.Faq {
+  .faq-content-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+
+    .faq-left {
+      width: 360px;
+      border-right: 1px solid $light-blue-grey;
+    }
+
+    @include respond-below(sm) {
+      .faq-left {
+        display: none;
+      }
+    }
+
+    .faq-right {
+      flex: 1;
+      min-height: 100vh;
+    }
+  }
+}

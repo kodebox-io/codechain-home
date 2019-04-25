@@ -3,7 +3,6 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import Select from "react-select";
 import { getOptionValue } from "react-select/lib/builtins";
 import { ValueType } from "react-select/lib/types";
-import { Container } from "reactstrap";
 import { RawFaqData } from "../FAQ";
 import "./index.scss";
 
@@ -30,14 +29,10 @@ class SearchResourcesSection extends React.Component<Props> {
         const options = data && this.parseData(data);
         return (
             <div className="Search-resources-section">
-                <Container>
-                    <div className="section-name-container">
-                        <div className="section-title-container">
-                            <span className="section-title reverse">
-                                {t("faq:search.title")}
-                            </span>
-                        </div>
-                    </div>
+                <div className="search-resource-title">
+                    <span>{t("faq:search.title")}</span>
+                </div>
+                <div className="select-wrapper">
                     <Select
                         isLoading={!options}
                         className="select-container"
@@ -50,7 +45,7 @@ class SearchResourcesSection extends React.Component<Props> {
                         classNamePrefix="custom-select"
                         placeholder={t("faq:search.placeholder")}
                     />
-                </Container>
+                </div>
             </div>
         );
     }

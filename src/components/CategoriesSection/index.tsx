@@ -1,7 +1,6 @@
 import * as _ from "lodash";
 import * as React from "react";
 import { Trans, withTranslation, WithTranslation } from "react-i18next";
-import { Col, Container, Row } from "reactstrap";
 import { RawFaqData } from "../FAQ";
 import "./index.scss";
 
@@ -20,35 +19,25 @@ class CategoriesSection extends React.Component<Props> {
         const categories = data && this.getCategories(data);
         return (
             <div className="Categories">
-                <Container>
-                    <div className="description">
-                        <span>
-                            <Trans i18nKey={"faq:category.description"} />
-                        </span>
-                    </div>
-                    {categories ? (
-                        <Row>
-                            {categories.map((c, index) => (
-                                <Col
-                                    key={index}
-                                    md={4}
-                                    // tslint:disable-next-line:jsx-no-lambda
-                                    onClick={() => {
-                                        this.props.onSelect(c.id);
-                                    }}
-                                >
-                                    <div className="category-item">
-                                        <span>{c.label}</span>
-                                    </div>
-                                </Col>
-                            ))}
-                        </Row>
-                    ) : (
-                        <div className="text-center">
-                            <div className="loader reverse" />
+                {categories ? (
+                    categories.map((c, index) => (
+                        <div
+                            key={index}
+                            // tslint:disable-next-line:jsx-no-lambda
+                            onClick={() => {
+                                this.props.onSelect(c.id);
+                            }}
+                        >
+                            <div className="category-item">
+                                <span>{c.label}</span>
+                            </div>
                         </div>
-                    )}
-                </Container>
+                    ))
+                ) : (
+                    <div className="text-center">
+                        <div className="loader reverse" />
+                    </div>
+                )}
             </div>
         );
     }
