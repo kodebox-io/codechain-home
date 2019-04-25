@@ -3,171 +3,171 @@
 		"id": "1",
 		"categoryId": "1",
 		"categoryName_ko": "1. 코드체인 프로젝트",
-		"categoryName_en": "tab_en1",
-		"question_ko": "1) 코드체인 플랫폼 구성",
-		"question_en": "question?",
-		"answer_ko": "코드체인 플랫폼은 네트워크와 각종 서비스 툴을 제공하는 서비스 플랫폼으로 구성되어 있습니다. 코드체인 플랫폼의 서비스 레이어를 통해 다양한 자산이 토큰화 될 수 있습니다.",
-		"answer_en": "answer?"
+		"categoryName_en": "1. CodeChain Project",
+		"question_ko": "1) 코드체인 플랫폼",
+		"question_en": "1) CodeChain Platform",
+		"answer_ko": "코드체인 플랫폼은 네트워크와 각종 서비스 툴을 제공하는 서비스 플랫폼으로 구성되어 있습니다. \n코드체인 플랫폼의 서비스 레이어를 통해 다양한 자산이 토큰화 될 수 있습니다.",
+		"answer_en": "CodeChain is a blockchain network specialized in issuing and managing digital assets. \nThe CodeChain platform consists of a network and a service platform that provides a diverse set of service tools. \nVarious assets can be tokenized through the CodeChain platform’s service layer."
 	},
 	{
 		"id": "2",
 		"categoryId": "1",
 		"categoryName_ko": "1. 코드체인 프로젝트",
-		"categoryName_en": "",
+		"categoryName_en": "1. CodeChain Project",
 		"question_ko": "2) 코드체인 네트워크의 합의 방식",
-		"question_en": "",
-		"answer_ko": "코드체인은 텐더민트 방식의 합의 알고리즘에 기반하여 자체 구현한 네트워크로 운영됩니다. 검증노드는 허용된 노드만 블록생성에 참여할 수 있는 비개방형(permissioned) 네트워크로 구성되어 있습니다.",
-		"answer_en": ""
+		"question_en": "2) The CodeChain Network’s Consensus Mechanism",
+		"answer_ko": "코드체인은 텐더민트 방식의 합의 알고리즘에 기반하여 자체 구현한 네트워크로 운영됩니다. \n스테이크를 가진 검증 노드는 누구나 블록생성에 참여할 수 있는 개방형 네트워크로 구성되어 있습니다. \n",
+		"answer_en": "CodeChain operates on a clean room implementation of Tendermint consensus algorithm. \nCodeChain is a public network, meaning nodes with enough stake can act as validators and create new blocks."
 	},
 	{
 		"id": "3",
 		"categoryId": "1",
 		"categoryName_ko": "1. 코드체인 프로젝트",
-		"categoryName_en": "",
-		"question_ko": "3) 코드체인의 자산 발행 플로토콜",
-		"question_en": "",
+		"categoryName_en": "1. CodeChain Project",
+		"question_ko": "3) 코드체인의 자산 발행 프로토콜",
+		"question_en": "3) CodeChain Asset Minting Protocol",
 		"answer_ko": "코드체인의 두가지 프로토콜 중 하나인 자산프로토콜(Asset Protocol)을 통해 KYC/AML 규정, 락업(Lock-up) 기간, 투자자 수 등 각종 규제가 선제적으로 준수되는 상태에서 디지털 토큰을 발행할 수 있습니다.",
-		"answer_en": ""
+		"answer_en": "The Asset Protocol, one of the two protocols currently offered by CodeChain, enables digital token issuance supporting regulatory compliance, such as KYC/AML, lock-up periods, privacy, etc.."
 	},
 	{
 		"id": "4",
 		"categoryId": "1",
 		"categoryName_ko": "1. 코드체인 프로젝트",
-		"categoryName_en": "",
-		"question_ko": "4) 코드체인의 자산 거래 플로토콜",
-		"question_en": "",
+		"categoryName_en": "1. CodeChain Project",
+		"question_ko": "4) 코드체인의 자산 거래 프로토콜",
+		"question_en": "4) CodeChain Asset Exchange Protocol",
 		"answer_ko": "발행된 디지털 토큰은 자산거래 프로토콜(Asset Exchange Protocol)을 통하여 소유자 내역 등 개인정보가 보호되는 안전한 상태에서 거래가 이루어지도록 프로그래밍됩니다.",
-		"answer_en": ""
+		"answer_en": "Issued digital tokens are programmed through the Asset Exchange Protocol in order to ensure that transactions are carried out in a secure manner that keeps personal information, such as transaction history, safe and protected."
 	},
 	{
 		"id": "5",
 		"categoryId": "1",
 		"categoryName_ko": "1. 코드체인 프로젝트",
-		"categoryName_en": "",
-		"question_ko": "5) 도구 - 익스플로러",
-		"question_en": "",
-		"answer_ko": "코드체인이 현재 제공하는 도구에는 크게 총 세 가지(익스플로러, 콘솔, 지갑)가 있습니다. 코드체인 익스플로러는 코드체인 네트워크의 전반적인 상황(총 생성된 블록 수, 평균 블록 생성 시간, 한 블록에 포함되는 데이터 용량 등), 거래 내역, 코드체인 상에서 발행된 디지털 자산과 관련한 정보 등을 제공하고 있습니다.",
-		"answer_en": ""
+		"categoryName_en": "1. CodeChain Project",
+		"question_ko": "5) 익스플로러",
+		"question_en": "5) Explorer",
+		"answer_ko": "코드체인이 현재 제공하는 도구에는 크게 총 세 가지(익스플로러, 지갑, 콘솔)가 있습니다. \n코드체인 익스플로러는 코드체인 네트워크의 전반적인 상황(총 생성된 블록 수, 평균 블록 생성 시간, 한 블록에 포함되는 데이터 용량 등), 거래 내역, 코드체인 상에서 발행된 디지털 자산과 관련한 정보 등을 제공하고 있습니다.",
+		"answer_en": "There are currently three main types of tools provided by CodeChain: Explorer, Console, and Wallet. \nCodeChain Explorer provides information regarding the overall situation of the CodeChain network (total number of generated blocks, average block creation time, amount of data contained in one block, etc), transaction history of the digital assets that were minted on CodeChain."
 	},
 	{
 		"id": "6",
 		"categoryId": "1",
 		"categoryName_ko": "1. 코드체인 프로젝트",
-		"categoryName_en": "tab_en1",
-		"question_ko": "6) 도구 - 지갑",
-		"question_en": "question?",
-		"answer_ko": "코드체인 지갑은 디지털 자산을 보관하고 전송하는 서비스를 제공합니다. 혹은 개인이 디지털 자산을 직접 발행해볼 수 있기도 한데요, 이와 관련한 자세한 내용은 아래의 동영상이나 블로그를 참고해주세요.",
-		"answer_en": ""
+		"categoryName_en": "1. CodeChain Project",
+		"question_ko": "6) 지갑",
+		"question_en": "6) Wallet",
+		"answer_ko": "코드체인 지갑은 디지털 자산을 보관하고 전송하는 서비스를 제공합니다. \n혹은 개인이 디지털 자산을 직접 발행해볼 수 있기도 한데요, 이와 관련한 자세한 내용은 [블로그](https://medium.com/codechain)를 참고해주세요.",
+		"answer_en": "CodeChain Wallet stores and transfers your digital assets. It also enables you to publish your own digital assets directly. \nFor more information regarding this matter, please refer to the [blog post](https://medium.com/codechain)."
 	},
 	{
 		"id": "7",
 		"categoryId": "1",
 		"categoryName_ko": "1. 코드체인 프로젝트",
-		"categoryName_en": "",
-		"question_ko": "7) 도구 - 콘솔",
-		"question_en": "",
-		"answer_ko": "코드체인 콘솔은 고객사가 보다 쉽게 코드체인 플랫폼 위에서 자산토큰화를 할 수 있도록 지원하기 위해 마련된 서비스입니다. 프로그래밍이나 블록체인과 관련한 배경지식이 없는 고객도 코드체인 콘솔을 통해 규제가 준수되는 상태에서 디지털 자산을 발행할 수 있고 발행 이후 지분보유자들의 의사결정을 위한 투표, 수익 배당등을 손쉽게 관리할 수 있습니다.",
-		"answer_en": ""
+		"categoryName_en": "1. CodeChain Project",
+		"question_ko": "7) 콘솔",
+		"question_en": "7) Console",
+		"answer_ko": "코드체인 콘솔은 고객사가 보다 쉽게 코드체인 플랫폼 위에서 자산토큰화를 할 수 있도록 지원하기 위해 마련된 서비스입니다. \n프로그래밍이나 블록체인과 관련한 배경지식이 없는 고객도 코드체인 콘솔을 통해 규제가 준수되는 상태에서 디지털 자산을 발행할 수 있고 발행 이후 지분보유자들의 의사결정을 위한 투표, 수익 배당등을 손쉽게 관리할 수 있습니다.",
+		"answer_en": "CodeChain Console is designed to help companies by facilitating the process of asset tokenization on the CodeChain platform. \nEven people with no software programming background can issue digital assets and manage their whole life-cycle in a regulated manner through CodeChain Console. "
 	},
 	{
 		"id": "8",
 		"categoryId": "2",
 		"categoryName_ko": "2. 디지털 증권의 발행과 거래",
-		"categoryName_en": "tab_en2",
-		"question_ko": "1) 디지털 자산 vs 디지털 증권",
-		"question_en": "question?",
-		"answer_ko": "디지털 자산은 디지털 증권을 포함하는 광의의 개념입니다. 디지털 증권은 각 국가가 규정하는 ‘증권’에 해당하여 관련 법령(韓자본시장법, 美SEC 연방 증권법 등)의 적용을 받는 디지털 자산입니다. 코드체인은 디지털 증권 뿐 아니라 다양한 디지털 자산을 발행하고 거래할 수 있는 플랫폼입니다.\n\n더불어 디지털 증권에 적용되는 법령을 토큰 레벨에 내재시킴으로써 디지털증권이 규제를 준수하는 상태로 안전하게 발행되고 거래되도록 지원합니다.",
-		"answer_en": "answer?"
+		"categoryName_en": "2. Issuance and Transaction of Digital Securities",
+		"question_ko": "1) 디지털 자산과 디지털 증권의 차이",
+		"question_en": "1) Digital Assets and Digital Securities",
+		"answer_ko": "디지털 자산은 디지털 증권을 포함하는 광의의 개념입니다. 디지털 증권은 각 국가가 규정하는 ‘증권’에 해당하여 관련 법령(韓자본시장법, 美SEC 연방 증권법 등)의 적용을 받는 디지털 자산입니다. \n\n코드체인은 디지털 증권 뿐 아니라 다양한 디지털 자산을 발행하고 거래할 수 있는 플랫폼입니다. 더불어 디지털 증권에 적용되는 법령을 토큰 레벨에 내재시킴으로써 디지털증권이 규제를 준수하는 상태로 안전하게 발행되고 거래되도록 지원합니다.",
+		"answer_en": "Digital assets is a broad concept that includes digital securities. Digital securities are digital assets subject to the relevant laws and regulations (Korea Capital Market Law, U.S. Securities and Exchange Act etc.) that correspond to the ‘securities’ prescribed by each country.\n\nCodeChain is a platform for issuing and trading digital securities, as well as other types of digital assets. In addition, by enforcing statutes that apply to digital securities at the token-level, it ensures that securities are issued and traded in a regulated manner."
 	},
 	{
 		"id": "9",
 		"categoryId": "2",
 		"categoryName_ko": "2. 디지털 증권의 발행과 거래",
-		"categoryName_en": "tab_en2",
+		"categoryName_en": "2. Issuance and Transaction of Digital Securities",
 		"question_ko": "2) 코드체인과 디지털 증권",
-		"question_en": "question?",
+		"question_en": "2) CodeChain and Digital Securities",
 		"answer_ko": "디지털 증권은 확실한 신분의 투자자 간 매매되어 범죄 수단으로 악용되지 않아야 하고, 보유 및 거래와 관련한 사적인 정보가 안전하게 보호되어야 합니다. 또한 현존하는 규제 영역의 틀을 벗어나지 않는 범위 내에서 디지털 자산의 발행과 거래가 이루어질 수 있도록 강제되어야 합니다. 이와 더불어 거래 확정과 동시에 리얼타임으로 업데이트 되는 주주명부, 기존 수익형 자산(주식, 부동산 등)의 수익배분, 또는 지분에 따른 투표 등이 이뤄지는 등 블록체인의 장점을 활용할 수 있어야 합니다.\n\n코드체인은 KYC/AML 프로토콜, 각 국가의 증권법 등 해당 법령에 일치하는 프로토콜 등을 내재화할 수 있으며 자산 거래 내역이 공공에 드러나지 않아 개인정보를 안전히 보호하고 있습니다. 그리고 자산의 발행 뿐 아니라 이후 생애주기 관련 기능(수익 배당, 투표 등)을 토큰 레벨에서 프로그래밍 할 수 있도록 설계되었기에 디지털 증권에 특화된 블록체인이라 평가받고 있습니다.",
-		"answer_en": "answer?"
+		"answer_en": "Digital securities must be traded in a compliant manner and not be misused for criminal activities, and private information regarding holdings and transactions should be kept safe and secure. In other words, users are required to issue and trade digital assets within the framework of the existing regulatory territory. Digital securities issued on a blockchain should be able to utilize all the advantages that the blockchain technology provides, such as a real-time cap table updates, real-time profit distribution of existing profitable assets (stocks, real estate, etc.), or cross-border onchain voting.\n\nCodeChain can integrate protocols such as the KYC/AML protocol and the securities laws of each country while leaving transactions of assets undisclosed to the general public. Since CodeChain has an easy way of issuing digital assets and managing their entire life-cycle,  it is currently being evaluated as the number one blockchain choice for digital securities."
 	},
 	{
 		"id": "10",
 		"categoryId": "2",
 		"categoryName_ko": "2. 디지털 증권의 발행과 거래",
-		"categoryName_en": "",
+		"categoryName_en": "2. Issuance and Transaction of Digital Securities",
 		"question_ko": "3) 디지털 증권의 규제와 코드체인의 강점",
-		"question_en": "",
-		"answer_ko": "대부분의 자산토큰화를 위한 블록체인은 이더리움 위에서 ERC-20 프로토콜을 기반으로 설계되었습니다. 탈중앙화와 투명성을 표방하는 이더리움의 특성상, 그와 같은 체인 위에 올라간 자산정보가 공중에 공개되는 것을 막기가 힘듭니다. 당장 www.amberdata.io 에만 접속하여 어카운트만 입력하시면 해당 어카운트가 보유하고 있는 ERC-20등 기반 프로토콜의 자산 내역이 낱낱이 조회됩니다. 실제 디지털 자산이 현 규제 틀 내에서 안착되고 자산 소유와 관련한 사적 정보가 개인정보로 분류되어 비공개 의무화 될 때, 이더리움 프로토콜 상 발행된 자산들은 당해 요건을 충족시키기가 힘듭니다. 더불어 이더리움의 확장성도 문제 되는 바 자산 지분소유에 특화된 블록체인의 필요성이 대두되는 것입니다. \n\n코드체인은 이와 같은 문제를 미연에 방지하기 위하여 개인정보 보호와 확장성을 동시에 달성하는 자체 체인을 개발하였습니다.",
-		"answer_en": ""
+		"question_en": "3) Digital Securities Regulations and the Strengths of CodeChain",
+		"answer_ko": "대부분의 자산토큰화를 위한 블록체인은 이더리움 위에서 ERC-20 프로토콜을 기반으로 설계되었습니다. 탈중앙화와 투명성을 표방하는 이더리움의 특성상, 그와 같은 체인 위에 올라간 자산정보가 공중에 공개되는 것을 막기가 힘듭니다. 당장 [www.amberdata.io](https://www.amberdata.io/dashboards/applications) 에만 접속하여 어카운트만 입력하시면 해당 어카운트가 보유하고 있는 ERC-20등 기반 프로토콜의 자산 내역이 낱낱이 조회됩니다. 실제 디지털 자산이 현 규제 틀 내에서 안착되고 자산 소유와 관련한 사적 정보가 개인정보로 분류되어 비공개 의무화 될 때, 이더리움 프로토콜 상 발행된 자산들은 당해 요건을 충족시키기가 힘듭니다. 더불어 이더리움의 확장성도 문제 되는 바 자산 지분소유에 특화된 블록체인의 필요성이 대두되는 것입니다. \n\n코드체인은 이와 같은 문제를 미연에 방지하기 위하여 개인정보 보호와 확장성을 동시에 달성하는 자체 체인을 개발하였습니다.",
+		"answer_en": "Most blockchains designed for asset tokenization are based on the ERC-20 protocol on Ethereum. Due to the nature of Ethereum that focuses on decentralization and transparency, it is difficult to prevent public disclosure of asset information on such chains. Even now, if one goes on [www.amberdata.io](https://www.amberdata.io/dashboards/applications) and enter an account, it is possible to view all the asset portfolio of the account owner. It is difficult for digital securities that were issued under the Ethereum protocol to follow the current regulatory framework while also keeping private information related to property ownership as classified personal information. In addition, not only is Ethereum’s scalability a problem, but the need for a blockchain that specializes in asset ownership is also emerging.\n\nCodeChain developed its own chain to achieve privacy and scalability at the same time to prevent such problems."
 	},
 	{
 		"id": "11",
 		"categoryId": "3",
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
-		"categoryName_en": "tab_en3",
+		"categoryName_en": "3. CodeChain Token Mechanism",
 		"question_ko": "1) 코드체인 네트워크의 운용 시스템",
-		"question_en": "question?",
-		"answer_ko": "코드체인 토큰 메커니즘은 두 종류의 토큰에 의해 구성됩니다.\n코드체인 지분토큰(CodeChain Stake, 이하 ‘CCS’)은 코드체인 네트워크 상에서 CCS 소유자가 보유 중인 지분을 나타냅니다. 코드체인 코인(CodeChain Coin, 이하 ‘CCC’)은 수수료 토큰(Fee token)입니다. 즉, 서비스 공급자는 거래 혹은 투표 배당 등 On-Chain 상에서 이루어지는 여러 활동을 위해 CCC를 지불하게 되고, 지불된 수수료는 CCS 보유자에게 지분에 따라 배분됩니다.",
-		"answer_en": "answer?"
+		"question_en": "1) CodeChain Network Management System",
+		"answer_ko": "코드체인 토큰 메커니즘은 두 종류의 토큰에 의해 구성됩니다.\n코드체인 지분토큰(CodeChain Stake, 이하 ‘CCS’)은 코드체인 네트워크 상에서 CCS 소유자가 보유 중인 지분을 나타냅니다. \n코드체인 코인(CodeChain Coin, 이하 ‘CCC’)은 수수료 토큰(Fee token)입니다. 즉, 서비스 공급자는 거래 혹은 투표 배당 등 On-Chain 상에서 이루어지는 여러 활동을 위해 CCC를 지불하게 되고, 지불된 수수료는 CCS 보유자에게 지분에 따라 배분됩니다.",
+		"answer_en": "The CodeChain network is operated by a two-token mechanism. CCS (CodeChain Stake) tokens represent the stake in the network and CCC (CodeChain Coin) tokens are used for the fees that the services based on the CodeChain network charge for transactions. In other words, service providers have to pay the fee tokens for transactions or any on-chain actions (e.g. vote) they generate."
 	},
 	{
 		"id": "12",
 		"categoryId": "3",
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
-		"categoryName_en": "tab_en3",
+		"categoryName_en": "3. CodeChain Token Mechanism",
 		"question_ko": "2) 코드체인 네트워크 토큰의 총 발행량",
-		"question_en": "question?",
+		"question_en": "2) Total Issuance of Tokens on the CodeChain Network",
 		"answer_ko": "|         |     지분 토큰 (CCS)     |       수수료 토큰 (CCC)       |\n|:-------:|:-----------------------:|:-----------------------------:|\n| 총 공급 | 10,000,000  (1천만 CCS) | 100,000,000,000   (1천억 CCC) |",
-		"answer_en": "answer?"
+		"answer_en": "|              |    Stake tokens (CCS)    |         Fee Tokens(CCC)         |\n|--------------|:------------------------:|:-------------------------------:|\n| Total supply | 10,000,000  (10 million) | 100,000,000,000   (100 billion) |"
 	},
 	{
 		"id": "13",
 		"categoryId": "3",
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
-		"categoryName_en": "",
+		"categoryName_en": "3. CodeChain Token Mechanism",
 		"question_ko": "3) 인플레이션",
-		"question_en": "",
+		"question_en": "3) Inflation",
 		"answer_ko": "CCS와 CCC의 공급량이 결정되어 있으므로 인플레이션은 발생하지 않습니다.",
-		"answer_en": ""
+		"answer_en": "Since CCS and CCC are fixed in supply, inflation will not occur."
 	},
 	{
 		"id": "14",
 		"categoryId": "3",
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
-		"categoryName_en": "",
+		"categoryName_en": "3. CodeChain Token Mechanism",
 		"question_ko": "4) 코드체인 네트워크 내 CCS의 기능",
-		"question_en": "",
-		"answer_ko": "CCS 보유자는 ‘코드체인 네트워크의 주인’이라 할 수 있으며 이하의 권리를 주장할 수 있습니다. \n\n1. 검증자(Validator)로서 코드체인 네트워크에 참여할 권리\n2. 네트워크에 지불되는 수수료를 수취할 권리\n\nCCS는 코드체인 네트워크 상에서 자산토큰화 서비스를 제공하거나 노드를 운영하는 등 다양한 방법으로 코드체인 생태계 확장에 직접적으로 기여하는 기업이 우선적으로 보유할 수 있게 될 것입니다.\n",
-		"answer_en": ""
+		"question_en": "4) Functions of CCS in the CodeChain Network",
+		"answer_ko": "CCS 보유자는 ‘코드체인 네트워크의 주인’이라 할 수 있으며 이하의 권리를 주장할 수 있습니다. \n\n1. 검증자(Validator)로서 코드체인 네트워크에 참여할 권리\n2. 네트워크에 지불되는 수수료를 수취할 권리\n\nCCS는 코드체인 네트워크 상에서 자산토큰화 서비스를 제공하거나 노드를 운영하는 등 다양한 방법으로 코드체인 생태계 확장에 직접적으로 기여하는 기업이 우선적으로 보유할 수 있게 될 것입니다.",
+		"answer_en": "Stake token holders are the owners of the network and have the following rights:\n1. The right to participate in the network as a validator\n2. The right to earn transaction fees paid to the network\n\nEligible candidates for purchasing CodeChain stake tokens would primarily be entities that use the CodeChain network for the services they provide. \n"
 	},
 	{
 		"id": "15",
 		"categoryId": "3",
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
-		"categoryName_en": "",
+		"categoryName_en": "3. CodeChain Token Mechanism",
 		"question_ko": "5) CCS 배분 계획",
-		"question_en": "",
+		"question_en": "5) CCS Distribution Plan",
 		"answer_ko": "2019년부터 향후 4년간 매년 총 CCS의 20%를 배분할 계획입니다.",
-		"answer_en": ""
+		"answer_en": "We plan on allocating 20% of the total CCS every year for the next four years starting from 2019."
 	},
 	{
 		"id": "16",
 		"categoryId": "3",
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
-		"categoryName_en": "",
-		"question_ko": "6) 코드체인 네트워크 내 CCC의 기능",
-		"question_en": "",
-		"answer_ko": "자산 토큰을 발행하거나, 발행된 자산 토큰을 전송하는 등 코드체인 네트워크를 사용할 때 일정 금액의 거래 수수료를 CCC로 지불합니다. 곧 코드체인 네트워크 사용에 대한 비용을 지불할 때 통용되는 토큰이 바로 CCC입니다.",
-		"answer_en": ""
+		"categoryName_en": "3. CodeChain Token Mechanism",
+		"question_ko": "6) 코드체인 네트워크 내 CCC의 용도",
+		"question_en": "6) Use of CCC in the CodeChain Network",
+		"answer_ko": "자산 토큰을 발행하거나, 발행된 자산 토큰을 전송하는 등 코드체인 네트워크를 사용할 때 일정 금액의 거래 수수료를 CCC로 지불합니다. \n곧 코드체인 네트워크 사용에 대한 비용을 지불할 때 통용되는 토큰이 바로 CCC입니다.",
+		"answer_en": "CCC is used to pay for fees when using the CodeChain network, such as minting an asset token, transferring an issued asset token, etc.. \nIn other words, CCC is the currency of the CodeChain network."
 	},
 	{
 		"id": "17",
 		"categoryId": "3",
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
-		"categoryName_en": "",
+		"categoryName_en": "3. CodeChain Token Mechanism",
 		"question_ko": "7) CCC와 CCS의 관계",
-		"question_en": "",
-		"answer_ko": "네트워크 사용료로 수취된 CCC는 CCS 보유자들에게 보유비율에 따라 일정하게 배분됩니다. 예를 들어 (주)코드박스가 총 CCS의 80%를 보유 중인 경우 일정 기간동안 수취된 1000CCC 중 800CCC에 대하여 수취할 권리가 있습니다.",
-		"answer_en": ""
+		"question_en": "7) Relationship Between CCC and CCS",
+		"answer_ko": "네트워크 사용료로 수취된 CCC는 CCS 보유자들에게 보유비율에 따라 일정하게 배분됩니다. 예를 들어, (주)코드박스가 총 CCS의 80%를 보유 중인 경우 일정 기간동안 수취된 1,000CCC 중 800CCC에 대하여 수취할 권리가 있습니다.",
+		"answer_en": "Fee tokens earned by the network are redistributed to the stake token holders on a pro-rata basis. For example, if we assume Kodebox holds 80% of the total stake tokens and 1,000 fee tokens are paid, Kodebox earns 800 fee tokens."
 	},
 	{
 		"id": "18",
@@ -175,9 +175,9 @@
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
 		"categoryName_en": "",
 		"question_ko": "8) CCC 배분 계획",
-		"question_en": "",
-		"answer_ko": "|              | 2019 | 2020 | 2021 | 2022 | 2023 | Total |\n|--------------|-----:|-----:|-----:|-----:|-----:|------:|\n|   Partners   |   10 |   10 |   10 |   10 |   10 |    50 |\n| Contributors |    8 |    8 |    8 |    8 |    8 |    40 |\n|  Operations  |    2 |    2 |    2 |    2 |    2 |    10 |\n|     Total    |   20 |   20 |   20 |   20 |   20 |   100 |\n",
-		"answer_en": ""
+		"question_en": "8) CCC distribution",
+		"answer_ko": "<div style=\"text-align:right\">(십억개)</div>\n|              | 2019 | 2020 | 2021 | 2022 | 2023 | Total |\n|:------------:|-----:|-----:|-----:|-----:|-----:|------:|\n|   Partners   |   10 |   10 |   10 |   10 |   10 |    50 |\n| Contributors |    8 |    8 |    8 |    8 |    8 |    40 |\n|  Operations  |    2 |    2 |    2 |    2 |    2 |    10 |\n|     Total    |   20 |   20 |   20 |   20 |   20 |   100 |\n\nPartner는 코드체인 생태계의 건전한 성장에 기여하는 사업체, 각 국의 정부 기관, 금융기관, 비영리 기관등을 의미합니다.\n\nContributor는 코드체인 생태계의 건전한 성장에 기여하는 개인 혹은 커뮤니티를 의미합니다. [코드체인 깃허브](https://github.com/CodeChain-io) 저장소의 ‘pull requests’를 통해 코드체인의 발전에 기여하거나, 코드체인 네트워크를 확장시키거나, 코드체인 관련 기술이나 생태계를 설명하는 글을 작성, 또는 코드체인 에서 발행한 각종 아티클등을 해석하고 SNS에서 코드체인의 우수성을 구체적으로 설명하는 등의 언급이 모두 ‘기여’에 해당됩니다.\n\n일부 CCC가 코드박스의 운영(operations) 비용으로 사용됩니다. 코드체인 팀은 CCC를 다양한 거래소에 점진적으로 매각할 예정입니다.",
+		"answer_en": "<div style=\"text-align:right\">(billion)</div>\n|              | 2019 | 2020 | 2021 | 2022 | 2023 | Total |\n|:------------:|-----:|-----:|-----:|-----:|-----:|------:|\n|   Partners   |   10 |   10 |   10 |   10 |   10 |    50 |\n| Contributors |    8 |    8 |    8 |    8 |    8 |    40 |\n|  Operations  |    2 |    2 |    2 |    2 |    2 |    10 |\n|     Total    |   20 |   20 |   20 |   20 |   20 |   100 |\n\n**Partners**\nCCC will be given to businesses, governments, institutions, or nonprofit organizations that contribute to the growth and adoption of the CodeChain ecosystem.\n\n**Contributors**\nA small amount of CCC will be given to individuals and communities who contribute to the development of the CodeChain ecosystem. By contribution, we mean actions such as direct pull requests to any of [our GitHub](https://github.com/CodeChain-io) repositories, usage of the network, articles that explain the CodeChain technology or ecosystem, translations of CodeChain’s documents, mentions on social networks, etc.\n \n\n**Operations**\nReserved for Kodebox operational expenses. We periodically auction these CCC on various exchanges."
 	},
 	{
 		"id": "19",
@@ -185,9 +185,9 @@
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
 		"categoryName_en": "",
 		"question_ko": "9) 코드체인 파트너십 프로그램",
-		"question_en": "",
+		"question_en": "9) CodeChain Partnership Program",
 		"answer_ko": "코드체인 네트워크의 형성과 성장을 위해 기여하는 사업체는 코드체인 생태계내에서 가장 중요한 역할을 담당합니다. 신속한 생태계 확장을 위해 코드체인 팀은 파트너십 프로그램을 운영하고 있으며 프로젝트를 위해 코드체인 네트워크를 활용할 계획이 있는 사업체에게 코드체인의 본원화폐 CCC를 배분합니다. \n\n코드체인팀은 연간 공급량의 10.0%를 파트너십 프로그램에 사용할 예정입니다.  파트너에게 배분된 CCC는 오직 네트워크 수수료를 지불하는 목적으로만 사용되도록 프로그래밍 되어있습니다. 다시 말해 파트너는 배분받은 CCC를 2차 유통시장에서 거래할 수 없고 네트워크를 확장시키는 용도로만 사용하게 됩니다. 이러한 정책의 근본적인 목적은 CCC가 실제 가치를 인정받기도 전에 pump and dump의 수단으로 사용되는 것을 방지하기 위해서입니다.",
-		"answer_en": ""
+		"answer_en": "Entities that contribute to the growth and adoption of the CodeChain network are the most important players of the ecosystem. In order to encourage and drive faster adoption, we are running a Partnership Program through which we distribute CodeChain’s native currencies (CCC) to the entities (that plan to use the CodeChain network for their projects.) \nWe plan to spend 10% of the total supply every year to grow our ecosystem. The CCC distributed to the partners are meant to be used solely for paying the network’s transaction fees; CCC received via the Partnership Program will not be traded in secondary markets. The primary and the utmost reason for this policy is because we want to prevent any sort of price speculation or pump-and-dump schemes from anyone who holds CCC."
 	},
 	{
 		"id": "20",
@@ -195,8 +195,8 @@
 		"categoryName_ko": "3. 코드체인 토큰 매커니즘",
 		"categoryName_en": "",
 		"question_ko": "10) 블록생성에 대한 Transaction Fee의 배분",
-		"question_en": "",
-		"answer_ko": "코드체인 블록 생성에 대한 Transaction Fee는 크게 두가지(일반 이용료, 추가 이용료)로 구성되어 있습니다. 일반 이용료는 특정 거래가 검증되기 위한 최소 이용료이고 추가이용료는 이에 더해 보다 신속한 검증을 위해 추가로 지불하는 금액입니다.",
-		"answer_en": ""
+		"question_en": "10) Distribution of Transaction Fees Upon Block Generation",
+		"answer_ko": "코드체인 블록 생성에 대한 Transaction Fee는 크게 두가지(일반 이용료, 추가 이용료)로 구성되어 있습니다. \n일반 이용료는 특정 거래가 검증되기 위한 최소 이용료이고 추가이용료는 이에 더해 보다 신속한 검증을 위해 추가로 지불하는 금액입니다.",
+		"answer_en": "The fees consist of normal fees, which are the minimum rates required for paying the transactions, and express fees, which are additional rates required for settling urgent transactions. The normal fees earned by the CodeChain network for keeping transactions records are then distributed to the stake token holders (stakeholders of the network) on a pro-rata basis, and the additional fees are allocated to the validators that have settled the incumbent transactions."
 	}
 ]
