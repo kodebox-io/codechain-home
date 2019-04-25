@@ -56,7 +56,7 @@
 		"categoryName_en": "1. CodeChain Project",
 		"question_ko": "6) 지갑",
 		"question_en": "6) Wallet",
-		"answer_ko": "코드체인 지갑은 디지털 자산을 보관하고 전송하는 서비스를 제공합니다. \n혹은 개인이 디지털 자산을 직접 발행해볼 수 있기도 한데요, 이와 관련한 자세한 내용은 [블로그](https://medium.com/codechain)를 참고해주세요.",
+		"answer_ko": "코드체인 지갑은 디지털 자산을 보관하고 전송하는 서비스를 제공합니다. 혹은 개인이 디지털 자산을 직접 발행해볼 수 있기도 한데요, 이와 관련한 자세한 내용은 [블로그](https://medium.com/codechain)를 참고해주세요.",
 		"answer_en": "CodeChain Wallet stores and transfers your digital assets. It also enables you to publish your own digital assets directly. \nFor more information regarding this matter, please refer to the [blog post](https://medium.com/codechain)."
 	},
 	{
@@ -66,7 +66,7 @@
 		"categoryName_en": "1. CodeChain Project",
 		"question_ko": "7) 콘솔",
 		"question_en": "7) Console",
-		"answer_ko": "코드체인 콘솔은 고객사가 보다 쉽게 코드체인 플랫폼 위에서 자산토큰화를 할 수 있도록 지원하기 위해 마련된 서비스입니다. \n프로그래밍이나 블록체인과 관련한 배경지식이 없는 고객도 코드체인 콘솔을 통해 규제가 준수되는 상태에서 디지털 자산을 발행할 수 있고 발행 이후 지분보유자들의 의사결정을 위한 투표, 수익 배당등을 손쉽게 관리할 수 있습니다.",
+		"answer_ko": "코드체인 콘솔은 고객사가 보다 쉽게 코드체인 플랫폼 위에서 자산토큰화를 할 수 있도록 지원하기 위해 마련된 서비스입니다. 프로그래밍이나 블록체인과 관련한 배경지식이 없는 고객도 코드체인 콘솔을 통해 규제가 준수되는 상태에서 디지털 자산을 발행할 수 있고 발행 이후 지분보유자들의 의사결정을 위한 투표, 수익 배당등을 손쉽게 관리할 수 있습니다.",
 		"answer_en": "CodeChain Console is designed to help companies by facilitating the process of asset tokenization on the CodeChain platform. \nEven people with no software programming background can issue digital assets and manage their whole life-cycle in a regulated manner through CodeChain Console. "
 	},
 	{
@@ -145,7 +145,7 @@
 		"categoryName_ko": "2. 코드체인 토큰 매커니즘",
 		"categoryName_en": "2. CodeChain Token Mechanism",
 		"question_ko": "8) CCC 배분 계획",
-		"question_en": "8) CCC distribution",
+		"question_en": "8) CCC Distribution Plan",
 		"answer_ko": "<div style=\"text-align:right\">(십억개)</div>\n|              | 2019 | 2020 | 2021 | 2022 | 2023 | Total |\n|:------------:|-----:|-----:|-----:|-----:|-----:|------:|\n|   Partners   |   10 |   10 |   10 |   10 |   10 |    50 |\n| Contributors |    8 |    8 |    8 |    8 |    8 |    40 |\n|  Operations  |    2 |    2 |    2 |    2 |    2 |    10 |\n|     Total    |   20 |   20 |   20 |   20 |   20 |   100 |\n\nPartner는 코드체인 생태계의 건전한 성장에 기여하는 사업체, 각 국의 정부 기관, 금융기관, 비영리 기관등을 의미합니다.\n\nContributor는 코드체인 생태계의 건전한 성장에 기여하는 개인 혹은 커뮤니티를 의미합니다. [코드체인 깃허브](https://github.com/CodeChain-io) 저장소의 ‘pull requests’를 통해 코드체인의 발전에 기여하거나, 코드체인 네트워크를 확장시키거나, 코드체인 관련 기술이나 생태계를 설명하는 글을 작성, 또는 코드체인 에서 발행한 각종 아티클등을 해석하고 SNS에서 코드체인의 우수성을 구체적으로 설명하는 등의 언급이 모두 ‘기여’에 해당됩니다.\n\n일부 CCC가 코드박스의 운영(operations) 비용으로 사용됩니다. 코드체인 팀은 CCC를 다양한 거래소에 점진적으로 매각할 예정입니다.",
 		"answer_en": "<div style=\"text-align:right\">(billion)</div>\n|              | 2019 | 2020 | 2021 | 2022 | 2023 | Total |\n|:------------:|-----:|-----:|-----:|-----:|-----:|------:|\n|   Partners   |   10 |   10 |   10 |   10 |   10 |    50 |\n| Contributors |    8 |    8 |    8 |    8 |    8 |    40 |\n|  Operations  |    2 |    2 |    2 |    2 |    2 |    10 |\n|     Total    |   20 |   20 |   20 |   20 |   20 |   100 |\n\n**Partners**\nCCC will be given to businesses, governments, institutions, or nonprofit organizations that contribute to the growth and adoption of the CodeChain ecosystem.\n\n**Contributors**\nA small amount of CCC will be given to individuals and communities who contribute to the development of the CodeChain ecosystem. By contribution, we mean actions such as direct pull requests to any of [our GitHub](https://github.com/CodeChain-io) repositories, usage of the network, articles that explain the CodeChain technology or ecosystem, translations of CodeChain’s documents, mentions on social networks etc..\n \n\n**Operations**\nReserved for Kodebox operational expenses. We periodically auction these CCC on various exchanges."
 	},
