@@ -56,8 +56,8 @@
 		"categoryName_en": "CodeChain Project",
 		"question_ko": "지갑",
 		"question_en": "Wallet",
-		"answer_ko": "코드체인 지갑은 디지털 자산을 보관하고 전송하는 서비스를 제공합니다. 혹은 개인이 디지털 자산을 직접 발행해볼 수 있기도 한데요, 이와 관련한 자세한 내용은 [블로그](https://medium.com/codechain)를 참고해주세요.",
-		"answer_en": "CodeChain Wallet stores and transfers your digital assets. It also enables you to publish your own digital assets directly. \nFor more information regarding this matter, please refer to the [blog post](https://medium.com/codechain)."
+		"answer_ko": "코드체인 지갑은 디지털 자산을 보관하고 전송하는 서비스를 제공합니다. 혹은 개인이 디지털 자산을 직접 발행해볼 수 있기도 한데요, 이와 관련한 자세한 내용은 [블로그](https://medium.com/kodebox/%EC%BD%94%EB%93%9C%EC%B2%B4%EC%9D%B8-%EC%A7%80%EA%B0%91-%EC%84%A4%EB%AA%85%EC%84%9C-1-2-1db99af1f0e8)를 참고해주세요.",
+		"answer_en": "CodeChain Wallet stores and transfers your digital assets. It also enables you to publish your own digital assets directly. \nFor more information regarding this matter, please refer to the [blog post](https://medium.com/codechain/creating-codechain-wallet-f333055836f3)."
 	},
 	{
 		"id": "7",
