@@ -19,7 +19,7 @@ class LogoSection extends React.Component<Props> {
     }
     public render() {
         return (
-            <div className="Logo-section" id="home">
+            <div className="Logo-section" id="#home">
                 <div
                     className="graph-background rellax"
                     data-rellax-speed="5"

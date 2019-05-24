@@ -1,6 +1,5 @@
 import * as React from "react";
-import MediaQuery from "react-responsive";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "./Footer.scss";
 import logo from "./img/CodechainLogo_White.svg";
@@ -11,14 +10,6 @@ import telegram from "./img/telegram.svg";
 import twitter from "./img/twitter.svg";
 
 const HeaderHeight = 76;
-const scrollWithOffset = (el: any, offset: number) => {
-    const elementPosition = el.offsetTop - offset;
-    window.scroll({
-        top: elementPosition,
-        left: 0,
-        behavior: "smooth"
-    });
-};
 
 export default class Footer extends React.Component<any, any> {
     public render() {
@@ -98,11 +89,8 @@ export default class Footer extends React.Component<any, any> {
                     <div className="link-container">
                         <div className="link-item-col">
                             <Link
-                                to="/#feature"
-                                // tslint:disable-next-line:jsx-no-lambda
-                                scroll={el =>
-                                    scrollWithOffset(el, HeaderHeight)
-                                }
+                                to="/feature"
+                                onClick={this.linkHandler("#feature")}
                             >
                                 <span className="link-header">
                                     Why CodeChain
@@ -111,22 +99,16 @@ export default class Footer extends React.Component<any, any> {
                         </div>
                         <div className="link-item-col">
                             <Link
-                                to="/#platform"
-                                // tslint:disable-next-line:jsx-no-lambda
-                                scroll={el =>
-                                    scrollWithOffset(el, HeaderHeight)
-                                }
+                                to="/platform"
+                                onClick={this.linkHandler("#platform")}
                             >
                                 <span className="link-header">Platform</span>
                             </Link>
                         </div>
                         <div className="link-item-col">
                             <Link
-                                to="/#contact"
-                                // tslint:disable-next-line:jsx-no-lambda
-                                scroll={el =>
-                                    scrollWithOffset(el, HeaderHeight)
-                                }
+                                to="/contact"
+                                onClick={this.linkHandler("#contact")}
                             >
                                 <span className="link-header">Contact</span>
                             </Link>
@@ -155,5 +137,19 @@ export default class Footer extends React.Component<any, any> {
                 </Container>
             </div>
         );
+    }
+
+    private linkHandler = (id: string) => () => {
+      window.setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el != null) {
+            const elementPosition = el.offsetTop - HeaderHeight;
+            window.scroll({
+                top: elementPosition,
+                left: 0,
+                behavior: "smooth"
+            });
+        }
+      }, 0);
     }
 }

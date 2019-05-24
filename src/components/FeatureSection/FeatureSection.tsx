@@ -13,7 +13,7 @@ type Props = WithTranslation;
 class FeatureSection extends React.Component<Props> {
     public render() {
         return (
-            <div className="Feature-section" id="feature">
+            <div className="Feature-section" id="#feature">
                 <Container>
                     <div className="section-name-container">
                         <div className="section-title-container">

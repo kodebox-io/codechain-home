@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { I18nextProvider } from "react-i18next";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import i18next from "../../i18next";
 import About from "../About/About";
 import FAQ from "../FAQ";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Home from "../Home/Home";
+import Home, { paths as homePaths } from "../Home/Home";
 import NotFound from "../NotFound/NotFound";
 import "./App.scss";
 
@@ -14,12 +14,16 @@ class App extends Component {
     public render() {
         return (
             <I18nextProvider i18n={i18next}>
-                <Router>
+                <Router hashType="noslash">
                     <div className="App">
                         <Header />
                         <div className="Content">
                             <Switch>
-                                <Route exact={true} path="/" component={Home} />
+                                <Route
+                                    exact={true}
+                                    path={[...homePaths, "/"]}
+                                    component={Home}
+                                />
                                 <Route
                                     exact={true}
                                     path="/about"

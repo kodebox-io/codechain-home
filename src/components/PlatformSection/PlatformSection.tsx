@@ -16,7 +16,7 @@ class PlatformSection extends React.Component<Props> {
     public render() {
         console.log()
         return (
-            <div className="Platform-section" id="platform">
+            <div className="Platform-section" id="#platform">
                 <Container>
                     <div className="section-name-container">
                         <div className="section-title-container">

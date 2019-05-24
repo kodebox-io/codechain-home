@@ -55,7 +55,7 @@ class ContactUsSection extends React.Component<Props, State> {
         } = this.state;
         const required = t("contact:required");
         return (
-            <div className="Contact-us-section" id="contact">
+            <div className="Contact-us-section" id="#contact">
                 <Container>
                     <div className="section-name-container">
                         <div className="section-title-container">

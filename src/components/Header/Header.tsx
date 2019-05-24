@@ -3,8 +3,7 @@ import Language from "@material-ui/icons/Language";
 import * as React from "react";
 import { withTranslation, WithTranslation } from "react-i18next";
 import MediaQuery from "react-responsive";
-import { Link, RouteComponentProps, withRouter } from "react-router-dom";
-import { NavHashLink as NavLink } from "react-router-hash-link";
+import { Link, NavLink, RouteComponentProps, withRouter } from "react-router-dom";
 import { Modal, ModalBody, Popover, PopoverBody } from "reactstrap";
 import "./Header.scss";
 import menuClose from "./img/Close.svg";
@@ -21,14 +20,6 @@ interface State {
 }
 
 const HeaderHeight = 76;
-const scrollWithOffset = (el: any, offset: number) => {
-    const elementPosition = el.offsetTop - offset;
-    window.scroll({
-        top: elementPosition,
-        left: 0,
-        behavior: "smooth"
-    });
-};
 
 type Props = RouteComponentProps & WithTranslation;
 
@@ -69,10 +60,9 @@ class Header extends React.Component<Props, State> {
                     "white-header"} ${checkingTop && "transition"}`}
             >
                 <NavLink
-                    to="/#home"
+                    to="/home"
                     activeClassName="selected"
-                    // tslint:disable-next-line:jsx-no-lambda
-                    scroll={el => scrollWithOffset(el, HeaderHeight)}
+                    onClick={this.linkHandler("#home")}
                 >
                     {isBlueHeader ? (
                         <img src={logoWhite} />
@@ -83,10 +73,9 @@ class Header extends React.Component<Props, State> {
                 <MediaQuery query="(min-width:1108px)">
                     <div className={`menu-item ml-auto`}>
                         <NavLink
-                            to="/#feature"
+                            to="/feature"
                             activeClassName="selected"
-                            // tslint:disable-next-line:jsx-no-lambda
-                            scroll={el => scrollWithOffset(el, HeaderHeight)}
+                            onClick={this.linkHandler("#feature")}
                         >
                             <span className="menu-item-header">
                                 Why CodeChain
@@ -95,20 +84,18 @@ class Header extends React.Component<Props, State> {
                     </div>
                     <div className="menu-item">
                         <NavLink
-                            to="/#platform"
+                            to="/platform"
                             activeClassName="selected"
-                            // tslint:disable-next-line:jsx-no-lambda
-                            scroll={el => scrollWithOffset(el, HeaderHeight)}
+                            onClick={this.linkHandler("#platform")}
                         >
                             <span className="menu-item-header">Platform</span>
                         </NavLink>
                     </div>
                     <div className="menu-item">
                         <NavLink
-                            to="/#contact"
+                            to="/contact"
                             activeClassName="selected"
-                            // tslint:disable-next-line:jsx-no-lambda
-                            scroll={el => scrollWithOffset(el, HeaderHeight)}
+                            onClick={this.linkHandler("#contact")}
                         >
                             <span className="menu-item-header">Contact</span>
                         </NavLink>
@@ -187,26 +174,24 @@ class Header extends React.Component<Props, State> {
                                 </div>
                                 <div className="logo-container">
                                     <NavLink
-                                        to="/#home"
+                                        to="/home"
                                         activeClassName="selected"
-                                        // tslint:disable-next-line:jsx-no-lambda
-                                        scroll={el =>
-                                            scrollWithOffset(el, HeaderHeight)
-                                        }
-                                        onClick={this.toggle}
+                                        onClick={() => {
+                                            this.toggle();
+                                            this.linkHandler("#home")();
+                                        }}
                                     >
                                         <img src={logoWhite} />
                                     </NavLink>
                                 </div>
                                 <div className="menu-item">
                                     <NavLink
-                                        to="/#feature"
+                                        to="/feature"
                                         activeClassName="selected"
-                                        // tslint:disable-next-line:jsx-no-lambda
-                                        scroll={el =>
-                                            scrollWithOffset(el, HeaderHeight)
-                                        }
-                                        onClick={this.toggle}
+                                        onClick={() => {
+                                            this.toggle();
+                                            this.linkHandler("#feature")();
+                                        }}
                                     >
                                         <span className="item-name">
                                             Why CodeChain
@@ -215,13 +200,12 @@ class Header extends React.Component<Props, State> {
                                 </div>
                                 <div className="menu-item">
                                     <NavLink
-                                        to="/#platform"
+                                        to="/platform"
                                         activeClassName="selected"
-                                        // tslint:disable-next-line:jsx-no-lambda
-                                        scroll={el =>
-                                            scrollWithOffset(el, HeaderHeight)
-                                        }
-                                        onClick={this.toggle}
+                                        onClick={() => {
+                                            this.toggle();
+                                            this.linkHandler("#platform")();
+                                        }}
                                     >
                                         <span className="item-name">
                                             Platform
@@ -230,13 +214,12 @@ class Header extends React.Component<Props, State> {
                                 </div>
                                 <div className="menu-item">
                                     <NavLink
-                                        to="/#contact"
+                                        to="/contact"
                                         activeClassName="selected"
-                                        // tslint:disable-next-line:jsx-no-lambda
-                                        scroll={el =>
-                                            scrollWithOffset(el, HeaderHeight)
-                                        }
-                                        onClick={this.toggle}
+                                        onClick={() => {
+                                            this.toggle();
+                                            this.linkHandler("#contact")();
+                                        }}
                                     >
                                         <span className="item-name">
                                             Contact
@@ -301,6 +284,20 @@ class Header extends React.Component<Props, State> {
                 </MediaQuery>
             </div>
         );
+    }
+
+    private linkHandler = (id: string) => () => {
+      window.setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el != null) {
+            const elementPosition = el.offsetTop - HeaderHeight;
+            window.scroll({
+                top: elementPosition,
+                left: 0,
+                behavior: "smooth"
+            });
+        }
+      }, 0);
     }
 
     private toggleLangButton = () => {
