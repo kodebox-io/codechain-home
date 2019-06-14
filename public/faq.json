@@ -206,7 +206,7 @@
 		"categoryName_en": "How can we help you?",
 		"question_ko": "문의하기",
 		"question_en": "Contact us",
-		"answer_ko": "더 궁금한 내용이 있다면 코드체인 텔레그램을 이용하시면 빠르게 문의하실 수 있습니다.\n\n[t.me/codechain_protocol](https://t.me/codechain_protocol)",
-		"answer_en": "If you have any queries, please do not hesistate to contact us on Telegram.\n\r\n[t.me/codechain_protocol](https://t.me/codechain_protocol)"
+		"answer_ko": "더 궁금한 내용이 있다면 코드체인 [텔레그램](https://t.me/codechain_protocol)을 이용하시면 빠르게 문의하실 수 있습니다.",
+		"answer_en": "If you have any queries, please do not hesistate to contact us on [Telegram](https://t.me/codechain_protocol)"
 	}
 ]
