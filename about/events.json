@@ -1,5 +1,14 @@
 [
 	{
+		"id": "27",
+		"subTitle": "2019",
+		"title": "RustConf 2019",
+		"startDate": "2019-8-22",
+		"endDate": "2019-8-23",
+		"link": "https://rustconf.com/",
+		"photo": "1pdDoJpU4Ue31tnGlEjT8bNgwftiP2Jpl"
+	},
+	{
 		"id": "26",
 		"subTitle": "2019",
 		"title": "BUIDL ASIA 2019",
