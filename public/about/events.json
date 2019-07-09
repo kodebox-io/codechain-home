@@ -1,6 +1,6 @@
 [
 	{
-		"id": "27",
+		"id": "28",
 		"subTitle": "2019",
 		"title": "RustConf 2019",
 		"startDate": "2019-8-22",
@@ -9,13 +9,22 @@
 		"photo": "1pdDoJpU4Ue31tnGlEjT8bNgwftiP2Jpl"
 	},
 	{
-		"id": "26",
+		"id": "27",
 		"subTitle": "2019",
 		"title": "BUIDL ASIA 2019",
 		"startDate": "2019-7-22",
 		"endDate": "2019-7-23",
 		"link": "https://www.buidl.asia/",
 		"photo": "1gC6oD6Gk03UEGctz213K1orbrMVTxtXg"
+	},
+	{
+		"id": "26",
+		"subTitle": "2019",
+		"title": "COSMOS HACKATOM SEOUL",
+		"startDate": "2019-7-19",
+		"endDate": "2019-7-20",
+		"link": "https://cosmos.network/",
+		"photo": "1dIBFWijOoZA5CuKZ6z8vyFO2TPi27MJv"
 	},
 	{
 		"id": "25",
