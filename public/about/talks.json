@@ -1,5 +1,17 @@
 [
 	{
+		"id": "26",
+		"title": "Cosmos HackAtom 2019 - CodeChain Consensus : Tendermint Rust Implementation",
+		"date": "July 20th, 2019",
+		"link": "https://docs.google.com/presentation/d/1xBImBml_qVgRRKO8DGEPYiP2vN42eYsGo23-Scc6yOs/edit?usp=sharing"
+	},
+	{
+		"id": "25",
+		"title": "Cosmos HackAtom 2019 - Build an app on CodeChain",
+		"date": "July 19th, 2019",
+		"link": "https://docs.google.com/presentation/d/1-kIGmCOl6nkg59EUXi1CqrJR5GcNUUEc_ijt-13idGU/edit?usp=sharing"
+	},
+	{
 		"id": "24",
 		"title": "CodeChain Connect 2019 - CodeChain Token Structure",
 		"date": "July 3rd, 2019",
