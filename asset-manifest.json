@@ -3,8 +3,8 @@
   "main.js": "/static/js/main.f28fff84.chunk.js",
   "main.js.map": "/static/js/main.f28fff84.chunk.js.map",
   "static/css/1.9d2deae0.chunk.css": "/static/css/1.9d2deae0.chunk.css",
-  "static/js/1.14bd3281.chunk.js": "/static/js/1.14bd3281.chunk.js",
-  "static/js/1.14bd3281.chunk.js.map": "/static/js/1.14bd3281.chunk.js.map",
+  "static/js/1.4635c3dc.chunk.js": "/static/js/1.4635c3dc.chunk.js",
+  "static/js/1.4635c3dc.chunk.js.map": "/static/js/1.4635c3dc.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/CodechainLogo_White.svg": "/static/media/CodechainLogo_White.630f622f.svg",
@@ -35,6 +35,6 @@
   "static/css/main.dd2e94f3.chunk.css.map": "/static/css/main.dd2e94f3.chunk.css.map",
   "static/css/1.9d2deae0.chunk.css.map": "/static/css/1.9d2deae0.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.ae1c36fe855530afaca5c9b055147078.js": "/precache-manifest.ae1c36fe855530afaca5c9b055147078.js",
+  "precache-manifest.787051e73865ee3dcacc40b1cd607198.js": "/precache-manifest.787051e73865ee3dcacc40b1cd607198.js",
   "service-worker.js": "/service-worker.js"
 }
