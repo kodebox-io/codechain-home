@@ -1,0 +1,33 @@
+<script>
+  const APP_STORE_LINK =
+    "https://itunes.apple.com/us/app/codechain-wallet/id1456966925";
+  const PLAY_STORE_LINK =
+    "https://play.google.com/store/apps/details?id=io.kodebox.ccwallet";
+
+  function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "iOS";
+    }
+
+    return "unknown";
+  }
+
+  switch (getMobileOperatingSystem()) {
+    case "Android":
+      location.href = PLAY_STORE_LINK;
+      break;
+    case "iOS":
+      location.href = APP_STORE_LINK;
+      break;
+    case "unknown":
+      document.write("Unsupported device");
+      break;
+  }
+</script>

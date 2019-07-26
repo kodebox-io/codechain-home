@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "RJPWBD3TMZ.io.kodebox.wcwallet",
+        "paths": ["/m/wallet-test"]
+      },
+      {
+        "appID": "RJPWBD3TMZ.io.kodebox.ccwallet",
+        "paths": ["/m/wallet"]
+      }
+    ]
+  }
+}
