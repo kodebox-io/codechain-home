@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.kodebox.wcwallet",
+      "sha256_cert_fingerprints": [
+        "2B:93:50:FE:B9:7C:A8:20:A7:2D:E4:79:73:A7:82:91:7A:0A:C6:92:1A:E1:88:F5:7B:FC:A7:01:66:64:20:71"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.kodebox.ccwallet",
+      "sha256_cert_fingerprints": [
+        "E9:21:00:DD:84:74:D9:84:45:40:E2:67:6F:85:94:D2:EA:27:74:4A:BC:69:A8:45:82:05:F2:BC:52:53:11:7F"
+      ]
+    }
+  }
+]
