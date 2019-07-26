@@ -35,6 +35,7 @@ echo "Removing existing files"
 rm -rf deploy/*
 
 echo "Updating gh-pages branch"
+shopt -s dotglob # https://askubuntu.com/questions/259383/how-can-i-get-mv-or-the-wildcard-to-move-hidden-files
 cp -rf build/* deploy
 
 echo "Createing CNAME File"
