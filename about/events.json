@@ -1,12 +1,21 @@
 [
 	{
-		"id": "28",
+		"id": "29",
 		"subTitle": "2019",
 		"title": "RustConf 2019",
 		"startDate": "2019-8-22",
 		"endDate": "2019-8-23",
 		"link": "https://rustconf.com/",
 		"photo": "1pdDoJpU4Ue31tnGlEjT8bNgwftiP2Jpl"
+	},
+	{
+		"id": "28",
+		"subTitle": "2019",
+		"title": "JSConf US 2019",
+		"startDate": "2019-8-12",
+		"endDate": "2019-8-14",
+		"link": "https://2019.jsconf.us/",
+		"photo": "1kkxJDdSeFvlHuA5rI43O830ni-BIFa2F"
 	},
 	{
 		"id": "27",
