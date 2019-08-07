@@ -27,7 +27,12 @@
       location.href = APP_STORE_LINK;
       break;
     case "unknown":
-      document.write("Unsupported device");
+      const message = /^ko/.test(navigator.language)
+        ? "지원되지 않는 기기입니다"
+        : "not supported on this device";
+      document.write(message);
+      alert(message);
+      location.href = APP_STORE_LINK;
       break;
   }
 </script>
