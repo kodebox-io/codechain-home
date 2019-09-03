@@ -1,5 +1,14 @@
 [
 	{
+		"id": "30",
+		"subTitle": "2019",
+		"title": "Empowering Blockchain Summit",
+		"startDate": "2019-9-13",
+		"endDate": "2019-9-14",
+		"link": "https://empoweringblockchainsummit.com/",
+		"photo": "1dgJ48YH2EsZJwnHE43kbvuK2T8mX1uP9"
+	},
+	{
 		"id": "29",
 		"subTitle": "2019",
 		"title": "RustConf 2019",
