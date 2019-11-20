@@ -1,5 +1,5 @@
 import * as React from "react";
-import { withTranslation, WithTranslation, Trans } from "react-i18next";
+import { Trans, withTranslation, WithTranslation } from "react-i18next";
 import laptop from "./img/laptop.png";
 import "./LogoSection.scss";
 const Rellax = require("rellax");
@@ -45,6 +45,14 @@ class LogoSection extends React.Component<Props> {
                             >
                                 <div className="custom-btn reverse paper-btn">
                                     White Paper
+                                </div>
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://research.codechain.io"
+                            >
+                                <div className="custom-btn reverse paper-btn">
+                                    Research
                                 </div>
                             </a>
                             <a
