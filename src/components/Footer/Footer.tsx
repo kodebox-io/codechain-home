@@ -4,7 +4,7 @@ import { Col, Container, Row } from "reactstrap";
 import "./Footer.scss";
 import logo from "./img/CodechainLogo_White.svg";
 import github from "./img/github.svg";
-import gitter from "./img/gitter.svg";
+import discord from "./img/discord.svg";
 import medium from "./img/medium.svg";
 import telegram from "./img/telegram.svg";
 import twitter from "./img/twitter.svg";
@@ -49,10 +49,10 @@ export default class Footer extends React.Component<any, any> {
                                 </a>
                                 <a
                                     target="_blank"
-                                    href="https://gitter.im/CodeChain-io/codechain"
+                                    href="https://discordapp.com/invite/xhpdXm7"
                                 >
                                     <img
-                                        src={gitter}
+                                        src={discord}
                                         className="mr-3 mr-md-0 ml-0 ml-md-3 link-icon"
                                     />
                                 </a>
