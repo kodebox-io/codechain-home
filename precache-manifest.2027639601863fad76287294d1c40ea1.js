@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "49a8ed55933700a34a2e",
-    "url": "/static/css/main.6c6fe2a6.chunk.css"
+    "revision": "394f941db8bbe84be5bc",
+    "url": "/static/css/main.691061b2.chunk.css"
   },
   {
-    "revision": "49a8ed55933700a34a2e",
-    "url": "/static/js/main.49a8ed55.chunk.js"
+    "revision": "394f941db8bbe84be5bc",
+    "url": "/static/js/main.394f941d.chunk.js"
   },
   {
-    "revision": "7dc4e16821718260d3c7",
-    "url": "/static/css/1.9b3a7577.chunk.css"
+    "revision": "a2292277eb87486c4ab0",
+    "url": "/static/css/1.81940c5b.chunk.css"
   },
   {
-    "revision": "7dc4e16821718260d3c7",
-    "url": "/static/js/1.7dc4e168.chunk.js"
+    "revision": "a2292277eb87486c4ab0",
+    "url": "/static/js/1.a2292277.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/github.11edc2fb.svg"
   },
   {
-    "revision": "038f66f2f40a448f0fd22862ed6c727f",
-    "url": "/static/media/gitter.038f66f2.svg"
+    "revision": "174f6104e48e40499b60f17a4760c28b",
+    "url": "/static/media/discord.174f6104.svg"
   },
   {
     "revision": "e5a5b160310514b2f52e92eb87740da8",
@@ -128,15 +128,15 @@ self.__precacheManifest = [
     "url": "/static/media/slick.b7c9e1e4.woff"
   },
   {
-    "revision": "d41f55a78e6f49a5512878df1737e58a",
-    "url": "/static/media/slick.d41f55a7.ttf"
-  },
-  {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/static/media/slick.f97e3bbf.svg"
   },
   {
-    "revision": "fe42ad705f1e12df3c37c27f66b1c922",
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "2fd7eee5c661a8819f0c482173bbcb84",
     "url": "/index.html"
   }
 ];
