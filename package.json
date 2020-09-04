@@ -28,7 +28,7 @@
     "react-slick": "^0.23.2",
     "reactstrap": "^6.5.0",
     "rellax": "^1.7.1",
-    "showdown": "^1.9.0",
+    "showdown": "^1.9.1",
     "slick-carousel": "^1.8.1",
     "typescript": "^3.2.2",
     "wowjs": "^1.1.3"
